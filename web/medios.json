@@ -1,0 +1,1041 @@
+{
+ "diputados": {
+  "1107": {
+   "foto": "fotos/1107.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/María_Francisca_Bello_Campos"
+  },
+  "1148": {
+   "foto": "fotos/1148.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Javiera_Morales_Alvarado"
+  },
+  "1153": {
+   "foto": "fotos/1153.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Ericka_Ñanco_Vásquez"
+  },
+  "1192": {
+   "foto": "fotos/1192.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Lilian_Betancurt_Delgado"
+  },
+  "1021": {
+   "foto": "fotos/1021.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Andrés_Celis_Montt"
+  },
+  "1157": {
+   "foto": "fotos/1157.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Marlene_Pérez_Cartes"
+  },
+  "1117": {
+   "foto": "fotos/1117.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Nathalie_Castillo_Rojas"
+  },
+  "1012": {
+   "foto": "fotos/1012.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Boris_Anthony_Barrera_Moreno"
+  },
+  "1015": {
+   "foto": "fotos/1015.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jorge_Elías_Brito_Hasbún"
+  },
+  "1152": {
+   "foto": "fotos/1152.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Gloria_Naveillan_Arriagada"
+  },
+  "1236": {
+   "foto": "fotos/1236.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Paula_Andrea_Olmos_Contreras"
+  },
+  "1074": {
+   "foto": "fotos/1074.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Marisela_del_Carmen_Santibáñez_Novoa"
+  },
+  "1025": {
+   "foto": "fotos/1025.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/María_Catalina_Del_Real_Mihovilovic"
+  },
+  "1100": {
+   "foto": "fotos/1100.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Cristián_Araya_Lerdo_de_Tejada"
+  },
+  "1128": {
+   "foto": "fotos/1128.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Ana_María_Gazmuri_Vieira"
+  },
+  "1009": {
+   "foto": "fotos/1009.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jorge_Alessandri_Vergara"
+  },
+  "1102": {
+   "foto": "fotos/1102.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Roberto_Arroyo_Muñoz"
+  },
+  "1212": {
+   "foto": "fotos/1212.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Erich_Christ_Grohs_Marín"
+  },
+  "1172": {
+   "foto": "fotos/1172.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Stephan_Schubert_Rubio"
+  },
+  "1077": {
+   "foto": "fotos/1077.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Raúl_Humberto_Soto_Mardones"
+  },
+  "1140": {
+   "foto": "fotos/1140.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Daniel_Lilayu_Vivanco"
+  },
+  "1175": {
+   "foto": "fotos/1175.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Cristián_Tapia_Ramos"
+  },
+  "1176": {
+   "foto": "fotos/1176.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Hotuiti_Teao_Drago"
+  },
+  "1065": {
+   "foto": "fotos/1065.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Guillermo_Andrés_Ramírez_Diez"
+  },
+  "1131": {
+   "foto": "fotos/1131.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Mauro_González_Villarroel"
+  },
+  "872": {
+   "foto": "fotos/872.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jaime_Mulet_Martínez"
+  },
+  "1240": {
+   "foto": "fotos/1240.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Zandra_Esther_Parisi_Fernández"
+  },
+  "1183": {
+   "foto": "fotos/1183.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Flor_Weisse_Novoa"
+  },
+  "1234": {
+   "foto": "fotos/1234.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Mario_Antonio_Olavarría_Rodríguez"
+  },
+  "1142": {
+   "foto": "fotos/1142.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Daniel_Manouchehri_Lobos"
+  },
+  "1216": {
+   "foto": "fotos/1216.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Stephanie_Jéldrez_Ortiz"
+  },
+  "1211": {
+   "foto": "fotos/1211.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Sofía_Alejandra_González_Cortés"
+  },
+  "1143": {
+   "foto": "fotos/1143.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Cristóbal_Martínez_Ramírez"
+  },
+  "1250": {
+   "foto": "fotos/1250.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Bernardo_Antonio_Salinas_Maya"
+  },
+  "986": {
+   "foto": "fotos/986.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Marcela_Ximena_Hernando_Pérez"
+  },
+  "1165": {
+   "foto": "fotos/1165.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Agustín_Romero_Leiva"
+  },
+  "1248": {
+   "foto": "fotos/1248.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Felipe_Ross_Correa"
+  },
+  "1108": {
+   "foto": "fotos/1108.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Juan_Beltrán_Silva"
+  },
+  "1044": {
+   "foto": "fotos/1044.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Raúl_Alfonso_Leiva_Carvajal"
+  },
+  "1116": {
+   "foto": "fotos/1116.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Felipe_Camaño_Cárdenas"
+  },
+  "1105": {
+   "foto": "fotos/1105.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Héctor_Barría_Angulo"
+  },
+  "1086": {
+   "foto": "fotos/1086.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Gonzalo_Rodolfo_Winter_Etcheberry"
+  },
+  "1180": {
+   "foto": "fotos/1180.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Consuelo_Veloso_Ávila"
+  },
+  "1087": {
+   "foto": "fotos/1087.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Gael_Fernanda_Yeomans_Araya"
+  },
+  "1038": {
+   "foto": "fotos/1038.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Marcos_Artemio_Ilabaca_Cerda"
+  },
+  "1189": {
+   "foto": "fotos/1189.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jaime_Andrés_Bassa_Mercado"
+  },
+  "1062": {
+   "foto": "fotos/1062.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Joanna_Elena_Pérez_Olea"
+  },
+  "1039": {
+   "foto": "fotos/1039.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Pamela_Jiles_Moreno"
+  },
+  "1099": {
+   "foto": "fotos/1099.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jaime_Araya_Guerrero"
+  },
+  "1207": {
+   "foto": "fotos/1207.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Valentina_Belén_Cáceres_Monsalvez"
+  },
+  "815": {
+   "foto": "fotos/815.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Sergio_Enrique_Bobadilla_Muñoz"
+  },
+  "1075": {
+   "foto": "fotos/1075.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Diego_Ignacio_Schalper_Sepúlveda"
+  },
+  "1061": {
+   "foto": "fotos/1061.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Irle_Andrea_Parra_Sauterel"
+  },
+  "1251": {
+   "foto": "fotos/1251.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Macarena_Eugenia_Santelices_Cañas"
+  },
+  "1219": {
+   "foto": "fotos/1219.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Tomás_Kast_Sommerhoff"
+  },
+  "1221": {
+   "foto": "fotos/1221.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Benjamín_Israel_Lorca_Inzunza"
+  },
+  "1127": {
+   "foto": "fotos/1127.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Lorena_Fries_Monleón"
+  },
+  "1254": {
+   "foto": "fotos/1254.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Ignacio_José_Urcullú_Clèment-Lund"
+  },
+  "1082": {
+   "foto": "fotos/1082.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Cristóbal_Ignacio_de_Loyola_Urruticoechea_Ríos"
+  },
+  "1178": {
+   "foto": "fotos/1178.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Héctor_Ulloa_Aguilera"
+  },
+  "1073": {
+   "foto": "fotos/1073.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Juan_Rubén_Santana_Castillo"
+  },
+  "1181": {
+   "foto": "fotos/1181.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Nelson_Venegas_Salazar"
+  },
+  "1261": {
+   "foto": "fotos/1261.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Daniel_Valenzuela_Salazar"
+  },
+  "1217": {
+   "foto": "fotos/1217.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Pier_Giuseppe_Karlezi_Hazleby"
+  },
+  "1114": {
+   "foto": "fotos/1114.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Félix_Bugueño_Sotelo"
+  },
+  "1146": {
+   "foto": "fotos/1146.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/José_Meza_Pereira"
+  },
+  "1256": {
+   "foto": "fotos/1256.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Tatiana_Karina_Urrutia_Herrera"
+  },
+  "843": {
+   "foto": "fotos/843.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/René_Manuel_García_García"
+  },
+  "1264": {
+   "foto": "fotos/1264.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Fernando_Zamorano_Peralta"
+  },
+  "1241": {
+   "foto": "fotos/1241.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Patricio_Pinilla_Valencia"
+  },
+  "1244": {
+   "foto": "fotos/1244.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Claudia_Reyes_Larenas"
+  },
+  "1252": {
+   "foto": "fotos/1252.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Constanza_Gabriela_Schönhaut_Soto"
+  },
+  "1238": {
+   "foto": "fotos/1238.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Álvaro_Ortiz_Vera"
+  },
+  "1205": {
+   "foto": "fotos/1205.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Carlos_César_Cuadrado_Prats"
+  },
+  "1239": {
+   "foto": "fotos/1239.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Fabián_Mauricio_Ossandón_Briceño"
+  },
+  "1259": {
+   "foto": "fotos/1259.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Juan_Marcelo_Valenzuela_Henríquez"
+  },
+  "1104": {
+   "foto": "fotos/1104.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Chiara_Barchiesi_Chávez"
+  },
+  "1225": {
+   "foto": "fotos/1225.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Cristián_Menchaca_Pinochet"
+  },
+  "1226": {
+   "foto": "fotos/1226.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/José_Montalva_Feuerhake"
+  },
+  "1243": {
+   "foto": "fotos/1243.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Tamara_Alejandra_Ramírez_Ramírez"
+  },
+  "1150": {
+   "foto": "fotos/1150.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Benjamín_Moreno_Bascur"
+  },
+  "1245": {
+   "foto": "fotos/1245.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Alejandro_Riquelme_Ducci"
+  },
+  "803": {
+   "foto": "fotos/803.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/René_Alinco_Bustos"
+  },
+  "1110": {
+   "foto": "fotos/1110.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Carlos_Antonio_Karim_Bianchi_Chelech"
+  },
+  "1054": {
+   "foto": "fotos/1054.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Francesca_Elizabeth_Andrea_Muñoz_González"
+  },
+  "1223": {
+   "foto": "fotos/1223.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Hans_Alberto_Marowski_Cuevas"
+  },
+  "1159": {
+   "foto": "fotos/1159.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Lorena_Pizarro_Sierra"
+  },
+  "1208": {
+   "foto": "fotos/1208.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jorge_Díaz_Ibarra"
+  },
+  "1222": {
+   "foto": "fotos/1222.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Andrea_Macías_Palma"
+  },
+  "1171": {
+   "foto": "fotos/1171.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Emilia_Schneider_Videla"
+  },
+  "1060": {
+   "foto": "fotos/1060.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Luis_Rafael_Pardo_Sainz"
+  },
+  "1191": {
+   "foto": "fotos/1191.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Valentina_Becerra_Peña"
+  },
+  "1227": {
+   "foto": "fotos/1227.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Claudia_Patricia_Mora_Vega"
+  },
+  "1257": {
+   "foto": "fotos/1257.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Alejandra_Valdebenito_Torres"
+  },
+  "1220": {
+   "foto": "fotos/1220.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Leandro_Kunstmann_Collado"
+  },
+  "1263": {
+   "foto": "fotos/1263.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Sebastián_Nicolás_Zamora_Soto"
+  },
+  "915": {
+   "foto": "fotos/915.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Germán_Verdugo_Soto"
+  },
+  "1242": {
+   "foto": "fotos/1242.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Rodrigo_Ramírez_Parra"
+  },
+  "1200": {
+   "foto": "fotos/1200.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Cristián_Alejandro_Contreras_Radovic"
+  },
+  "1017": {
+   "foto": "fotos/1017.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Álvaro_Jorge_Carter_Fernández"
+  },
+  "1249": {
+   "foto": "fotos/1249.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Omar_Sabat_Guzmán"
+  },
+  "1141": {
+   "foto": "fotos/1141.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Luis_Malla_Valenzuela"
+  },
+  "1028": {
+   "foto": "fotos/1028.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Eduardo_Alfredo_Durán_Salinas"
+  },
+  "1132": {
+   "foto": "fotos/1132.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jorge_Guzmán_Zepeda"
+  },
+  "1174": {
+   "foto": "fotos/1174.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Marco_Antonio_Sulantay_Olivares"
+  },
+  "1246": {
+   "foto": "fotos/1246.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/José_Antonio_Rivas_Villalobos"
+  },
+  "1133": {
+   "foto": "fotos/1133.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Juan_Irarrázaval_Rossel"
+  },
+  "1182": {
+   "foto": "fotos/1182.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Sebastián_Videla_Castillo"
+  },
+  "1170": {
+   "foto": "fotos/1170.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Luis_Fernando_Sánchez_Ossa"
+  },
+  "1203": {
+   "foto": "fotos/1203.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Sebastián_Cristoffanini_Jaraquemada"
+  },
+  "1232": {
+   "foto": "fotos/1232.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Cristian_Neira_Martínez"
+  },
+  "1195": {
+   "foto": "fotos/1195.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Carlos_José_Carvajal_Gallardo"
+  },
+  "1258": {
+   "foto": "fotos/1258.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Guillermo_Valdés_Carmona"
+  },
+  "1059": {
+   "foto": "fotos/1059.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/María_Ximena_Ossandón_Irarrázabal"
+  },
+  "1262": {
+   "foto": "fotos/1262.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Diego_Vergara_Rodríguez"
+  },
+  "1173": {
+   "foto": "fotos/1173.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Daniela_Serrano_Salazar"
+  },
+  "1255": {
+   "foto": "fotos/1255.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Eileen_Patricia_Urqueta_Rojas"
+  },
+  "1013": {
+   "foto": "fotos/1013.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Alejandro_Javier_Bernales_Maldonado"
+  },
+  "1166": {
+   "foto": "fotos/1166.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Natalia_Romero_Talguia"
+  },
+  "1235": {
+   "foto": "fotos/1235.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Javier_Ignacio_Olivares_Avendaño"
+  },
+  "1237": {
+   "foto": "fotos/1237.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Francisco_Javier_Orrego_Gutiérrez"
+  },
+  "1214": {
+   "foto": "fotos/1214.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Constanza_Verónica_Hube_Portus"
+  },
+  "1177": {
+   "foto": "fotos/1177.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Carolina_Tello_Rojas"
+  },
+  "1119": {
+   "foto": "fotos/1119.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Sara_Concha_Smith"
+  },
+  "1233": {
+   "foto": "fotos/1233.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Ricardo_Andrés_Neumann_Bertín"
+  },
+  "1202": {
+   "foto": "fotos/1202.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Eduardo_Andrés_Cretton_Rebolledo"
+  },
+  "1230": {
+   "foto": "fotos/1230.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Alex_Nahuelquín_Nahuelquín"
+  },
+  "1198": {
+   "foto": "fotos/1198.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/María_Paz_Charpentier_Rajcevich"
+  },
+  "1194": {
+   "foto": "fotos/1194.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Daniel_Eduardo_Bustos_Leal"
+  },
+  "1229": {
+   "foto": "fotos/1229.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Javier_Muñoz_Riquelme"
+  },
+  "1122": {
+   "foto": "fotos/1122.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Luis_Cuello_Peña_y_Lillo"
+  },
+  "1199": {
+   "foto": "fotos/1199.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jaime_Coloma_Álamos"
+  },
+  "1210": {
+   "foto": "fotos/1210.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Gustavo_Adolfo_Gatica_Villarroel"
+  },
+  "1228": {
+   "foto": "fotos/1228.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Paulina_Muñoz_Minte"
+  },
+  "1056": {
+   "foto": "fotos/1056.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Emilia_Iris_Nuyado_Ancapichún"
+  },
+  "1186": {
+   "foto": "fotos/1186.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Ignacio_Jaime_Achurra_Díaz"
+  },
+  "1190": {
+   "foto": "fotos/1190.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Enrique_Alejandro_Bassaletti_Riess"
+  },
+  "1215": {
+   "foto": "fotos/1215.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Álvaro_Arturo_Jofré_Cáceres"
+  },
+  "1187": {
+   "foto": "fotos/1187.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Carlo_Alejandro_Arqueros_Pizarro"
+  },
+  "1260": {
+   "foto": "fotos/1260.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/César_Ignacio_Valenzuela_Maass"
+  },
+  "1184": {
+   "foto": "fotos/1184.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Roberto_Antonio_Celedón_Fernández"
+  },
+  "1224": {
+   "foto": "fotos/1224.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Cristian_Andrés_Mella_Andaur"
+  },
+  "1197": {
+   "foto": "fotos/1197.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Carlos_Chandía_Alarcón"
+  },
+  "1204": {
+   "foto": "fotos/1204.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Francisco_Crisóstomo_Llanos"
+  },
+  "1196": {
+   "foto": "fotos/1196.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Priscilla_Castillo_Gerli"
+  },
+  "1201": {
+   "foto": "fotos/1201.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Flor_Contreras_Vivallo"
+  },
+  "1247": {
+   "foto": "fotos/1247.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Javiera_Valentina_Rodríguez_Pascual"
+  },
+  "1213": {
+   "foto": "fotos/1213.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Irací_Luiza_Hassler_Jacob"
+  },
+  "1231": {
+   "foto": "fotos/1231.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Ximena_Andrea_Naranjo_Pinto"
+  },
+  "1209": {
+   "foto": "fotos/1209.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Matías_Fernández_Hartwig"
+  },
+  "1206": {
+   "foto": "fotos/1206.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Carolina_Cucumides_Calderón"
+  },
+  "1253": {
+   "foto": "fotos/1253.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Fernando_Ugarte_Tejeda"
+  },
+  "1218": {
+   "foto": "fotos/1218.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/José_Antonio_Kast_Adriasola"
+  },
+  "1193": {
+   "foto": "fotos/1193.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Patricio_Briones_Moller"
+  },
+  "1188": {
+   "foto": "fotos/1188.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Marcos_Patricio_Barraza_Gómez"
+  }
+ },
+ "partidos": {
+  "DC": {
+   "logo": "partidos/DC.png",
+   "autor": "B1mbo",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Christian_Democrat_Party_of_Chile.svg",
+   "color": "#0261A5"
+  },
+  "DEM": {
+   "logo": "partidos/DEM.png",
+   "autor": "Coolerbuds",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Logo_Dem%C3%B3cratas_Chile.png",
+   "color": "#0F144C"
+  },
+  "EVOP": {
+   "logo": "partidos/EVOP.png",
+   "autor": "Evópoli",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Ev%C3%B3poli.png",
+   "color": "#00BFFF"
+  },
+  "FA": {
+   "logo": "partidos/FA.png",
+   "autor": "Pablo Utreras",
+   "licencia": "CC BY-SA 4.0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Frente_Amplio_(Texto).svg",
+   "color": "#0060A8"
+  },
+  "PAH": {
+   "logo": "partidos/PAH.png",
+   "autor": "Acción Humanista",
+   "licencia": "CC BY-SA 4.0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Logo_de_Acci%C3%B3n_Humanista_Chile.png",
+   "color": "#F04800"
+  },
+  "PC": {
+   "logo": "partidos/PC.png",
+   "autor": "B1mbo",
+   "licencia": "CC BY 3.0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Partido_Comunista_de_Chile.svg",
+   "color": "#BF0000"
+  },
+  "PDG": {
+   "logo": "partidos/PDG.png",
+   "autor": "Jomiga1999",
+   "licencia": "CC BY-SA 4.0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Logo_Partido_de_la_Gente.jpg",
+   "color": "#00285E"
+  },
+  "PL": {
+   "logo": "partidos/PL.png",
+   "autor": "Internacional Liberal",
+   "licencia": "CC0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:LogoPLChile2017.png",
+   "color": "#FF03B2"
+  },
+  "PNL": {
+   "logo": "partidos/PNL.png",
+   "autor": "Janitoalevic",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Partido_Nacional_Libertario.svg",
+   "color": "#F28500"
+  },
+  "PPD": {
+   "logo": "partidos/PPD.png",
+   "autor": "Kes47",
+   "licencia": "CC BY 3.0 cl",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Partido_por_la_Democracia_emblema.svg",
+   "color": "#FFFF00"
+  },
+  "PR": {
+   "logo": "partidos/PR.png",
+   "autor": "Sfs90",
+   "licencia": "CC BY-SA 3.0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Partido_Radical_de_Chile.png",
+   "color": "#552058"
+  },
+  "PREP": {
+   "logo": "partidos/PREP.png",
+   "autor": "Partido Republicano",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Partido_Republicano_(Chile,_2019).svg",
+   "color": "#31446C"
+  },
+  "PS": {
+   "logo": "partidos/PS.png",
+   "autor": "B1mbo",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Socialist_Party_of_Chile.svg",
+   "color": "#FF0000"
+  },
+  "RN": {
+   "logo": "partidos/RN.png",
+   "autor": "Renovación Nacional",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Logo_del_Partido_pol%C3%ADtico_Renovaci%C3%B3n_Nacional_(RN),_Chile.svg",
+   "color": "#135BB8"
+  },
+  "UDI": {
+   "logo": "partidos/UDI.png",
+   "autor": "UDI",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:UDI_2017.svg",
+   "color": "#00008B"
+  }
+ }
+}

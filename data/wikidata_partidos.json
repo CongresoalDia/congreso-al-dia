@@ -1,0 +1,181 @@
+{
+ "DC": {
+  "nombre": "Partido Demócrata Cristiano",
+  "wikidata": "Q1395049",
+  "logo": "Emblem of the Christian Democrat Party of Chile.svg",
+  "color": "0261A5",
+  "creditos": {
+   "autor": "B1mbo",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Christian_Democrat_Party_of_Chile.svg"
+  }
+ },
+ "DEM": {
+  "nombre": "Partido Demócratas Chile",
+  "wikidata": "Q115065800",
+  "logo": "Logo Demócratas Chile.png",
+  "color": "0F144C",
+  "creditos": {
+   "autor": "Coolerbuds",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Logo_Dem%C3%B3cratas_Chile.png"
+  }
+ },
+ "EVOP": {
+  "nombre": "Evolución Política",
+  "wikidata": "Q16565533",
+  "logo": "Evópoli.png",
+  "color": "00BFFF",
+  "creditos": {
+   "autor": "Evópoli",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Ev%C3%B3poli.png"
+  }
+ },
+ "FA": {
+  "nombre": "Frente Amplio",
+  "wikidata": "Q28469675",
+  "logo": "Frente Amplio (Texto).svg",
+  "color": null,
+  "creditos": {
+   "autor": "Pablo Utreras",
+   "licencia": "CC BY-SA 4.0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Frente_Amplio_(Texto).svg"
+  },
+  "color_del_logo": "0060A8"
+ },
+ "FRVS": {
+  "nombre": "Federación Regionalista Verde Social",
+  "wikidata": "Q28868044",
+  "logo": null,
+  "color": null
+ },
+ "PAH": {
+  "nombre": "Partido Acción Humanista",
+  "wikidata": null,
+  "logo": "Logo de Acción Humanista Chile.png",
+  "color": null,
+  "creditos": {
+   "autor": "Acción Humanista",
+   "licencia": "CC BY-SA 4.0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Logo_de_Acci%C3%B3n_Humanista_Chile.png"
+  },
+  "color_del_logo": "F04800"
+ },
+ "PC": {
+  "nombre": "Partido Comunista",
+  "wikidata": "Q317952",
+  "logo": "Partido Comunista de Chile.svg",
+  "color": "BF0000",
+  "creditos": {
+   "autor": "B1mbo",
+   "licencia": "CC BY 3.0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Partido_Comunista_de_Chile.svg"
+  }
+ },
+ "PCCH": {
+  "nombre": "Partido Cristiano de Chile",
+  "wikidata": null,
+  "logo": null,
+  "color": null
+ },
+ "PDG": {
+  "nombre": "Partido de la Gente",
+  "wikidata": "Q107012458",
+  "logo": "Logo Partido de la Gente.jpg",
+  "color": "00285E",
+  "creditos": {
+   "autor": "Jomiga1999",
+   "licencia": "CC BY-SA 4.0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Logo_Partido_de_la_Gente.jpg"
+  }
+ },
+ "PL": {
+  "nombre": "Partido Liberal de Chile",
+  "wikidata": "Q3885147",
+  "logo": "LogoPLChile2017.png",
+  "color": "FF03B2",
+  "creditos": {
+   "autor": "Internacional Liberal",
+   "licencia": "CC0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:LogoPLChile2017.png"
+  }
+ },
+ "PNL": {
+  "nombre": "Partido Nacional Libertario",
+  "wikidata": "Q126425000",
+  "logo": "Partido Nacional Libertario.svg",
+  "color": "F28500",
+  "creditos": {
+   "autor": "Janitoalevic",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Partido_Nacional_Libertario.svg"
+  }
+ },
+ "PPD": {
+  "nombre": "Partido Por la Democracia",
+  "wikidata": "Q1759292",
+  "logo": "Partido por la Democracia emblema.svg",
+  "color": "FFFF00",
+  "creditos": {
+   "autor": "Kes47",
+   "licencia": "CC BY 3.0 cl",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Partido_por_la_Democracia_emblema.svg"
+  }
+ },
+ "PR": {
+  "nombre": "Partido Radical de Chile",
+  "wikidata": "Q1759368",
+  "logo": "Partido Radical de Chile.png",
+  "color": "552058",
+  "creditos": {
+   "autor": "Sfs90",
+   "licencia": "CC BY-SA 3.0",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Partido_Radical_de_Chile.png"
+  }
+ },
+ "PREP": {
+  "nombre": "Partido Republicano",
+  "wikidata": "Q64539214",
+  "logo": "Partido Republicano (Chile, 2019).svg",
+  "color": "31446C",
+  "creditos": {
+   "autor": "Partido Republicano",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Partido_Republicano_(Chile,_2019).svg"
+  }
+ },
+ "PS": {
+  "nombre": "Partido Socialista",
+  "wikidata": "Q823648",
+  "logo": "Emblem of the Socialist Party of Chile.svg",
+  "color": "FF0000",
+  "creditos": {
+   "autor": "B1mbo",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Socialist_Party_of_Chile.svg"
+  }
+ },
+ "RN": {
+  "nombre": "Renovación Nacional",
+  "wikidata": "Q1422826",
+  "logo": "Logo del Partido político Renovación Nacional (RN), Chile.svg",
+  "color": "135BB8",
+  "creditos": {
+   "autor": "Renovación Nacional",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Logo_del_Partido_pol%C3%ADtico_Renovaci%C3%B3n_Nacional_(RN),_Chile.svg"
+  }
+ },
+ "UDI": {
+  "nombre": "Unión Demócrata Independiente",
+  "wikidata": "Q602131",
+  "logo": "UDI 2017.svg",
+  "color": "00008B",
+  "creditos": {
+   "autor": "UDI",
+   "licencia": "Public domain",
+   "fuente": "https://commons.wikimedia.org/wiki/File:UDI_2017.svg"
+  }
+ }
+}
