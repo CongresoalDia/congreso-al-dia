@@ -211,6 +211,9 @@ def main():
         CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Logos: {len(medios['partidos'])}/{len(cache)}")
 
+    # Orden fijo (la BCN entrega los resultados en distinto orden cada vez) para que el archivo solo cambie si cambian los datos
+    medios["diputados"] = dict(sorted(medios["diputados"].items(), key=lambda kv: int(kv[0])))
+    medios["partidos"] = dict(sorted(medios["partidos"].items()))
     (WEB / "medios.json").write_text(json.dumps(medios, ensure_ascii=False, indent=1), encoding="utf-8")
 
 

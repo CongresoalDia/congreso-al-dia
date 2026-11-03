@@ -68,6 +68,10 @@ python pipeline/presupuesto.py   # costo del Congreso (DIPRES) -> web/presupuest
 python -m http.server 8931 --directory web   # ver el sitio en http://localhost:8931
 ```
 
+**Actualización automática.** Todos los días, GitHub Actions (`.github/workflows/actualizar.yml`) actualiza la
+Cámara y el presupuesto y sube los JSON que cambian. La API del Senado no responde a los servidores de GitHub, así
+que el Senado se actualiza desde un PC con `python pipeline/actualizar_senado.py`.
+
 La primera descarga tarda unos minutos; las siguientes solo bajan lo nuevo (y lo de la última semana, por si
 hubo correcciones). Los datos crudos (`data/raw/`) no se versionan; los JSON que usa el sitio sí.
 

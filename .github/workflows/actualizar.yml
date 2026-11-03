@@ -43,10 +43,7 @@ jobs:
           python pipeline/calcular.py
           python pipeline/medios.py
 
-      - name: Senado
-        id: senado
-        continue-on-error: true
-        run: python pipeline/senado.py
+      # El Senado no está aquí: su API responde 403 a los servidores de GitHub. Se actualiza desde un PC (ver README).
 
       - name: Presupuesto
         id: presupuesto
@@ -74,7 +71,7 @@ jobs:
 
       # Si alguna fuente falló, el flujo queda en rojo (y GitHub avisa por correo), aunque se suba lo que sí funcionó
       - name: Revisar fuentes
-        if: steps.camara.outcome == 'failure' || steps.senado.outcome == 'failure' || steps.presupuesto.outcome == 'failure'
+        if: steps.camara.outcome == 'failure' || steps.presupuesto.outcome == 'failure'
         run: |
-          echo "Cámara: ${{ steps.camara.outcome }} · Senado: ${{ steps.senado.outcome }} · Presupuesto: ${{ steps.presupuesto.outcome }}"
+          echo "Cámara: ${{ steps.camara.outcome }} · Presupuesto: ${{ steps.presupuesto.outcome }}"
           exit 1
