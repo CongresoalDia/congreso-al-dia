@@ -422,7 +422,11 @@
    "fuente": "https://federacionregionalistaverdesocial.cl"
   },
   "PCCH": {
-   "color": "#7B4FA3"
+   "logo": "partidos/PCCH.png",
+   "color": "#004878",
+   "autor": "Partido Cristiano de Chile",
+   "licencia": "logo oficial del partido",
+   "fuente": ""
   }
  }
 }

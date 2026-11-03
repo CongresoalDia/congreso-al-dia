@@ -49,6 +49,7 @@ COLORES_FIJOS = {"FRVS": "#2E8B57", "PCCH": "#7B4FA3"}
 # Logos entregados a mano (no están en Commons): ya guardados en web/partidos/{alias}.png
 LOGOS_LOCALES = {"FRVS": {"color": "#78A818", "autor": "Federación Regionalista Verde Social", "licencia": "logo oficial del partido",
                           "fuente": "https://federacionregionalistaverdesocial.cl"}}
+LOGOS_LOCALES["PCCH"] = {"color": "#004878", "autor": "Partido Cristiano de Chile", "licencia": "logo oficial del partido", "fuente": ""}
 INDEPENDIENTES = {"logo": "partidos/IND.svg", "color": "#5B6B7F", "autor": "Congreso Abierto",
                   "licencia": "Dibujo propio (sin partido)", "fuente": ""}
 
