@@ -29,6 +29,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      # Versión en los enlaces a app.js y estilos.css para que el navegador no use una copia vieja tras cada cambio
+      - name: Versionar archivos
+        run: sed -i "s#\"app.js\"#\"app.js?v=${GITHUB_SHA::8}\"#; s#\"estilos.css\"#\"estilos.css?v=${GITHUB_SHA::8}\"#" web/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
