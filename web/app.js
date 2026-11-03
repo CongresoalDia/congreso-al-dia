@@ -664,25 +664,27 @@ function vistaInicio() {
   });
 }
 
-// Contador: días de sesión (con votaciones) desde la última votación unánime; recesos y semanas distritales no suman
+// Contador: días de calendario desde la última votación unánime hasta hoy (incluye recesos y semanas distritales)
 function contadorUnanimidad(u) {
   if (!u || !u.ultima) return "";
-  const n = u.sesiones_sin ?? 0;
-  const r = u.racha_max;
-  const esRecord = r && n > 0 && n >= r.sesiones;
+  const dia = (iso) => Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10));
+  const hoy = new Date();
+  const n = Math.max(0, Math.round((Date.UTC(hoy.getFullYear(), hoy.getMonth(), hoy.getDate()) - dia(u.ultima.fecha.slice(0, 10))) / 864e5));
+  const r = u.racha_dias;
+  const esRecord = r && n > 0 && n >= r.dias;
   const digitos = String(n).padStart(2, "0").split("").map((c) => `<span class="digito">${c}</span>`).join("");
   const cuando = fecha(u.ultima.fecha.slice(0, 10), { weekday: "long", day: "numeric", month: "long" });
   return `<section class="contador" aria-label="Días sin una votación unánime">
     <div class="contador-tablero">${digitos}<span class="contador-unidad">${n === 1 ? "día" : "días"}</span></div>
     <div class="contador-texto">
       <p class="contador-titulo">sin una votación <em>unánime</em> en ${CAMARA.clave === "senado" ? "el Senado" : "la Sala"}</p>
-      <p>${n === 0 ? `Hubo votación unánime en la última sesión, el ${cuando}` : `La última fue el ${cuando}`}:
+      <p>${n === 0 ? `Hubo votación unánime hoy, el ${cuando}` : `La última fue el ${cuando}`}:
         <a href="${P}/v/${u.ultima.id}">«${esc(u.ultima.titulo)}»</a>, ${u.ultima.resultado ? esc(u.ultima.resultado.toLowerCase()) + " " : "votada "}${u.ultima.si} a ${u.ultima.no}.</p>
       <p class="contador-datos">
         <span><strong>${num(u.unanimes)}</strong> de ${num(u.total)} votaciones han sido unánimes (${pct((100 * u.unanimes) / u.total)})</span>
-        ${r ? `<span>${esRecord ? "<strong>Es la racha más larga del período</strong>" : `Racha más larga: <strong>${plural(r.sesiones, "día", "días")}</strong> (${rango(r.desde, r.hasta)})`}</span>` : ""}
+        ${r ? `<span>${esRecord ? "<strong>Es la racha más larga del período</strong>" : `Racha más larga: <strong>${plural(r.dias, "día", "días")}</strong> (${rango(r.desde, r.hasta)})`}</span>` : ""}
       </p>
-      <p class="contador-nota">Cuenta solo días con votaciones en sala: las semanas distritales y los recesos no suman.
+      <p class="contador-nota">Días de calendario desde la última votación unánime, contando semanas distritales y recesos.
         Unánime: todos votaron lo mismo, a favor o en contra, y nadie se abstuvo.</p>
     </div>
   </section>`;

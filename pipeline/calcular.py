@@ -177,11 +177,23 @@ def exportar_votaciones(filas):
     return resumen_unanimidad(votaciones, proyectos)
 
 
+def racha_calendario(votaciones):
+    """Mayor tiempo en días de calendario entre dos días con votación unánime: {dias, desde, hasta} o None."""
+    unanime = lambda v: v["si"] + v["no"] > 0 and v["abst"] == 0 and (v["no"] == 0 or v["si"] == 0)
+    fechas = sorted({v["fecha"][:10] for v in votaciones if unanime(v)})
+    mejor = None
+    for a, b in zip(fechas, fechas[1:]):
+        dias = (date.fromisoformat(b) - date.fromisoformat(a)).days
+        if not mejor or dias > mejor["dias"]:
+            mejor = {"dias": dias, "desde": a, "hasta": b}
+    return mejor
+
+
 def resumen_unanimidad(votaciones, proyectos):
     """Votaciones unánimes (todos votan lo mismo y nadie se abstiene), la última, y las rachas sin ninguna.
 
-    Las rachas se cuentan en días de sesión con votaciones, no en días de calendario: así las semanas
-    distritales y los recesos no suman."""
+    `sesiones_sin` y `racha_max` cuentan días de sesión con votaciones; el sitio muestra el tiempo en días de
+    calendario (`ultima.fecha` hasta hoy y `racha_dias`), que sí incluye semanas distritales y recesos."""
     unanime = lambda v: v["si"] + v["no"] > 0 and v["abst"] == 0 and (v["no"] == 0 or v["si"] == 0)
     dias = sorted({v["fecha"][:10] for v in votaciones})
     con_unanime = {v["fecha"][:10] for v in votaciones if unanime(v)}
@@ -203,6 +215,7 @@ def resumen_unanimidad(votaciones, proyectos):
                    "resultado": ultima["resultado"]},
         "sesiones_sin": len(actual),  # días de sesión con votaciones desde la última unánime
         "racha_max": racha if racha["sesiones"] else None,
+        "racha_dias": racha_calendario(votaciones),
     }
 
 
