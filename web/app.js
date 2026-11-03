@@ -672,15 +672,15 @@ function contadorUnanimidad(u) {
   const esRecord = r && n > 0 && n >= r.sesiones;
   const digitos = String(n).padStart(2, "0").split("").map((c) => `<span class="digito">${c}</span>`).join("");
   const cuando = fecha(u.ultima.fecha.slice(0, 10), { weekday: "long", day: "numeric", month: "long" });
-  return `<section class="contador" aria-label="Días de sesión sin una votación unánime">
-    <div class="contador-tablero">${digitos}<span class="contador-unidad">${n === 1 ? "día de<br>sesión" : "días de<br>sesión"}</span></div>
+  return `<section class="contador" aria-label="Días sin una votación unánime">
+    <div class="contador-tablero">${digitos}<span class="contador-unidad">${n === 1 ? "día" : "días"}</span></div>
     <div class="contador-texto">
       <p class="contador-titulo">sin una votación <em>unánime</em> en ${CAMARA.clave === "senado" ? "el Senado" : "la Sala"}</p>
       <p>${n === 0 ? `Hubo votación unánime en la última sesión, el ${cuando}` : `La última fue el ${cuando}`}:
         <a href="${P}/v/${u.ultima.id}">«${esc(u.ultima.titulo)}»</a>, ${u.ultima.resultado ? esc(u.ultima.resultado.toLowerCase()) + " " : "votada "}${u.ultima.si} a ${u.ultima.no}.</p>
       <p class="contador-datos">
         <span><strong>${num(u.unanimes)}</strong> de ${num(u.total)} votaciones han sido unánimes (${pct((100 * u.unanimes) / u.total)})</span>
-        ${r ? `<span>${esRecord ? "<strong>Es la racha más larga del período</strong>" : `Racha más larga: <strong>${plural(r.sesiones, "día de sesión", "días de sesión")}</strong> (${rango(r.desde, r.hasta)})`}</span>` : ""}
+        ${r ? `<span>${esRecord ? "<strong>Es la racha más larga del período</strong>" : `Racha más larga: <strong>${plural(r.sesiones, "día", "días")}</strong> (${rango(r.desde, r.hasta)})`}</span>` : ""}
       </p>
       <p class="contador-nota">Cuenta solo días con votaciones en sala: las semanas distritales y los recesos no suman.
         Unánime: todos votaron lo mismo, a favor o en contra, y nadie se abstuvo.</p>
