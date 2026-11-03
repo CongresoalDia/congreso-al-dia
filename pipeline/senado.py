@@ -182,8 +182,12 @@ def main():
                 if p["PARLID"] in posicion:
                     letras[posicion[p["PARLID"]]] = OPCION.get(clave.upper(), "n")
         sid = v["ID_SESION"]
-        if sid in sesiones and abs((date.fromisoformat(iso(v["FECHA_VOTACION"])) - date.fromisoformat(iso(sesiones[sid]["FECHA"]))).days) > 1:
-            desfase.append((vid, iso(v["FECHA_VOTACION"]), iso(sesiones[sid]["FECHA"])))
+        fecha = iso(v["FECHA_VOTACION"])
+        # La API fecha algunas votaciones días después de su sesión (p. ej. 30 de la sesión del 19-may salen
+        # del 26 al 29-may, sin sesiones esos días); el orden de los ID y la hora calzan con la sesión: se usa su fecha.
+        if sid in sesiones and abs((date.fromisoformat(fecha) - date.fromisoformat(iso(sesiones[sid]["FECHA"]))).days) > 1:
+            desfase.append((vid, fecha, iso(sesiones[sid]["FECHA"])))
+            fecha = iso(sesiones[sid]["FECHA"])
         for pid in ids:  # quienes no aparecen en ninguna lista y estaban en la sesión: no votaron
             k = posicion[pid]
             if letras[k] == "-" and (sid, pid) in estado_en:
@@ -209,7 +213,7 @@ def main():
         codigo = (v.get("BOLETIN") or "").strip()
         boletin = codigo if re.fullmatch(r"\d+-\d+", codigo) else None  # "S 2.716" y similares son asuntos del Senado
         votaciones.append({
-            "id": vid, "fecha": f"{iso(v['FECHA_VOTACION'])}T{v['FECHA_VOTACION'][11:16]}",
+            "id": vid, "fecha": f"{fecha}T{v['FECHA_VOTACION'][11:16]}",
             "tipo": "Proyecto de Ley" if boletin else "Otros",
             "asunto": f"Asunto del Senado {codigo}" if codigo and not boletin else "Votación en Sala", "boletin": boletin,
             "materia": None, "articulo": tema or None, "tramite": None, "etapa": None, "quorum": v.get("QUORUM"),
@@ -283,7 +287,7 @@ def main():
     escribir("medios.json", medios)
     print(json.dumps({k: v for k, v in resumen.items() if k != "unanimidad"}, ensure_ascii=False, indent=1))
     if desfase:
-        print(f"Aviso: {len(desfase)} votaciones con fecha distinta a la de su sesión (votación, fecha, sesión):", desfase[:10])
+        print(f"Aviso: {len(desfase)} votaciones fechadas con la fecha de su sesión (votación, fecha API, sesión):", desfase[:10])
     print("Fotos:", len(medios["diputados"]), "| proyectos con título:", len(proyectos), "| motivos:", motivos_lista)
 
 
