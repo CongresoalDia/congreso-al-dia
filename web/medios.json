@@ -60,17 +60,23 @@
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Gloria_Naveillan_Arriagada"
   },
+  "1074": {
+   "foto": "fotos/1074.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Marisela_del_Carmen_Santibáñez_Novoa"
+  },
   "1236": {
    "foto": "fotos/1236.jpg",
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Paula_Andrea_Olmos_Contreras"
   },
-  "1074": {
-   "foto": "fotos/1074.jpg",
+  "1009": {
+   "foto": "fotos/1009.jpg",
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Marisela_del_Carmen_Santibáñez_Novoa"
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jorge_Alessandri_Vergara"
   },
   "1025": {
    "foto": "fotos/1025.jpg",
@@ -89,12 +95,6 @@
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Ana_María_Gazmuri_Vieira"
-  },
-  "1009": {
-   "foto": "fotos/1009.jpg",
-   "autor": "Biblioteca del Congreso Nacional de Chile",
-   "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jorge_Alessandri_Vergara"
   },
   "1102": {
    "foto": "fotos/1102.jpg",
@@ -126,6 +126,18 @@
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Daniel_Lilayu_Vivanco"
   },
+  "872": {
+   "foto": "fotos/872.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jaime_Mulet_Martínez"
+  },
+  "1240": {
+   "foto": "fotos/1240.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Zandra_Esther_Parisi_Fernández"
+  },
   "1175": {
    "foto": "fotos/1175.jpg",
    "autor": "Biblioteca del Congreso Nacional de Chile",
@@ -149,18 +161,6 @@
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Mauro_González_Villarroel"
-  },
-  "872": {
-   "foto": "fotos/872.jpg",
-   "autor": "Biblioteca del Congreso Nacional de Chile",
-   "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Jaime_Mulet_Martínez"
-  },
-  "1240": {
-   "foto": "fotos/1240.jpg",
-   "autor": "Biblioteca del Congreso Nacional de Chile",
-   "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Zandra_Esther_Parisi_Fernández"
   },
   "1183": {
    "foto": "fotos/1183.jpg",
@@ -192,11 +192,23 @@
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Sofía_Alejandra_González_Cortés"
   },
+  "1039": {
+   "foto": "fotos/1039.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Pamela_Jiles_Moreno"
+  },
   "1143": {
    "foto": "fotos/1143.jpg",
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Cristóbal_Martínez_Ramírez"
+  },
+  "1087": {
+   "foto": "fotos/1087.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Gael_Fernanda_Yeomans_Araya"
   },
   "1250": {
    "foto": "fotos/1250.jpg",
@@ -258,12 +270,6 @@
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Consuelo_Veloso_Ávila"
   },
-  "1087": {
-   "foto": "fotos/1087.jpg",
-   "autor": "Biblioteca del Congreso Nacional de Chile",
-   "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Gael_Fernanda_Yeomans_Araya"
-  },
   "1038": {
    "foto": "fotos/1038.jpg",
    "autor": "Biblioteca del Congreso Nacional de Chile",
@@ -281,12 +287,6 @@
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Joanna_Elena_Pérez_Olea"
-  },
-  "1039": {
-   "foto": "fotos/1039.jpg",
-   "autor": "Biblioteca del Congreso Nacional de Chile",
-   "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Pamela_Jiles_Moreno"
   },
   "1099": {
    "foto": "fotos/1099.jpg",
@@ -414,6 +414,12 @@
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Fernando_Zamorano_Peralta"
   },
+  "1252": {
+   "foto": "fotos/1252.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Constanza_Gabriela_Schönhaut_Soto"
+  },
   "1241": {
    "foto": "fotos/1241.jpg",
    "autor": "Biblioteca del Congreso Nacional de Chile",
@@ -426,23 +432,29 @@
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Claudia_Reyes_Larenas"
   },
-  "1252": {
-   "foto": "fotos/1252.jpg",
-   "autor": "Biblioteca del Congreso Nacional de Chile",
-   "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Constanza_Gabriela_Schönhaut_Soto"
-  },
   "1238": {
    "foto": "fotos/1238.jpg",
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Álvaro_Ortiz_Vera"
   },
+  "1245": {
+   "foto": "fotos/1245.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Alejandro_Riquelme_Ducci"
+  },
   "1205": {
    "foto": "fotos/1205.jpg",
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Carlos_César_Cuadrado_Prats"
+  },
+  "1104": {
+   "foto": "fotos/1104.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Chiara_Barchiesi_Chávez"
   },
   "1239": {
    "foto": "fotos/1239.jpg",
@@ -455,12 +467,6 @@
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Juan_Marcelo_Valenzuela_Henríquez"
-  },
-  "1104": {
-   "foto": "fotos/1104.jpg",
-   "autor": "Biblioteca del Congreso Nacional de Chile",
-   "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Chiara_Barchiesi_Chávez"
   },
   "1225": {
    "foto": "fotos/1225.jpg",
@@ -485,12 +491,6 @@
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Benjamín_Moreno_Bascur"
-  },
-  "1245": {
-   "foto": "fotos/1245.jpg",
-   "autor": "Biblioteca del Congreso Nacional de Chile",
-   "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Alejandro_Riquelme_Ducci"
   },
   "803": {
    "foto": "fotos/803.jpg",
@@ -642,6 +642,12 @@
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Juan_Irarrázaval_Rossel"
   },
+  "1214": {
+   "foto": "fotos/1214.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Constanza_Verónica_Hube_Portus"
+  },
   "1182": {
    "foto": "fotos/1182.jpg",
    "autor": "Biblioteca del Congreso Nacional de Chile",
@@ -725,12 +731,6 @@
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Francisco_Javier_Orrego_Gutiérrez"
-  },
-  "1214": {
-   "foto": "fotos/1214.jpg",
-   "autor": "Biblioteca del Congreso Nacional de Chile",
-   "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Constanza_Verónica_Hube_Portus"
   },
   "1177": {
    "foto": "fotos/1177.jpg",
@@ -900,17 +900,17 @@
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Matías_Fernández_Hartwig"
   },
-  "1206": {
-   "foto": "fotos/1206.jpg",
-   "autor": "Biblioteca del Congreso Nacional de Chile",
-   "licencia": "datos.bcn.cl",
-   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Carolina_Cucumides_Calderón"
-  },
   "1253": {
    "foto": "fotos/1253.jpg",
    "autor": "Biblioteca del Congreso Nacional de Chile",
    "licencia": "datos.bcn.cl",
    "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Fernando_Ugarte_Tejeda"
+  },
+  "1206": {
+   "foto": "fotos/1206.jpg",
+   "autor": "Biblioteca del Congreso Nacional de Chile",
+   "licencia": "datos.bcn.cl",
+   "fuente": "https://www.bcn.cl/historiapolitica/resenas_parlamentarias/wiki/Carolina_Cucumides_Calderón"
   },
   "1218": {
    "foto": "fotos/1218.jpg",
@@ -960,6 +960,20 @@
    "fuente": "https://commons.wikimedia.org/wiki/File:Frente_Amplio_(Texto).svg",
    "color": "#0060A8"
   },
+  "FRVS": {
+   "logo": "partidos/FRVS.png",
+   "color": "#78A818",
+   "autor": "Federación Regionalista Verde Social",
+   "licencia": "logo oficial del partido",
+   "fuente": "https://federacionregionalistaverdesocial.cl"
+  },
+  "IND": {
+   "logo": "partidos/IND.svg",
+   "color": "#5B6B7F",
+   "autor": "Congreso al día",
+   "licencia": "Dibujo propio (sin partido)",
+   "fuente": ""
+  },
   "PAH": {
    "logo": "partidos/PAH.png",
    "autor": "Acción Humanista",
@@ -973,6 +987,13 @@
    "licencia": "CC BY 3.0",
    "fuente": "https://commons.wikimedia.org/wiki/File:Partido_Comunista_de_Chile.svg",
    "color": "#BF0000"
+  },
+  "PCCH": {
+   "logo": "partidos/PCCH.png",
+   "color": "#004878",
+   "autor": "Partido Cristiano de Chile",
+   "licencia": "logo oficial del partido",
+   "fuente": ""
   },
   "PDG": {
    "logo": "partidos/PDG.png",
@@ -1036,27 +1057,6 @@
    "licencia": "Public domain",
    "fuente": "https://commons.wikimedia.org/wiki/File:UDI_2017.svg",
    "color": "#00008B"
-  },
-  "IND": {
-   "logo": "partidos/IND.svg",
-   "color": "#5B6B7F",
-   "autor": "Congreso al día",
-   "licencia": "Dibujo propio (sin partido)",
-   "fuente": ""
-  },
-  "FRVS": {
-   "logo": "partidos/FRVS.png",
-   "color": "#78A818",
-   "autor": "Federación Regionalista Verde Social",
-   "licencia": "logo oficial del partido",
-   "fuente": "https://federacionregionalistaverdesocial.cl"
-  },
-  "PCCH": {
-   "logo": "partidos/PCCH.png",
-   "color": "#004878",
-   "autor": "Partido Cristiano de Chile",
-   "licencia": "logo oficial del partido",
-   "fuente": ""
   }
  }
 }
