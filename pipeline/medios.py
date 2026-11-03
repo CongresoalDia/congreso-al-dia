@@ -43,6 +43,13 @@ LOGOS_FIJOS = {
 }
 
 
+# Sin ficha o sin color en Wikidata: color fijo (aproximado, el de su identidad visual) y, para
+# independientes, un emblema propio dibujado (web/partidos/IND.svg) con gris azulado neutro
+COLORES_FIJOS = {"FRVS": "#2E8B57", "PCCH": "#7B4FA3"}
+INDEPENDIENTES = {"logo": "partidos/IND.svg", "color": "#5B6B7F", "autor": "Congreso Abierto",
+                  "licencia": "Dibujo propio (sin partido)", "fuente": ""}
+
+
 def pedir(url, pausa=1.0, intentos=6):
     """GET con pausa entre consultas; reintenta si el servidor pide bajar el ritmo (429) o se corta la conexión."""
     req = urllib.request.Request(url, headers=UA)
@@ -167,6 +174,7 @@ def main():
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
     for alias, nombre in sorted({(d["partido"], d["partido_nombre"]) for d in datos["diputados"] if d["partido"]}):
         if alias == "IND":
+            medios["partidos"]["IND"] = dict(INDEPENDIENTES)
             continue
         if alias not in cache or cache[alias].get("wikidata") != PARTIDOS_FIJOS.get(alias, cache[alias].get("wikidata")):
             qid, logo, color = buscar_partido(nombre, PARTIDOS_FIJOS.get(alias))
@@ -190,7 +198,7 @@ def main():
             medios["partidos"].setdefault(alias, {}).update({"logo": f"partidos/{alias}.png", **c["creditos"]})
             if not c.get("color"):
                 c["color_del_logo"] = color_de_logo(destino)
-        color = c.get("color") or c.get("color_del_logo")
+        color = c.get("color") or c.get("color_del_logo") or COLORES_FIJOS.get(alias)
         if color:
             medios["partidos"].setdefault(alias, {})["color"] = "#" + color.lstrip("#")
         CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")

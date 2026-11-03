@@ -1250,7 +1250,7 @@ function creditos() {
       del Congreso Nacional de Chile</a>, desde sus datos abiertos (<a href="https://datos.bcn.cl" rel="noopener">datos.bcn.cl</a>).</p>` : ""}
     ${logos.length ? `<p>Logos y colores de partidos desde Wikidata y Wikimedia Commons:</p>
     <ul class="creditos">${logos.map(([alias, m]) =>
-      `<li>${esc(alias)}: <a href="${esc(m.fuente)}" rel="noopener">${esc(m.autor || "ver en Commons")}</a>${m.licencia ? ", " + esc(m.licencia) : ""}</li>`).join("")}</ul>` : ""}`;
+      `<li>${esc(alias)}: ${m.fuente ? `<a href="${esc(m.fuente)}" rel="noopener">${esc(m.autor || "ver en Commons")}</a>` : esc(m.autor || "")}${m.licencia ? ", " + esc(m.licencia) : ""}</li>`).join("")}</ul>` : ""}`;
 }
 
 // ---------- rutas ----------

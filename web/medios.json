@@ -1036,6 +1036,19 @@
    "licencia": "Public domain",
    "fuente": "https://commons.wikimedia.org/wiki/File:UDI_2017.svg",
    "color": "#00008B"
+  },
+  "IND": {
+   "logo": "partidos/IND.svg",
+   "color": "#5B6B7F",
+   "autor": "Congreso Abierto",
+   "licencia": "Dibujo propio (sin partido)",
+   "fuente": ""
+  },
+  "FRVS": {
+   "color": "#2E8B57"
+  },
+  "PCCH": {
+   "color": "#7B4FA3"
   }
  }
 }
