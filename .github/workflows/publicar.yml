@@ -1,0 +1,37 @@
+# Publica la carpeta web/ en GitHub Pages cada vez que cambia main o termina la actualización diaria de datos.
+name: Publicar sitio
+
+on:
+  push:
+    branches: [main]
+    paths: ["web/**"]
+  workflow_run:  # los commits de la actualización diaria no disparan "push", así que se publica al terminar
+    workflows: ["Actualizar datos"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: despliegue
+        uses: actions/deploy-pages@v4
