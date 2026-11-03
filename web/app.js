@@ -604,7 +604,7 @@ function vistaInicio() {
       <a class="costo-mini" id="costo-mini" href="${P}/costo" hidden></a>
       <div class="grid-2">
         <section class="tarjeta-top bueno">
-          <header><span class="sello">▲ Lo mejor</span><h2>Los que más <em>cumplen</em></h2>
+          <header><span class="sello">▲ Mayor asistencia</span><h2>Los que más <em>cumplen</em></h2>
             <p>Mayor asistencia y, entre ellos, los que más votan. ${cien} ${CAMARA.pluralCorto} tienen 100% de asistencia.</p></header>
           ${topConPodio(cumplen.slice(0, 10), (d) => pct(d.pct_votaciones),
             (d) => `Asistencia ${pct(d.pct_asistencia)} · votó en ${pct(d.pct_votaciones)}`)}
@@ -612,7 +612,7 @@ function vistaInicio() {
         </section>
 
         <section class="tarjeta-top malo">
-          <header><span class="sello">▼ Lo peor</span><h2>Los que menos <em>asisten</em></h2><p id="menos-sub"></p></header>
+          <header><span class="sello">▼ Menor asistencia</span><h2>Los que menos <em>asisten</em></h2><p id="menos-sub"></p></header>
           <div class="segmentado" role="group" aria-label="Qué inasistencias contar">
             <button type="button" data-sin="1">${CAMARA.clave === "senado" ? "Sin justificadas" : "Sin justificadas por ley"}</button>
             <button type="button" data-sin="0">Todas las faltas</button>
@@ -623,7 +623,7 @@ function vistaInicio() {
       </div>
 
       <section class="tarjeta-top ancha malo">
-        <header><span class="sello">▼ Lo peor</span><h2>Van a la sala, pero <em>no votan</em></h2>
+        <header><span class="sello">▼ Presentes sin votar</span><h2>Van a la sala, pero <em>no votan</em></h2>
           <p>Votaciones en que no votó <strong>estando presente</strong> en la sesión. Aquí no cuentan las licencias ni las faltas
             justificadas: solo se consideran las sesiones a las que asistió.</p></header>
         ${topConPodio(noVotan, (d) => pct(tasaPresenteSinVotar(d)),
