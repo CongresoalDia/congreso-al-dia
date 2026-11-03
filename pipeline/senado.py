@@ -174,6 +174,7 @@ def main():
     ids = [pid for pid in senadores if reg[pid]["sesiones"]]
     posicion = {pid: k for k, pid in enumerate(ids)}
     votaciones = []
+    desfase = []  # votaciones cuya fecha no coincide con la de su sesión (para revisar a mano)
     for vid, v in votos.items():
         letras = ["-"] * len(ids)
         for clave, lista in (v.get("VOTACIONES") or {}).items():
@@ -181,12 +182,14 @@ def main():
                 if p["PARLID"] in posicion:
                     letras[posicion[p["PARLID"]]] = OPCION.get(clave.upper(), "n")
         sid = v["ID_SESION"]
+        if sid in sesiones and abs((date.fromisoformat(iso(v["FECHA_VOTACION"])) - date.fromisoformat(iso(sesiones[sid]["FECHA"]))).days) > 1:
+            desfase.append((vid, iso(v["FECHA_VOTACION"]), iso(sesiones[sid]["FECHA"])))
         for pid in ids:  # quienes no aparecen en ninguna lista y estaban en la sesión: no votaron
             k = posicion[pid]
             if letras[k] == "-" and (sid, pid) in estado_en:
                 letras[k] = "n"
-            if letras[k] == "-":
-                continue
+            if letras[k] == "-" or sid not in asistencia:
+                continue  # sin lista de asistencia de esa sesión no cuenta por persona (igual que la Cámara)
             r = reg[pid]
             r["votaciones"] += 1
             if letras[k] in "acb":
@@ -279,6 +282,8 @@ def main():
                                                  "fuente": "https://www.senado.cl"}
     escribir("medios.json", medios)
     print(json.dumps({k: v for k, v in resumen.items() if k != "unanimidad"}, ensure_ascii=False, indent=1))
+    if desfase:
+        print(f"Aviso: {len(desfase)} votaciones con fecha distinta a la de su sesión (votación, fecha, sesión):", desfase[:10])
     print("Fotos:", len(medios["diputados"]), "| proyectos con título:", len(proyectos), "| motivos:", motivos_lista)
 
 

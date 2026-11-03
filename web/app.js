@@ -1084,6 +1084,9 @@ function vistaVotacion(id) {
           ${proyecto && enlaceProyectoCamara(proyecto, v.boletin) ? `<a href="${enlaceProyectoCamara(proyecto, v.boletin)}" rel="noopener" target="_blank">Tramitación del proyecto ↗</a>` : ""}
         </div>
       </section>
+      ${!partidos.length ? `<section class="bloque"><p class="aclaracion">Los datos abiertos no traen el voto de cada parlamentario en esta votación
+        (el detalle no coincide con el resultado oficial), así que solo se muestra el resultado. Esta votación no se cuenta
+        en las cifras individuales.</p></section>` : `
       <section class="bloque">
         <h2>Por partido</h2>
         <div class="v-partidos">${partidos.map((p) => `
@@ -1102,7 +1105,7 @@ function vistaVotacion(id) {
             <div class="v-personas">${porOpcion[k].sort((x, y) => x.nombre.localeCompare(y.nombre, "es")).map(persona).join("")}</div>
           </div>`).join("")}</div>
         <p class="aclaracion">"No votó" incluye a quienes estaban ausentes, con licencia o presentes sin votar.</p>
-      </section>`;
+      </section>`}`;
     $("#volver")?.addEventListener("click", (e) => { e.preventDefault(); history.back(); });
   });
 }
@@ -1246,7 +1249,9 @@ function vistaMetodologia() {
       <h2>Qué no mide</h2>
       <ul>
         <li>El trabajo en comisiones, el trabajo en terreno ni la calidad de las leyes que impulsa cada parlamentario.</li>
-        <li>La sesión más reciente puede no aparecer hasta que se publica su asistencia.</li>
+        <li>La sesión más reciente puede no aparecer hasta que se publica su asistencia. Sus votaciones se ven en el sitio, pero
+          no se suman a las cifras de cada parlamentario hasta que aparece la lista (así se sabe quién tenía licencia o permiso).</li>
+        <li>Si el detalle de una votación no coincide con su resultado oficial, se muestra el resultado y no se cuenta por persona.</li>
       </ul>
       <p>El código y los datos procesados son abiertos. Si encuentras un error, avísanos.</p>
       ${creditos()}

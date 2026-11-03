@@ -122,6 +122,15 @@ ASUNTOS = {  # descripciones codificadas de votaciones que no son proyectos de l
 }
 
 
+def detalle_inconsistente(v):
+    """True si el detalle por diputado no trae ningún voto emitido aunque los totales oficiales sí tienen votos
+    (pasó en la votación 90242: 56-60-5 oficial, pero los 155 aparecen como "no vota"). Esa votación no se
+    usa en las cifras de cada diputado ni se muestra voto a voto."""
+    emitidos = sum(voto.find("c:OpcionVoto", NS).get("Valor") in VOTO_EMITIDO for voto in v.iterfind(".//c:Voto", NS))
+    oficiales = sum(int(txt(v, f"c:{t}") or 0) for t in ("TotalSi", "TotalNo", "TotalAbstencion"))
+    return oficiales > 0 and emitidos == 0
+
+
 def exportar_votaciones(filas):
     """web/votaciones.json: cada votación con su proyecto, qué se votó y el voto de cada diputado
     (una letra por diputado, en el orden de la lista "diputados": a favor, c en contra, b abstención,
@@ -154,7 +163,7 @@ def exportar_votaciones(filas):
         boletin = re.search(r"Bolet[ií]n N°\s*(\d+-\d+)", desc)
         numero = re.match(r"Proyecto de (Resolución|Acuerdo) N°\s*(\d+)", desc)
         votos = ["-"] * len(ids)
-        for voto in v.iterfind(".//c:Voto", NS):
+        for voto in ([] if detalle_inconsistente(v) else v.iterfind(".//c:Voto", NS)):
             k = posicion.get(txt(voto, "c:Diputado/c:Id"))
             if k is not None:
                 votos[k] = OPCION_VOTO.get(voto.find("c:OpcionVoto", NS).get("Valor"), "n")
@@ -261,15 +270,23 @@ def main():
 
     def sesion_de(fecha):
         """La sesión del mismo día que empezó más recientemente antes de la votación."""
-        candidatas = [s for s in sesiones if s[0][:10] == fecha[:10] and s[0] <= fecha]
-        return candidatas[-1] if candidatas else None
+        del_dia = [s for s in sesiones if s[0][:10] == fecha[:10]]
+        antes = [s for s in del_dia if s[0] <= fecha]
+        return (antes or del_dia or [None])[-1 if antes else 0]
 
     # --- Votaciones ---
-    sin_sesion = 0
+    sin_sesion = inconsistentes = 0
     for archivo in (RAW / "votos").glob("*.xml"):
         v = ET.parse(archivo).getroot()
         sesion = sesion_de(txt(v, "c:Fecha"))
-        sin_sesion += sesion is None
+        # Igual que la asistencia: mientras la Cámara no publica la lista del día, esas votaciones no cuentan por
+        # persona (no se podría saber quién tenía licencia o permiso). Se suman solas cuando aparece la lista.
+        if sesion is None:
+            sin_sesion += 1
+            continue
+        if detalle_inconsistente(v):
+            inconsistentes += 1
+            continue
         for voto in v.iterfind(".//c:Voto", NS):
             did = txt(voto, "c:Diputado/c:Id")
             opcion = voto.find("c:OpcionVoto", NS).get("Valor")
@@ -312,7 +329,7 @@ def main():
         })
     filas.sort(key=lambda f: (f["pct_asistencia"] or 0, f["pct_votaciones"] or 0))
 
-    promedio = lambda k: round(sum(f[k] for f in filas if f[k] is not None) / len(filas), 1)
+    promedio = lambda k: round(sum(f[k] for f in filas if f[k] is not None) / len([f for f in filas if f[k] is not None]), 1)
     resumen = {
         "actualizado": datetime.now().isoformat(timespec="minutes"),
         "periodo": txt(ET.parse(RAW / "periodo.xml").getroot(), "c:Nombre"),
@@ -335,7 +352,8 @@ def main():
     resumen["unanimidad"] = exportar_votaciones(filas)
     exportar_web(resumen, filas, sesiones)
     print(json.dumps(resumen, ensure_ascii=False, indent=1))
-    print(f"Diputados con datos: {len(filas)} | votaciones sin sesión asociada: {sin_sesion}")
+    print(f"Diputados con datos: {len(filas)} | votaciones sin lista de asistencia (no cuentan aún): {sin_sesion}"
+          f" | con detalle inconsistente: {inconsistentes}")
 
 
 if __name__ == "__main__":
