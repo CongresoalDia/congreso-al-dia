@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Congreso al día</title>
+  <style>
+    .torre { fill: none; stroke: #c9b693; stroke-width: 2.8; }
+    .zocalo { fill: #cf6f55; }
+    .sol { fill: #e6a63c; }
+    @media (prefers-color-scheme: dark) {
+      .torre { stroke: #e9dcc4; }
+      .zocalo { fill: #e07f63; }
+      .sol { fill: #f2b54a; }
+    }
+  </style>
+  <path class="sol" d="M22.5 43a9.5 9.5 0 0 1 19 0z"/>
+  <g class="torre">
+    <path d="M7.4 58V7.4h11V43"/><path d="M56.6 58V7.4h-11V43"/>
+    <path d="M18.4 12.4h27.2M18.4 18.6h27.2"/>
+  </g>
+  <g class="zocalo">
+    <rect x="14" y="43" width="36" height="4.4"/>
+    <rect x="14" y="47" width="3.6" height="11"/><rect x="24.4" y="47" width="3.6" height="11"/>
+    <rect x="36" y="47" width="3.6" height="11"/><rect x="46.4" y="47" width="3.6" height="11"/>
+    <rect x="6" y="54" width="11.6" height="4"/><rect x="46.4" y="54" width="11.6" height="4"/>
+  </g>
+</svg>

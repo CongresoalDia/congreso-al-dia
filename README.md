@@ -1,60 +1,86 @@
-# Congreso Abierto
+<p align="center"><img src="marca/logo.svg" width="96" alt=""></p>
 
-Asistencia y participación en votaciones de cada diputado, con datos oficiales de la
-Cámara de Diputadas y Diputados ([opendata.camara.cl](https://opendata.camara.cl)).
+# Congreso al día
 
-## Uso
+Asistencia, votaciones y costo del Congreso de Chile, sesión a sesión y con datos oficiales: cada diputada,
+diputado, senadora y senador, y cuánto cuesta el funcionamiento del Congreso.
 
-```
-python pipeline/descargar.py   # baja sesiones y votaciones del período actual a data/raw/
-python pipeline/calcular.py    # genera data/diputados.json, data/diputados.csv, web/datos.json y web/votaciones.json
-python pipeline/medios.py      # fotos oficiales (BCN) y logos/colores de partidos (Wikidata); requiere Pillow
-python pipeline/senado.py      # Senado: asistencia, votaciones y fotos (API pública del Senado) -> web/senado/
-python -m http.server 8931 --directory web   # ver la página en http://127.0.0.1:8931
-```
+Es un sitio ciudadano e independiente, sin afiliación al Congreso ni a partidos políticos. El código y los
+cálculos están aquí para que cualquiera pueda revisarlos.
 
-La página (`web/`) es HTML/CSS/JS sin dependencias ni compilación: se puede publicar tal cual
-en cualquier hosting estático (GitHub Pages, Cloudflare Pages).
+## De dónde vienen los datos
 
-Solo usa la librería estándar de Python 3.11+. La primera descarga tarda unos minutos;
-las siguientes solo bajan lo nuevo (y lo de la última semana, por si hubo correcciones).
+| Qué | Fuente |
+|---|---|
+| Cámara: sesiones, asistencia, votaciones y proyectos | [Datos abiertos de la Cámara](https://opendata.camara.cl) |
+| Senado: sesiones, asistencia, votaciones y fichas | [API pública del Senado](https://www.senado.cl) y su servicio de tramitación |
+| Presupuesto y gasto del Congreso | [Datos abiertos de la DIPRES](https://datos.gob.cl/organization/direccion_de_presupuestos) (Partida 02) |
+| Fotos de diputadas y diputados | [Biblioteca del Congreso Nacional](https://datos.bcn.cl) |
+| Logos y colores de partidos | [Wikidata](https://www.wikidata.org) y Wikimedia Commons |
+| Población (monto por habitante) | Censo 2024, INE |
 
-## Metodología
+## Cómo se calcula
 
-**Toda inasistencia cuenta**, sea cual sea el motivo. El motivo oficial de cada falta se
-guarda para dar contexto, y se clasifica en:
+**Asistencia.** Solo sesiones de sala. **Toda inasistencia cuenta**, sea cual sea el motivo; el motivo oficial
+de cada falta se muestra para dar contexto:
 
 | Estado | Motivos |
 |---|---|
-| `licencia` | Licencia médica, permiso prenatal, postnatal y parental |
-| `trabajo` | Misiones oficiales, actividad propia de la labor parlamentaria, actividad con el Presidente, gestión encomendada por la Cámara |
-| `justificada` | Cualquier otra justificación (impedimento grave, permisos personales, permisos de Comités…) |
-| `sin_justificar` | Falta sin justificación registrada |
+| Licencia | Licencia médica, permiso prenatal, postnatal y parental |
+| Trabajo parlamentario | Misiones oficiales, labor parlamentaria, actividad con el Presidente, gestión encomendada por la Cámara |
+| Otra justificación | Impedimento grave, permisos particulares, permisos de Comités Parlamentarios y otros |
+| Sin justificar | Falta sin justificación registrada |
 
-- `pct_asistencia` = asistencias / sesiones — **dato principal**
-- `pct_votaciones` = votos emitidos (a favor, en contra, abstención) / (votaciones − dispensas) — **dato principal**
-- `pct_asistencia_ajustada`, `pct_votaciones_ajustado` = lo mismo, pero sin contar las inasistencias
-  justificadas por ley: licencias, trabajo parlamentario y **todas las del Art. 42 del Reglamento**
-  (licencia médica, impedimento grave, permiso particular, labor parlamentaria, gestión encomendada),
-  que por reglamento no afectan la asistencia. Los permisos de Comités Parlamentarios sí cuentan.
-  Dato secundario; queda en blanco si la base es menor a 10 sesiones o 50 votaciones.
-- En la portada, "Los que menos asisten" muestra el **% de inasistencia** (100 − asistencia).
-- Votación **unánime**: todos votaron lo mismo (a favor o en contra) y nadie se abstuvo. El contador y las rachas
-  se miden en días de sesión con votaciones (no días de calendario), para que recesos y semanas distritales no sumen.
-- `historial` = estado de cada sesión, para dibujar la línea de tiempo con licencias y trabajo parlamentario marcados
-- `periodos` = sesiones consecutivas con licencia o trabajo parlamentario agrupadas (estado, desde, hasta, motivo)
-- `no_vota_licencia`, `no_vota_trabajo` = votaciones en que no votó por estar con licencia / en trabajo parlamentario
-- `no_vota_presente` = votaciones en que no votó, en una sesión a la que sí registró asistencia.
-  Puede incluir inhabilitaciones por conflicto de interés, que la fuente no distingue.
+Junto a cada porcentaje hay una cifra secundaria ("sin justif.") que **no cuenta las inasistencias justificadas
+por ley**: licencias, trabajo parlamentario y todas las del Art. 42 del Reglamento de la Cámara (licencia médica,
+impedimento grave, permiso particular, labor parlamentaria y gestión encomendada). Los permisos de Comités
+Parlamentarios sí cuentan: los Comités son las bancadas de cada partido (no las comisiones) y esos permisos los
+otorgan los propios jefes de bancada, sin un motivo público. En el Senado se descuenta toda inasistencia
+justificada. La cifra secundaria no se muestra si queda una base menor a 10 sesiones o 50 votaciones.
 
-**Votaciones** (`web/votaciones.json`): cada votación de sala con el título de su proyecto
-(`retornarProyectoLey`), qué se votó exactamente (artículo), trámite, tipo (general/particular/única),
-quórum, resultado y el voto de cada diputado. Los proyectos de resolución y "otros asuntos" no tienen
-título en los datos abiertos; se enlazan a su página en camara.cl.
+**Votaciones.** Porcentaje de votaciones de sala en que votó (a favor, en contra o abstención), sin contar las
+dispensas ni los pareos. "No votó estando presente" son votaciones de sesiones a las que asistió; puede incluir
+inhabilitaciones por conflicto de interés, que la fuente no distingue. Las votaciones de un día cuya lista de
+asistencia aún no se publica se muestran, pero no cuentan por persona hasta que aparece la lista.
 
-**Senado** (`pipeline/senado.py`): mismos cálculos con la API pública del Senado (`web-back.senado.cl/api`:
-sesiones, asistencia por sesión, votaciones con el voto de cada senador, fichas con foto) y su servicio de
-tramitación (títulos de proyectos). La cifra ajustada descuenta toda inasistencia justificada; el pareo no
-se exige (como la dispensa); las sesiones programadas a futuro no se cuentan. La web lo muestra en `#/senado/...`.
+**Unanimidad.** Una votación es unánime si todos votaron lo mismo (a favor o en contra) y nadie se abstuvo. El
+contador mide días de calendario desde la última votación unánime.
 
-Solo cubre la sala (no comisiones).
+**Costo del Congreso.** Gastos (no ingresos) de la Partida 02 "Congreso Nacional" de la Ley de Presupuestos:
+ley vigente y ejecución mes a mes por capítulo (Senado, Cámara, Biblioteca del Congreso y Consejo Resolutivo de
+Asignaciones Parlamentarias). El monto por parlamentario divide el presupuesto de cada cámara por sus integrantes
+e incluye funcionarios, asesores, edificios y funcionamiento, no solo la dieta. La dieta es igual para todos
+(art. 62 de la Constitución) y las asignaciones parlamentarias no son sueldo, por eso no hay ranking de "sueldos".
+
+Los casos raros de las fuentes (votaciones con detalle inconsistente, fechas corridas en la API del Senado,
+sesiones sin lista de asistencia) están documentados en el código de `pipeline/`.
+
+## Cómo correrlo
+
+Requiere Python 3.11+ (y [Pillow](https://pypi.org/project/pillow/) para las fotos).
+
+```
+python pipeline/descargar.py     # Cámara: baja sesiones, asistencia y votaciones a data/raw/
+python pipeline/calcular.py      # Cámara: calcula y genera web/datos.json y web/votaciones.json
+python pipeline/medios.py        # fotos (BCN) y logos/colores de partidos (Wikidata)
+python pipeline/senado.py        # Senado: asistencia, votaciones y fotos -> web/senado/
+python pipeline/presupuesto.py   # costo del Congreso (DIPRES) -> web/presupuesto.json
+python -m http.server 8931 --directory web   # ver el sitio en http://localhost:8931
+```
+
+La primera descarga tarda unos minutos; las siguientes solo bajan lo nuevo (y lo de la última semana, por si
+hubo correcciones). Los datos crudos (`data/raw/`) no se versionan; los JSON que usa el sitio sí.
+
+El sitio (`web/`) es HTML, CSS y JavaScript sin dependencias ni compilación: se publica tal cual en cualquier
+hosting estático.
+
+## Errores y sugerencias
+
+Si encuentras una cifra que no cuadra con la fuente oficial, abre un
+[issue](https://github.com/CongresoalDia/congreso-al-dia/issues) con el enlace a la fuente.
+
+## Licencia
+
+El código está bajo licencia [MIT](LICENSE). Los datos pertenecen a sus fuentes oficiales (Cámara de Diputadas y
+Diputados, Senado, DIPRES, BCN, INE); las fotos y los logos de partidos tienen sus propios créditos y licencias,
+detallados en el sitio.

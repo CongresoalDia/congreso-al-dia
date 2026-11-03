@@ -3,24 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Congreso Abierto — Asistencia y votaciones de la Cámara</title>
-<meta name="description" content="Asistencia a sala y participación en votaciones de cada diputada y diputado de Chile, con datos oficiales de la Cámara.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='20' rx='3' fill='%23D52B1E'/%3E%3Crect width='30' height='10' fill='%23fff'/%3E%3Crect width='10' height='10' fill='%230033A0'/%3E%3C/svg%3E">
+<title>Congreso al día — Asistencia y votaciones del Congreso de Chile</title>
+<meta name="description" content="Asistencia, votaciones y costo del Congreso de Chile: cada diputada, diputado, senadora y senador, con datos oficiales.">
+<meta property="og:title" content="Congreso al día">
+<meta property="og:description" content="Asistencia, votaciones y costo del Congreso de Chile, con datos oficiales.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta name="theme-color" content="#faf6ef">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icono-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,400..700;1,8..30,400..600&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 <div class="paisaje" aria-hidden="true"><svg id="cordillera" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice"></svg></div>
 
 <header class="cabecera">
-  <a href="#/" class="marca" data-destino="/"><svg viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" rx="3" fill="#D52B1E"/><path d="M0 3a3 3 0 0 1 3-3h27v10H0Z" fill="#fff"/><path d="M0 3a3 3 0 0 1 3-3h7v10H0Z" fill="#0033A0"/><path d="M5 2.4l.7 2.1h2.2l-1.8 1.3.7 2.1L5 6.6 3.2 7.9l.7-2.1-1.8-1.3h2.2Z" fill="#fff"/></svg>Congreso Abierto</a>
+  <a href="#/" class="marca" data-destino="/" aria-label="Congreso al día, inicio"><svg viewBox="0 0 64 64" aria-hidden="true">
+    <path class="lg-sol" d="M22.5 43a9.5 9.5 0 0 1 19 0z"/>
+    <g class="lg-torre"><path d="M7.4 58V7.4h11V43"/><path d="M56.6 58V7.4h-11V43"/><path d="M18.4 12.4h27.2M18.4 18.6h27.2"/></g>
+    <g class="lg-zocalo"><rect x="14" y="43" width="36" height="4.4"/><rect x="14" y="47" width="3.6" height="11"/><rect x="24.4" y="47" width="3.6" height="11"/><rect x="36" y="47" width="3.6" height="11"/><rect x="46.4" y="47" width="3.6" height="11"/><rect x="6" y="54" width="11.6" height="4"/><rect x="46.4" y="54" width="11.6" height="4"/></g>
+  </svg><span><b>Congreso</b> al día</span></a>
   <nav class="nav" aria-label="Secciones">
     <a href="#/" data-ruta="inicio" data-destino="/" class="solo-escritorio">Inicio</a>
     <a href="#/ranking" data-ruta="ranking" data-destino="/ranking">Ranking</a>
     <a href="#/votaciones" data-ruta="votaciones" data-destino="/votaciones"><span class="largo">Votaciones</span><span class="corto">Votos</span></a>
     <a href="#/partidos" data-ruta="partidos" data-destino="/partidos">Partidos</a>
+    <a href="#/costo" data-ruta="costo" data-destino="/costo"><span class="largo">¿Cuánto cuesta?</span><span class="corto">Costo</span></a>
     <a href="#/metodologia" data-ruta="metodologia" data-destino="/metodologia"><span class="largo">Metodología</span><span class="corto">Método</span></a>
   </nav>
   <button class="tema" id="tema" type="button" aria-label="Cambiar entre modo claro y oscuro">

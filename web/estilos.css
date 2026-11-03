@@ -39,11 +39,14 @@
   --radio: 16px;
   --sombra: 0 1px 2px rgba(20, 20, 30, .04), 0 8px 24px rgba(20, 20, 30, .06);
   --fuente: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --fuente-titulo: "Newsreader", Georgia, "Times New Roman", serif;
-  --fuente-acento: "Newsreader", Georgia, serif;
+  --fuente-titulo: "Piazzolla", Georgia, "Times New Roman", serif;
+  --fuente-acento: "Piazzolla", Georgia, serif;
   --fuente-cifras: "Schibsted Grotesk", system-ui, sans-serif;
   --azul-chile: #0033A0;
   --rojo-chile: #D52B1E;
+  --logo-torre: #c9b693;
+  --logo-zocalo: #cf6f55;
+  --logo-sol: #e6a63c;
   color-scheme: light;
 }
 
@@ -77,11 +80,17 @@
     --estrellas: 1;
     --c-vacio: rgba(255, 255, 255, .1);
     --sombra: 0 8px 30px rgba(0, 0, 0, .35);
+    --logo-torre: #e9dcc4;
+    --logo-zocalo: #e07f63;
+    --logo-sol: #f2b54a;
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
+  --logo-torre: #e9dcc4;
+  --logo-zocalo: #e07f63;
+  --logo-sol: #f2b54a;
   --fondo: #07090e;
   --superficie: rgba(22, 26, 34, .78);
   --superficie-solida: #141821;
@@ -177,15 +186,20 @@ body.interior .paisaje::after { height: 30%; }
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--fuente-titulo);
-  font-weight: 600;
-  font-size: 1.08rem;
+  font-family: var(--fuente);
+  font-weight: 400;
+  font-size: 1.05rem;
+  letter-spacing: -.015em;
   color: var(--texto);
   text-decoration: none;
   white-space: nowrap;
   margin-right: 10px;
 }
-.marca svg { width: 27px; height: 18px; border-radius: 3px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .12); }
+.marca b { font-weight: 700; }
+.marca svg { width: 28px; height: 28px; flex: none; }
+.lg-torre { fill: none; stroke: var(--logo-torre); stroke-width: 2.8; }
+.lg-zocalo { fill: var(--logo-zocalo); }
+.lg-sol { fill: var(--logo-sol); }
 .nav { display: flex; gap: 2px; }
 .nav a {
   color: var(--texto-suave);
@@ -556,7 +570,7 @@ a.celda-partido:hover strong { text-decoration: underline; }
 @media (max-width: 760px) {
   .cabecera { padding-left: 12px; top: 10px; }
   .marca { font-size: 0; margin-right: 2px; }
-  .marca svg { width: 24px; height: 24px; }
+  .marca svg { width: 26px; height: 26px; }
   .nav a { padding: 7px 10px; font-size: .86rem; }
   .hero { padding-bottom: 22vh; }
   .panel { margin-top: -40px; padding: 0 8px; }
@@ -997,8 +1011,9 @@ body.interior #asta, body.interior #congreso { display: none; }
   .nav .largo { display: none; }
   .nav .corto { display: inline; }
   .cabecera { gap: 2px; padding-left: 10px; }
-  .nav a { padding: 7px 9px; }
+  .nav a { padding: 7px 6px; }
 }
+@media (max-width: 375px) { .nav a { padding: 7px 4px; font-size: .78rem; } }
 .podio-valor small, .top-valor small { display: block; font-size: .62rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; opacity: .75; }
 
 /* ---------- selector de cámara ---------- */
@@ -1017,3 +1032,64 @@ body.interior #asta, body.interior #congreso { display: none; }
 .interior-cabecera .selector-camara { margin-bottom: 14px; }
 @media (max-width: 480px) { .selector-camara a { padding: 7px 13px; font-size: .86rem; } }
 .contador-unidad { line-height: 1.15; }
+
+/* ---------- cuánto cuesta el Congreso ---------- */
+.costo-vivo { margin: 0 0 16px; }
+.costo-vivo .contador-texto { flex-basis: 100%; }
+.costo-vivo-cifra {
+  font-family: var(--fuente-cifras); font-weight: 700; font-size: clamp(2.4rem, 7vw, 4.4rem) !important;
+  letter-spacing: -.04em; line-height: 1.05; color: #fff !important; margin: 6px 0 10px !important;
+  overflow-wrap: anywhere;
+}
+.costo-cifras { margin-bottom: 4px; }
+.costo-cifras .cifra, .costo-graficos > * { min-width: 0; }
+.costo-cifras + .tarjetas { margin-top: 12px; }
+.tarjeta .grande[data-contar] { font-size: clamp(2rem, 5vw, 2.6rem); }
+.costo-otros { display: flex; flex-wrap: wrap; gap: 6px 28px; font-size: .9rem; color: var(--texto-suave); padding: 14px 22px; }
+.costo-otros p { margin: 0; }
+.costo-otros strong { color: var(--texto); }
+.costo-graficos { margin-top: 4px; }
+.costo-desglose .item { grid-template-columns: minmax(0, 15rem) 1fr 3.4rem; }
+.meses-gasto { display: flex; align-items: flex-end; gap: 6px; height: 200px; padding-top: 4px; }
+.mes-gasto { flex: 1; min-width: 0; height: 100%; display: flex; flex-direction: column; align-items: center; gap: 4px; outline: none; }
+.mg-pista { flex: 1; width: 100%; max-width: 38px; display: flex; align-items: flex-end; }
+.mg-barra { width: 100%; background: var(--acento); border-radius: 4px 4px 0 0; transition: opacity .15s; }
+.meses-gasto:hover .mg-barra { opacity: .45; }
+.mes-gasto:hover .mg-barra, .mes-gasto:focus-visible .mg-barra { opacity: 1; }
+.mg-valor { font-size: .68rem; color: var(--texto-suave); white-space: nowrap; }
+.mg-mes { font-size: .75rem; color: var(--texto-suave); }
+.costo-fuente { margin-top: 10px; font-size: .85rem; color: var(--texto-suave); }
+@media (max-width: 760px) {
+  .costo-desglose .item { grid-template-columns: minmax(0, 1fr) 4.5rem 3rem; font-size: .84rem; }
+  .costo-cifras .cifra .valor { font-size: 1.3rem; line-height: 1.2; }
+  .costo-cifras .cifra { padding: 12px; }
+  .mg-valor { font-size: .58rem; }
+  .meses-gasto { gap: 3px; }
+}
+
+/* versión chica en la portada */
+.costo-mini {
+  margin-top: 14px; display: grid; grid-template-columns: auto auto 1fr auto; align-items: center; gap: 4px 22px;
+  padding: 14px 22px; border-radius: var(--radio); text-decoration: none; color: var(--texto);
+  background: var(--superficie); border: 1px solid var(--borde); border-left: 4px solid var(--azul-chile);
+  transition: border-color .15s, box-shadow .15s;
+}
+.costo-mini[hidden] { display: none; }
+.costo-mini:hover { box-shadow: var(--sombra); }
+.cm-rotulo { font-family: var(--fuente-titulo); font-size: 1.05rem; line-height: 1.2; max-width: 17rem; }
+.cm-rotulo em { font-style: italic; color: var(--acento); }
+.cm-vivo { font-family: var(--fuente-cifras); font-size: 1.9rem; font-weight: 700; letter-spacing: -.03em; white-space: nowrap; }
+.cm-datos { font-size: .85rem; color: var(--texto-suave); }
+.cm-datos b { color: var(--texto); font-weight: 600; }
+.cm-ver { font-size: .85rem; font-weight: 600; color: var(--enlace); white-space: nowrap; }
+.costo-mini + .grid-2 { margin-top: 22px; }
+@media (max-width: 900px) {
+  .costo-mini { grid-template-columns: 1fr auto; padding: 14px 16px; }
+  .cm-rotulo { max-width: none; grid-column: 1 / -1; }
+  .cm-datos { grid-column: 1 / -1; }
+  .cm-ver { grid-column: 1 / -1; }
+}
+#gasto-vivo { font-variant-numeric: tabular-nums; }
+#gasto-vivo .sep { font-variant-numeric: normal; }
+.cm-vivo { min-width: 6.2em; }
+@media (max-width: 900px) { .cm-vivo { min-width: 0; } }

@@ -23,7 +23,7 @@ from PIL import Image
 RAIZ = Path(__file__).resolve().parent.parent
 WEB = RAIZ / "web"
 CACHE = RAIZ / "data" / "wikidata_partidos.json"
-UA = {"User-Agent": "CongresoAbierto/0.1 (proyecto ciudadano de datos abiertos)"}
+UA = {"User-Agent": "CongresoAlDia/0.1 (proyecto ciudadano de datos abiertos)"}
 BCN_SPARQL = "https://datos.bcn.cl/sparql?"
 WIKIDATA = "https://www.wikidata.org/w/api.php?"
 COMMONS = "https://commons.wikimedia.org/w/api.php?"
@@ -50,7 +50,7 @@ COLORES_FIJOS = {"FRVS": "#2E8B57", "PCCH": "#7B4FA3"}
 LOGOS_LOCALES = {"FRVS": {"color": "#78A818", "autor": "Federación Regionalista Verde Social", "licencia": "logo oficial del partido",
                           "fuente": "https://federacionregionalistaverdesocial.cl"}}
 LOGOS_LOCALES["PCCH"] = {"color": "#004878", "autor": "Partido Cristiano de Chile", "licencia": "logo oficial del partido", "fuente": ""}
-INDEPENDIENTES = {"logo": "partidos/IND.svg", "color": "#5B6B7F", "autor": "Congreso Abierto",
+INDEPENDIENTES = {"logo": "partidos/IND.svg", "color": "#5B6B7F", "autor": "Congreso al día",
                   "licencia": "Dibujo propio (sin partido)", "fuente": ""}
 
 

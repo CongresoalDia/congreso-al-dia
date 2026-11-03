@@ -601,6 +601,7 @@ function vistaInicio() {
 
     <div class="contenedor">
       ${contadorUnanimidad(r.unanimidad)}
+      <a class="costo-mini" id="costo-mini" href="${P}/costo" hidden></a>
       <div class="grid-2">
         <section class="tarjeta-top bueno">
           <header><span class="sello">▲ Lo mejor</span><h2>Los que más <em>cumplen</em></h2>
@@ -654,6 +655,7 @@ function vistaInicio() {
     </div>`;
 
   pintarMenos();
+  pintarCostoMini();
   document.querySelectorAll(".segmentado button").forEach((b) =>
     b.addEventListener("click", () => { menosSinLicencias = b.dataset.sin === "1"; pintarMenos(); }));
   document.querySelectorAll("[data-partido]").forEach((a) =>
@@ -897,6 +899,9 @@ function vistaDiputado(id) {
             <span class="num">${num(n)}</span></div>`).join("")}
       </div>
       ${Object.keys(d.motivo_sesion).length ? `<ul class="motivos">${motivosContados(d).map(([m, n]) => `<li><span>${esc(m)}</span><span>${n}</span></li>`).join("")}</ul>` : ""}
+      ${motivosContados(d).some(([m]) => /Comités Parlamentarios/i.test(m)) ? `<p class="aclaracion">Los Comités Parlamentarios son las bancadas
+        (los diputados de cada partido). Estos permisos los otorgan los jefes de bancada y no exigen un motivo público; no se refieren
+        a trabajo en comisiones. Por eso cuentan como inasistencia, también en la cifra "sin justif.".</p>` : ""}
     </section>
 
     <section class="bloque">
@@ -1191,6 +1196,164 @@ function vistaPartidos() {
     a.addEventListener("click", () => { estado.partido = a.dataset.partido; estado.busqueda = ""; }));
 }
 
+// ---------- cuánto cuesta el Congreso (presupuesto.json, datos de la DIPRES) ----------
+let PRESUPUESTO = null;
+const MESES_CORTOS = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+const pesos = (n) => "$" + num(Math.round(n));
+const millones = (n) => "$" + num(Math.round(n / 1e6)) + " millones";
+const sinMovimiento = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// Cifra que sube desde cero al aparecer en pantalla: <span data-contar="valor" data-formato="pesos|millones|pct">
+const FORMATOS = { pesos, millones, pct: (n) => pct(n) };
+function animarCifras(raiz) {
+  const cifras = raiz.querySelectorAll("[data-contar]");
+  const pintar = (el, v) => { el.textContent = FORMATOS[el.dataset.formato](v); };
+  if (sinMovimiento() || !("IntersectionObserver" in window)) { cifras.forEach((el) => pintar(el, +el.dataset.contar)); return; }
+  const pendientes = new Set(cifras);
+  // Las que quedan arriba sin haberse visto (scroll rápido o salto al final) muestran su valor final
+  const alPasar = () => {
+    pendientes.forEach((el) => {
+      if (el.getBoundingClientRect().bottom < 0) { pendientes.delete(el); observador.unobserve(el); pintar(el, +el.dataset.contar); }
+    });
+    if (!pendientes.size || !el0.isConnected) window.removeEventListener("scroll", alPasar);
+  };
+  const el0 = cifras[0];
+  const observador = new IntersectionObserver((entradas) => entradas.forEach((e) => {
+    if (!e.isIntersecting || !pendientes.delete(e.target)) return;
+    observador.unobserve(e.target);
+    const el = e.target, fin = +el.dataset.contar, inicio = performance.now(), dura = 1600;
+    const paso = (t) => {
+      const x = Math.min(1, (t - inicio) / dura);
+      pintar(el, fin * (1 - Math.pow(1 - x, 3)));  // desacelera al final
+      if (x < 1) requestAnimationFrame(paso);
+    };
+    requestAnimationFrame(paso);
+  }), { threshold: 0.4 });
+  cifras.forEach((el) => { pintar(el, 0); observador.observe(el); });
+  window.addEventListener("scroll", alPasar, { passive: true });
+}
+
+// Lo que gasta el Congreso desde que se abrió la página, a ritmo del presupuesto vigente
+function contadorGasto(porMs) {
+  const el = $("#gasto-vivo");
+  const inicio = performance.now();
+  const paso = (t) => {
+    if (!el.isConnected) return;
+    // dígitos de ancho fijo (CSS) para que no salte; el punto de miles queda angosto
+    el.innerHTML = pesos(porMs * Math.max(0, t - inicio)).replace(/\./g, '<span class="sep">.</span>');
+    if (!sinMovimiento()) requestAnimationFrame(paso);
+  };
+  if (sinMovimiento()) { const id = setInterval(() => (el.isConnected ? paso(performance.now()) : clearInterval(id)), 1000); }
+  requestAnimationFrame(paso);
+}
+
+function barrasGasto(lista, total) {
+  const max = Math.max(...lista.map((s) => s.vigente));
+  return `<div class="desglose costo-desglose">${lista.slice().sort((a, b) => b.vigente - a.vigente).map((s) => `
+    <div class="item" title="${esc(s.nombre)}: ${millones(s.vigente)} en ${PRESUPUESTO.anio}">
+      <span>${esc(s.nombre)}</span>
+      <div class="barra"><div style="width:${(100 * s.vigente) / max}%;background:var(--acento)"></div></div>
+      <span class="num">${pct((100 * s.vigente) / total)}</span>
+    </div>`).join("")}</div>`;
+}
+
+function graficoMensual(p) {
+  const max = Math.max(...p.mensual.map((m) => m.ejecutado));
+  const mensual = p.mensual.map((m) => ({ ...m, etiqueta: `${MESES_CORTOS[m.mes - 1]}: ${millones(m.ejecutado)}` }));
+  return `<div class="meses-gasto" role="img" aria-label="Gasto por mes: ${mensual.map((m) => m.etiqueta).join("; ")}">
+    ${mensual.map((m) => `<div class="mes-gasto" title="${m.etiqueta}" tabindex="0">
+      <span class="mg-valor">${num(Math.round(m.ejecutado / 1e6))}</span>
+      <div class="mg-pista"><div class="mg-barra" style="height:${(100 * m.ejecutado) / max}%"></div></div>
+      <span class="mg-mes">${MESES_CORTOS[m.mes - 1]}</span>
+    </div>`).join("")}
+  </div>
+  <p class="aclaracion">En millones de pesos.</p>`;
+}
+
+const diasDelAnio = (anio) => (new Date(anio, 1, 29).getMonth() === 1 ? 366 : 365);
+const cargarPresupuesto = async () => (PRESUPUESTO ??= await fetch("presupuesto.json").then((r) => r.json()));
+
+// Versión chica para la portada: el contador en vivo y un par de cifras, con enlace a la sección
+async function pintarCostoMini() {
+  const p = await cargarPresupuesto().catch(() => null);
+  const el = $("#costo-mini");
+  if (!p || !el) return;
+  const dias = diasDelAnio(p.anio);
+  el.innerHTML = `
+    <span class="cm-rotulo">Desde que abriste esta página, el Congreso <em>ha gastado</em></span>
+    <strong class="cm-vivo" id="gasto-vivo">$0</strong>
+    <span class="cm-datos">Presupuesto ${p.anio}: <b data-contar="${p.total.vigente}" data-formato="millones"></b> ·
+      <b data-contar="${p.total.vigente / p.poblacion}" data-formato="pesos"></b> por habitante al año</span>
+    <span class="cm-ver">¿Cuánto cuesta el Congreso? →</span>`;
+  el.hidden = false;
+  animarCifras(el);
+  contadorGasto(p.total.vigente / (dias * 864e5));
+}
+
+async function vistaCosto() {
+  $("#app").innerHTML = `<div class="contenedor"><section class="interior-cabecera"><h1>¿Cuánto <em>cuesta</em> el Congreso?</h1></section></div>`;
+  const p = await cargarPresupuesto(), t = p.total;
+  if (!location.hash.includes("/costo")) return;  // se cambió de página mientras cargaba
+  const dias = diasDelAnio(p.anio);
+  const avance = (100 * t.ejecutado) / t.vigente;
+  const camaras = p.capitulos.filter((c) => c.parlamentarios);
+  const otros = p.capitulos.filter((c) => !c.parlamentarios);
+  $("#app").innerHTML = `
+    <div class="contenedor">
+    <section class="interior-cabecera"><h1 id="costo-titulo">¿Cuánto <em>cuesta</em> el Congreso?</h1>
+      <p>Presupuesto ${p.anio} del Congreso Nacional (Senado, Cámara, Biblioteca del Congreso y Consejo de Asignaciones
+        Parlamentarias) según la Ley de Presupuestos, con lo gastado hasta ${p.mes_nombre}.</p></section>
+
+    <section class="contador costo-vivo" aria-label="Gasto del Congreso desde que abriste esta página">
+      <div class="contador-texto">
+        <p class="contador-titulo">Desde que abriste esta página, el Congreso <em>ha gastado</em></p>
+        <p class="costo-vivo-cifra" id="gasto-vivo" aria-live="off">$0</p>
+        <p class="contador-nota">Calculado al ritmo del presupuesto ${p.anio}: ${millones(t.vigente / dias)} al día, unos ${pesos(t.vigente / dias / 86400)} por segundo.</p>
+      </div>
+    </section>
+
+    <div class="cifras costo-cifras">
+      <div class="cifra"><div class="etiqueta">Presupuesto ${p.anio}</div><div class="valor" data-contar="${t.vigente}" data-formato="millones"></div><div class="nota">ley vigente a ${p.mes_nombre}</div></div>
+      <div class="cifra"><div class="etiqueta">Al día</div><div class="valor" data-contar="${t.vigente / dias}" data-formato="millones"></div><div class="nota">todos los días del año</div></div>
+      <div class="cifra"><div class="etiqueta">Por habitante</div><div class="valor" data-contar="${t.vigente / p.poblacion}" data-formato="pesos"></div><div class="nota">al año (${esc(p.poblacion_fuente)})</div></div>
+      <div class="cifra"><div class="etiqueta">Gastado a ${p.mes_nombre}</div><div class="valor" data-contar="${t.ejecutado}" data-formato="millones"></div><div class="nota"><span data-contar="${avance}" data-formato="pct"></span> del presupuesto</div></div>
+    </div>
+
+    <div class="tarjetas">
+      ${camaras.map((c) => `<div class="tarjeta">
+        <h2>${esc(c.nombre)}</h2>
+        <div class="grande" data-contar="${c.vigente}" data-formato="millones"></div>
+        <div class="detalle">${pct((100 * c.vigente) / t.vigente)} del Congreso · gastado a ${p.mes_nombre}: ${millones(c.ejecutado)}</div>
+        <div class="ajustado">Dividido por sus ${c.parlamentarios} ${c.codigo === "01" ? "senadores" : "diputados"}:
+          <strong data-contar="${c.vigente / c.parlamentarios}" data-formato="millones"></strong> al año cada uno.
+          Incluye funcionarios, asesores, edificios y funcionamiento, no solo la dieta.</div>
+      </div>`).join("")}
+    </div>
+    <div class="bloque costo-otros">
+      ${otros.map((c) => `<p><strong>${esc(c.nombre)}</strong>: ${millones(c.vigente)} (${pct((100 * c.vigente) / t.vigente)})</p>`).join("")}
+    </div>
+
+    <div class="grid-2 costo-graficos">
+      <section class="bloque"><h2>En qué se gasta</h2><p class="sub">Presupuesto ${p.anio} del Congreso por tipo de gasto.</p>
+        ${barrasGasto(p.subtitulos, t.vigente)}
+        <p class="aclaracion">Las asignaciones parlamentarias pagan el personal de apoyo, asesorías externas y gastos operacionales
+          (oficinas, traslados) de cada parlamentario; no son sueldo. La dieta, igual para todos, equivale a la remuneración de un
+          ministro de Estado (art. 62 de la Constitución).</p></section>
+      <section class="bloque"><h2>Mes a mes</h2><p class="sub">Lo efectivamente gastado cada mes de ${p.anio}.</p>
+        ${graficoMensual(p)}</section>
+    </div>
+
+    <article class="texto costo-fuente">
+      <p>Fuente: <a href="${p.fuente}" rel="noopener">datos abiertos de la Dirección de Presupuestos (DIPRES)</a>, Partida 02
+        «Congreso Nacional» de la Ley de Presupuestos ${p.anio}: ley vigente y ejecución a ${p.mes_nombre}. Se cuentan solo los gastos
+        (no los ingresos). La DIPRES publica cada mes con uno o dos meses de desfase. El monto por habitante usa las
+        ${num(p.poblacion)} personas del ${esc(p.poblacion_fuente)}.</p>
+    </article>
+    </div>`;
+  animarCifras($("#app"));
+  contadorGasto(t.vigente / (dias * 864e5));
+}
+
 function vistaMetodologia() {
   const r = DATOS.resumen;
   $("#app").innerHTML = `
@@ -1219,7 +1382,9 @@ function vistaMetodologia() {
         justificadas por ley</strong>: licencias (médica, prenatal, postnatal y parental), trabajo parlamentario (misiones oficiales,
         actividades con el Presidente) y todas las justificaciones del <strong>Art. 42 del Reglamento</strong> (licencia médica,
         impedimento grave, permiso por motivos particulares, actividad propia de la labor parlamentaria y gestión encomendada por la
-        Cámara), que por reglamento no afectan la asistencia. Los permisos de los Comités Parlamentarios sí se cuentan.
+        Cámara), que por reglamento no afectan la asistencia. Los permisos de los Comités Parlamentarios sí se cuentan: los Comités
+        Parlamentarios son las bancadas de cada partido (no las comisiones), y esos permisos los otorgan los propios jefes de bancada
+        sin un motivo público.
         Si después de descontarlos quedan menos de 10 sesiones o 50 votaciones, ese dato no se muestra porque no sería representativo.</p>
 
       <h2>Votaciones</h2>
@@ -1324,6 +1489,10 @@ async function enrutar() {
   else if (h.match(/^\/v\/(\d+)/)) { ruta = "votaciones"; vistaVotacion(+h.match(/^\/v\/(\d+)/)[1]); }
   else if (h.startsWith("/votaciones")) { ruta = "votaciones"; vistaVotaciones(); }
   else if (h.startsWith("/partidos")) { ruta = "partidos"; vistaPartidos(); }
+  else if (h.startsWith("/costo")) {
+    ruta = "costo";
+    vistaCosto().catch(() => { $("#app").innerHTML = `<p class="vacio">No se pudo cargar el presupuesto. Intenta recargar la página.</p>`; });
+  }
   else if (h.startsWith("/metodologia")) { ruta = "metodologia"; vistaMetodologia(); }
   else vistaInicio();
   document.body.classList.toggle("interior", ruta !== "inicio");

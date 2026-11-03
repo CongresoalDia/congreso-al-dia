@@ -25,7 +25,7 @@ from calcular import periodos, resumen_unanimidad
 
 API = "https://web-back.senado.cl/api/"
 TRAMITACION = "https://tramitacion.senado.cl/wspublico/tramitacion.php?boletin="
-UA = {"User-Agent": "CongresoAbierto/0.1 (proyecto ciudadano de datos abiertos)"}
+UA = {"User-Agent": "CongresoAlDia/0.1 (proyecto ciudadano de datos abiertos)"}
 RAIZ = Path(__file__).resolve().parent.parent
 RAW = RAIZ / "data" / "raw" / "senado"
 WEB = RAIZ / "web" / "senado"

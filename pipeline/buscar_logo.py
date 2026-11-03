@@ -13,7 +13,7 @@ import urllib.request
 
 def api(**p):
     url = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({**p, "format": "json"})
-    req = urllib.request.Request(url, headers={"User-Agent": "congreso-abierto/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "CongresoAlDia/0.1"})
     return json.loads(urllib.request.urlopen(req, timeout=60).read())
 
 
