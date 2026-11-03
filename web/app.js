@@ -98,7 +98,7 @@ function chipPartido(d) {
 }
 
 // ---------- paisaje: cordillera de los Andes, cerros de Valparaíso, el Congreso y la bandera ----------
-// Todo se dibuja con código y siempre de día (los colores vienen de CSS, en .paisaje).
+// Todo se dibuja con código; los colores vienen de CSS (en .paisaje): de día con el modo claro, de noche con el oscuro.
 function azar(semilla) {  // mulberry32: aleatorio reproducible
   return () => {
     semilla |= 0; semilla = (semilla + 0x6d2b79f5) | 0;
@@ -188,7 +188,7 @@ function capaMontana(r, clase, opciones, conNieve, idSombra) {
 }
 
 // Casas de Valparaíso apiladas en la ladera: fachada, costado en sombra, techo y ventana
-function barrio(r, pts, desde, hasta, profundidad) {
+function barrio(r, pts, desde, hasta, profundidad, luces) {
   const colores = ["#e07a5f", "#f2cc8f", "#81b29a", "#3d5a80", "#e9c46a", "#f4a261", "#2a9d8f", "#f6f1e7", "#c96f53", "#8ecae6", "#b5838d", "#ffd166"];
   const alturaEn = (x) => {
     const i = Math.max(0, Math.min(pts.length - 1, Math.round(((x - pts[0][0]) / (pts[pts.length - 1][0] - pts[0][0])) * (pts.length - 1))));
@@ -206,6 +206,9 @@ function barrio(r, pts, desde, hasta, profundidad) {
     }
   }
   casas.sort((a, b) => a.y - b.y);
+  for (const { x, y, w, h, arbol } of casas) {  // ventanas encendidas de noche
+    if (!arbol && r() < .5) luces.push(`<rect x="${(x + 2.5).toFixed(1)}" y="${(y - h + 3).toFixed(1)}" width="3" height="3"/>`);
+  }
   return casas.map(({ x, y, w, h, c, arbol }) => arbol
     ? `<circle cx="${x.toFixed(1)}" cy="${(y - 4).toFixed(1)}" r="${(4 + w / 5).toFixed(1)}" class="arbol"/>`
     : `<g><rect x="${x.toFixed(1)}" y="${(y - h).toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" fill="${c}"/>`
@@ -367,7 +370,12 @@ function dibujarEscena() {
     base: 812, alto: 150, forma: 2, detalle: .05, suavizado: 4,
     macizos: [[-60, 1, 420], [330, .62, 260], [1250, .7, 300], [1660, 1, 440]],
   });
-  const casas = barrio(r, cerros, -40, 560, 120) + barrio(r, cerros, 1020, 1660, 120);
+  const luces = [];
+  const casas = barrio(r, cerros, -40, 560, 120, luces) + barrio(r, cerros, 1020, 1660, 120, luces);
+  const estrellas = Array.from({ length: 170 }, (_, i) => {  // cielo estrellado (solo se ve de noche)
+    const y = Math.pow(r(), 1.5) * 470, g = 0.5 + Math.pow(r(), 3) * 1.7;
+    return `<circle cx="${(r() * 1600).toFixed(0)}" cy="${y.toFixed(0)}" r="${g.toFixed(1)}"${i % 5 === 0 ? ` class="titila" style="animation-delay:${(r() * 6).toFixed(1)}s"` : ""}/>`;
+  }).join("");
 
   $("#cordillera").innerHTML = `
     <defs>
@@ -376,14 +384,16 @@ function dibujarEscena() {
       </linearGradient>
       <radialGradient id="halo"><stop offset="0" style="stop-color:var(--astro-halo)"/><stop offset="1" stop-opacity="0" style="stop-color:var(--astro-halo)"/></radialGradient>
       <linearGradient id="bruma" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-opacity="0" style="stop-color:var(--cielo-3)"/><stop offset="1" stop-opacity=".75" style="stop-color:var(--cielo-3)"/></linearGradient>
-      <linearGradient id="mar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5d93bf"/><stop offset="1" stop-color="#2d5f8c"/></linearGradient>
-      <linearGradient id="vidrio" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9c4df"/><stop offset=".5" stop-color="#6b8db3"/><stop offset="1" stop-color="#3f5f86"/></linearGradient>
+      <linearGradient id="mar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--mar-1)"/><stop offset="1" style="stop-color:var(--mar-2)"/></linearGradient>
+      <linearGradient id="vidrio" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--vidrio-1)"/><stop offset=".5" style="stop-color:var(--vidrio-2)"/><stop offset="1" style="stop-color:var(--vidrio-3)"/></linearGradient>
       <filter id="difuso" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
       ${andes.defs}
     </defs>
     <rect width="1600" height="900" fill="url(#cielo)"/>
+    <g class="capa-estrellas" fill="#fff">${estrellas}</g>
     <circle cx="1250" cy="170" r="210" fill="url(#halo)"/>
     <circle cx="1250" cy="170" r="32" class="astro"/>
+    <g class="luna-detalle"><circle cx="1240" cy="161" r="6.5"/><circle cx="1262" cy="180" r="4.2"/><circle cx="1255" cy="150" r="3"/><circle cx="1236" cy="184" r="3.4"/></g>
     <g class="capa-nubes" fill="#fff" filter="url(#difuso)">${nube(230, 140, 1.1)}${nube(1440, 110, .8)}${nube(770, 230, .5)}</g>
     ${andes.svg}
     <rect x="0" y="520" width="1600" height="260" fill="url(#bruma)"/>
@@ -392,6 +402,7 @@ function dibujarEscena() {
     ${pre.svg}
     <path d="${relleno(cerros)}" class="cerro"/>
     <g class="casas">${casas}</g>
+    <g class="luces">${luces.join("")}</g>
     <rect x="-60" y="804" width="1720" height="12" class="costanera"/>
     <rect x="-60" y="815" width="1720" height="85" fill="url(#mar)"/>
     <g class="olas">${Array.from({ length: 70 }, () => `<rect x="${(r() * 1700 - 50).toFixed(0)}" y="${(822 + r() * 76).toFixed(0)}" width="${(8 + r() * 34).toFixed(0)}" height="1.4"/>`).join("")}</g>

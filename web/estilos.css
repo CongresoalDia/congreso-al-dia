@@ -766,7 +766,7 @@ td.con-color { box-shadow: inset 4px 0 0 var(--pc); background: linear-gradient(
 }
 .interior-cabecera.con-volver { padding-top: 8px; }
 
-/* ---------- escena: siempre de día (las variables viven en .paisaje, así el modo oscuro no las cambia) ---------- */
+/* ---------- escena: de día en modo claro, de noche en modo oscuro (las variables viven en .paisaje) ---------- */
 .paisaje {
   --cielo-1: #3a7bd0; --cielo-2: #9ec8ee; --cielo-3: #f3e6d3;
   --astro: #fff6dc; --astro-halo: rgba(255, 230, 175, .6); --nubes: 1;
@@ -777,6 +777,8 @@ td.con-color { box-shadow: inset 4px 0 0 var(--pc); background: linear-gradient(
   --edif-luz: #ece2cf; --edif-sombra: #c4b496; --edif-base: #d9cdb7; --edif-escala: #cbbfa8;
   --edif-cornisa: #f6efe2; --edif-bajo: #9c8d73;
   --asta: #e9e9e9; --remate: #d9a72b;
+  --estrellas: 0; --brillo: 1; --luces: 0;
+  --vidrio-1: #a9c4df; --vidrio-2: #6b8db3; --vidrio-3: #3f5f86; --mar-1: #5d93bf; --mar-2: #2d5f8c;
 }
 .andes-luz { fill: var(--andes-luz); } .andes-sombra { fill: var(--andes-sombra); }
 .nieve-luz { fill: var(--nieve-luz); } .nieve-sombra { fill: var(--nieve-sombra); }
@@ -797,6 +799,64 @@ td.con-color { box-shadow: inset 4px 0 0 var(--pc); background: linear-gradient(
   --superficie-solida: #ffffff; --superficie-2: rgba(20, 23, 28, .06);
   --acento: #0033A0; --enlace: #0033A0; --boton: #0033A0; --boton-texto: #ffffff;
   color: var(--texto);
+}
+
+/* modo oscuro: la misma escena de noche, con cielo estrellado, luna y el Congreso iluminado */
+:root[data-theme="dark"] .paisaje {
+  --cielo-1: #050a1c; --cielo-2: #0f1d44; --cielo-3: #2b3d72;
+  --astro: #f4f1e2; --astro-halo: rgba(185, 200, 255, .38); --nubes: 0; --estrellas: 1; --brillo: .4; --luces: 1;
+  --andes-luz: #3c4b75; --andes-sombra: #26315a; --nieve-luz: #b4c0e4; --nieve-sombra: #7886b4;
+  --media-luz: #2c3659; --media-sombra: #1f2846;
+  --pre-luz: #252d49; --pre-sombra: #1b2239;
+  --cerro: #1e2b3c; --suelo: #16212d;
+  --edif-luz: #8f98b6; --edif-sombra: #5c6586; --edif-base: #767f9b; --edif-escala: #666f8b;
+  --edif-cornisa: #a0a9c4; --edif-bajo: #4d5572;
+  --asta: #b9bfd0; --remate: #c9a24a;
+  --vidrio-1: #ffe49e; --vidrio-2: #f4bd5e; --vidrio-3: #c98a2f; --mar-1: #1d3558; --mar-2: #0c1830;
+}
+:root[data-theme="dark"] .hero, :root[data-theme="dark"] body.interior .interior-cabecera, :root[data-theme="dark"] body.interior .ficha-cabecera, :root[data-theme="dark"] body.interior .volver {
+  --texto: #eef0f4; --texto-suave: #b4bccb; --borde: rgba(255, 255, 255, .13);
+  --vidrio: rgba(16, 20, 28, .55); --vidrio-borde: rgba(255, 255, 255, .14);
+  --superficie-solida: #141821; --superficie-2: rgba(255, 255, 255, .07);
+  --acento: #9db8ff; --enlace: #9db8ff; --boton: #ffffff; --boton-texto: #0b0e14;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .paisaje {
+  --cielo-1: #050a1c; --cielo-2: #0f1d44; --cielo-3: #2b3d72;
+  --astro: #f4f1e2; --astro-halo: rgba(185, 200, 255, .38); --nubes: 0; --estrellas: 1; --brillo: .4; --luces: 1;
+  --andes-luz: #3c4b75; --andes-sombra: #26315a; --nieve-luz: #b4c0e4; --nieve-sombra: #7886b4;
+  --media-luz: #2c3659; --media-sombra: #1f2846;
+  --pre-luz: #252d49; --pre-sombra: #1b2239;
+  --cerro: #1e2b3c; --suelo: #16212d;
+  --edif-luz: #8f98b6; --edif-sombra: #5c6586; --edif-base: #767f9b; --edif-escala: #666f8b;
+  --edif-cornisa: #a0a9c4; --edif-bajo: #4d5572;
+  --asta: #b9bfd0; --remate: #c9a24a;
+  --vidrio-1: #ffe49e; --vidrio-2: #f4bd5e; --vidrio-3: #c98a2f; --mar-1: #1d3558; --mar-2: #0c1830;
+  }
+  :root:not([data-theme="light"]) .hero, :root:not([data-theme="light"]) body.interior .interior-cabecera, :root:not([data-theme="light"]) body.interior .ficha-cabecera, :root:not([data-theme="light"]) body.interior .volver {
+  --texto: #eef0f4; --texto-suave: #b4bccb; --borde: rgba(255, 255, 255, .13);
+  --vidrio: rgba(16, 20, 28, .55); --vidrio-borde: rgba(255, 255, 255, .14);
+  --superficie-solida: #141821; --superficie-2: rgba(255, 255, 255, .07);
+  --acento: #9db8ff; --enlace: #9db8ff; --boton: #ffffff; --boton-texto: #0b0e14;
+  }
+}
+.casas, #puerto, #barco, #lanchas { filter: brightness(var(--brillo)); transition: filter .6s; }
+.luces { fill: #ffd27a; opacity: var(--luces); transition: opacity .6s; }
+.luna-detalle { fill: #aab3cf; opacity: calc(var(--estrellas) * .4); }
+.techo, .arbol { transition: none; }
+.titila { animation: titilar 5s ease-in-out infinite; }
+@keyframes titilar { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .titila { animation: none; } }
+
+/* de noche, el texto sobre el paisaje lleva una sombra oscura para no confundirse con edificio ni nieve */
+:root[data-theme="dark"] :is(.hero, body.interior .interior-cabecera, body.interior .ficha-cabecera) :is(h1, h2, p, li, span:not(.partido)) { text-shadow: 0 1px 10px rgba(4, 8, 22, .85), 0 0 2px rgba(4, 8, 22, .6); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) :is(.hero, body.interior .interior-cabecera, body.interior .ficha-cabecera) :is(h1, h2, p, li, span:not(.partido)) { text-shadow: 0 1px 10px rgba(4, 8, 22, .85), 0 0 2px rgba(4, 8, 22, .6); }
+}
+
+:root[data-theme="dark"] .chips span { background: rgba(8, 12, 28, .6); padding: 2px 10px; border-radius: 999px; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .chips span { background: rgba(8, 12, 28, .6); padding: 2px 10px; border-radius: 999px; }
 }
 
 /* en páginas interiores el paisaje es una franja baja: solo cordillera, sin edificio ni bandera */
