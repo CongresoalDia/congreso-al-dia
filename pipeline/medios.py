@@ -40,6 +40,7 @@ PARTIDOS_FIJOS = {
 LOGOS_FIJOS = {
     "DEM": "Logo Demócratas Chile.png",
     "PAH": "Logo de Acción Humanista Chile.png",
+    "FRVS": "Federacion Regionalista Verde Social (recorte).png",
 }
 
 
