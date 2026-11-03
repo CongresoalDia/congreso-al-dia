@@ -1045,7 +1045,11 @@
    "fuente": ""
   },
   "FRVS": {
-   "color": "#2E8B57"
+   "logo": "partidos/FRVS.png",
+   "color": "#78A818",
+   "autor": "Federación Regionalista Verde Social",
+   "licencia": "logo oficial del partido",
+   "fuente": "https://federacionregionalistaverdesocial.cl"
   },
   "PCCH": {
    "color": "#7B4FA3"

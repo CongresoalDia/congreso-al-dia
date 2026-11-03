@@ -40,13 +40,15 @@ PARTIDOS_FIJOS = {
 LOGOS_FIJOS = {
     "DEM": "Logo Demócratas Chile.png",
     "PAH": "Logo de Acción Humanista Chile.png",
-    "FRVS": "Federacion Regionalista Verde Social (recorte).png",
 }
 
 
 # Sin ficha o sin color en Wikidata: color fijo (aproximado, el de su identidad visual) y, para
 # independientes, un emblema propio dibujado (web/partidos/IND.svg) con gris azulado neutro
 COLORES_FIJOS = {"FRVS": "#2E8B57", "PCCH": "#7B4FA3"}
+# Logos entregados a mano (no están en Commons): ya guardados en web/partidos/{alias}.png
+LOGOS_LOCALES = {"FRVS": {"color": "#78A818", "autor": "Federación Regionalista Verde Social", "licencia": "logo oficial del partido",
+                          "fuente": "https://federacionregionalistaverdesocial.cl"}}
 INDEPENDIENTES = {"logo": "partidos/IND.svg", "color": "#5B6B7F", "autor": "Congreso Abierto",
                   "licencia": "Dibujo propio (sin partido)", "fuente": ""}
 
@@ -183,6 +185,9 @@ def main():
             (WEB / "partidos" / f"{alias}.png").unlink(missing_ok=True)
             print(f"  {alias}: {qid or 'no encontrado'} logo={'sí' if logo else 'no'} color={color}")
         c = cache[alias]
+        if alias in LOGOS_LOCALES and (WEB / "partidos" / f"{alias}.png").exists():
+            medios["partidos"][alias] = {"logo": f"partidos/{alias}.png", **LOGOS_LOCALES[alias]}
+            continue
         if alias in LOGOS_FIJOS and c.get("logo") != LOGOS_FIJOS[alias]:
             c["logo"] = LOGOS_FIJOS[alias]
             c.pop("creditos", None)
