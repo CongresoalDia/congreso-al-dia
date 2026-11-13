@@ -1,6 +1,6 @@
 {
  "resumen": {
-  "actualizado": "2026-11-13T10:53",
+  "actualizado": "2026-11-13T09:13",
   "periodo": "2026-2030",
   "sesiones": 95,
   "votaciones": 1377,
@@ -13,10 +13,10 @@
  "diputados": [
   {
    "id": 1107,
-   "nombre": "DANIEL MELO CONTRERAS",
+   "nombre": "María Francisca Bello Campos",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 2,
    "inasistencias": 93,
@@ -624,10 +624,10 @@
   },
   {
    "id": 1148,
-   "nombre": "Arturo Squella Ovalle",
+   "nombre": "Javiera Morales Alvarado",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 6,
    "inasistencias": 89,
@@ -1256,10 +1256,10 @@
   },
   {
    "id": 1153,
-   "nombre": "Joaquín Tuma Zedan",
+   "nombre": "Coca Ericka Ñanco Vásquez",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 33,
    "inasistencias": 62,
@@ -1882,10 +1882,10 @@
   },
   {
    "id": 1192,
-   "nombre": "JUAN LUIS CASTRO GONZÁLEZ",
+   "nombre": "Lilian Betancurt Delgado",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 53,
    "inasistencias": 42,
@@ -2514,7 +2514,7 @@
   },
   {
    "id": 1021,
-   "nombre": "Romilio Gutiérrez Pino",
+   "nombre": "Andrés Celis Montt",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
    "sexo": "Masculino",
@@ -3133,10 +3133,10 @@
   },
   {
    "id": 1157,
-   "nombre": "IGNACIO URRUTIA BONILLA",
+   "nombre": "Marlene Pérez Cartes",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 68,
    "inasistencias": 27,
@@ -3746,7 +3746,7 @@
   },
   {
    "id": 1012,
-   "nombre": "Enrique Estay Peñaloza",
+   "nombre": "Boris Barrera Moreno",
    "partido": "PC",
    "partido_nombre": "Partido Comunista",
    "sexo": "Masculino",
@@ -4359,10 +4359,10 @@
   },
   {
    "id": 1117,
-   "nombre": "IVÁN NORAMBUENA FARÍAS",
+   "nombre": "Nathalie Castillo Rojas",
    "partido": "PC",
    "partido_nombre": "Partido Comunista",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 72,
    "inasistencias": 23,
@@ -4999,7 +4999,7 @@
   },
   {
    "id": 1015,
-   "nombre": "Alejandro García-Huidobro Sanfuentes",
+   "nombre": "Jorge Brito Hasbún",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
    "sexo": "Masculino",
@@ -5626,10 +5626,10 @@
   },
   {
    "id": 1152,
-   "nombre": "RENZO TRISOTTI MARTÍNEZ",
+   "nombre": "Gloria Naveillan Arriagada",
    "partido": "PNL",
    "partido_nombre": "Partido Nacional Libertario",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 76,
    "inasistencias": 19,
@@ -5652,8 +5652,8 @@
    "pct_votaciones_ajustado": 78.0,
    "motivos": {
     "Licencia médica (Art. 42)": 7,
-    "Impedimento grave (Art. 42)": 5,
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 5
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 5,
+    "Impedimento grave (Art. 42)": 5
    },
    "periodos": [
     {
@@ -6246,17 +6246,17 @@
   },
   {
    "id": 1074,
-   "nombre": "Daniel Farcas Guendelman",
+   "nombre": "Marisela Santibáñez Novoa",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 91,
    "asiste": 76,
    "inasistencias": 15,
    "falta_licencia": 4,
    "falta_trabajo": 0,
-   "falta_justificada": 8,
-   "falta_sin_justificar": 3,
+   "falta_justificada": 9,
+   "falta_sin_justificar": 2,
    "votaciones": 1084,
    "vota": 732,
    "dispensado": 0,
@@ -6273,7 +6273,7 @@
    "motivos": {
     "Impedimento grave (Art. 42)": 6,
     "Licencia médica (Art. 42)": 4,
-    "Permiso especial Comités Parlamentarios": 2
+    "Permiso especial Comités Parlamentarios": 3
    },
    "periodos": [
     {
@@ -6799,8 +6799,8 @@
     {
      "fecha": "2026-11-02",
      "sesion": 4846,
-     "estado": "sin_justificar",
-     "motivo": null
+     "estado": "justificada",
+     "motivo": "Permiso especial Comités Parlamentarios"
     },
     {
      "fecha": "2026-11-03",
@@ -6842,10 +6842,10 @@
   },
   {
    "id": 1236,
-   "nombre": "AMARO LABRA SEPÚLVEDA",
+   "nombre": "Paula Olmos Contreras",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 81,
    "inasistencias": 14,
@@ -7471,7 +7471,7 @@
   },
   {
    "id": 1009,
-   "nombre": "Edmundo Eluchans Urenda",
+   "nombre": "Jorge Alessandri Vergara",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Masculino",
@@ -7497,8 +7497,8 @@
    "pct_votaciones_ajustado": 65.6,
    "motivos": {
     "Permiso especial Comités Parlamentarios": 4,
-    "Actividad oficial con el Presidente de la República (Art. 9)": 3,
     "Misión oficial con aviso de salida del país (Art. 37)": 3,
+    "Actividad oficial con el Presidente de la República (Art. 9)": 3,
     "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 2,
     "Impedimento grave (Art. 42)": 1
    },
@@ -8100,10 +8100,10 @@
   },
   {
    "id": 1039,
-   "nombre": "Rosauro Martínez Labbé",
+   "nombre": "Pamela Jiles Moreno",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 83,
    "inasistencias": 12,
@@ -8719,10 +8719,10 @@
   },
   {
    "id": 1025,
-   "nombre": "JAVIER HERNÁNDEZ HERNÁNDEZ",
+   "nombre": "Catalina Del Real Mihovilovic",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 83,
    "inasistencias": 12,
@@ -9324,7 +9324,7 @@
   },
   {
    "id": 1100,
-   "nombre": "Luis Lemus Aracena",
+   "nombre": "Cristián Araya Lerdo de Tejada",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -9943,10 +9943,10 @@
   },
   {
    "id": 1128,
-   "nombre": "JAIME PILOWSKY GREENE",
+   "nombre": "Ana María Gazmuri Vieira",
    "partido": "PAH",
    "partido_nombre": "Partido Acción Humanista",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 84,
    "inasistencias": 11,
@@ -10547,10 +10547,10 @@
   },
   {
    "id": 1240,
-   "nombre": "ANDRÉS LONGTON HERRERA",
+   "nombre": "Zandra Parisi Fernández",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 85,
    "inasistencias": 10,
@@ -11151,7 +11151,7 @@
   },
   {
    "id": 1102,
-   "nombre": "Felipe Letelier Norambuena",
+   "nombre": "Roberto Arroyo Muñoz",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -11770,7 +11770,7 @@
   },
   {
    "id": 1212,
-   "nombre": "SERGIO GAHONA SALAZAR",
+   "nombre": "Erich Grohs Marín",
    "partido": "PNL",
    "partido_nombre": "Partido Nacional Libertario",
    "sexo": "Masculino",
@@ -12383,7 +12383,7 @@
   },
   {
    "id": 1172,
-   "nombre": "PEDRO PABLO ALVAREZ-SALAMANCA RAMÍREZ",
+   "nombre": "Stephan Schubert Rubio",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -12408,8 +12408,8 @@
    "pct_asistencia_ajustada": 98.8,
    "pct_votaciones_ajustado": 94.0,
    "motivos": {
-    "Actividad oficial con el Presidente de la República (Art. 9)": 4,
     "Misión oficial con aviso de salida del país (Art. 37)": 4,
+    "Actividad oficial con el Presidente de la República (Art. 9)": 4,
     "Actividad propia de la labor parlamentaria (Art. 42)": 1
    },
    "periodos": [
@@ -13010,7 +13010,7 @@
   },
   {
    "id": 872,
-   "nombre": "JAIME MULET MARTÍNEZ",
+   "nombre": "Jaime Mulet Martínez",
    "partido": "FRVS",
    "partido_nombre": "Federación Regionalista Verde Social",
    "sexo": "Masculino",
@@ -13614,7 +13614,7 @@
   },
   {
    "id": 1077,
-   "nombre": "IVÁN FLORES GARCÍA",
+   "nombre": "Raúl Soto Mardones",
    "partido": "PPD",
    "partido_nombre": "Partido Por la Democracia",
    "sexo": "Masculino",
@@ -14227,7 +14227,7 @@
   },
   {
    "id": 1140,
-   "nombre": "RAÚL SALDÍVAR AUGER",
+   "nombre": "Daniel Lilayu Vivanco",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Masculino",
@@ -14830,7 +14830,7 @@
   },
   {
    "id": 1175,
-   "nombre": "PEPE AUTH STEWART",
+   "nombre": "Cristián Tapia Ramos",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -14856,8 +14856,8 @@
    "pct_votaciones_ajustado": 86.5,
    "motivos": {
     "Impedimento grave (Art. 42)": 5,
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1,
-    "Gestión encomendada por la Corporación (Art. 42)": 1
+    "Gestión encomendada por la Corporación (Art. 42)": 1,
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1
    },
    "periodos": [
     {
@@ -15443,7 +15443,7 @@
   },
   {
    "id": 1176,
-   "nombre": "NINO BALTOLU RASERA",
+   "nombre": "Hotuiti Teao Drago",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -16047,7 +16047,7 @@
   },
   {
    "id": 1065,
-   "nombre": "JUAN ANTONIO COLOMA ÁLAMOS",
+   "nombre": "Guillermo Ramírez Diez",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Masculino",
@@ -16651,7 +16651,7 @@
   },
   {
    "id": 1086,
-   "nombre": "Romilio Gutiérrez Pino",
+   "nombre": "Gonzalo Winter Etcheberry",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
    "sexo": "Masculino",
@@ -17263,7 +17263,7 @@
   },
   {
    "id": 1234,
-   "nombre": "ISSA KORT GARRIGA",
+   "nombre": "Mario Olavarría Rodríguez",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Masculino",
@@ -17866,7 +17866,7 @@
   },
   {
    "id": 1131,
-   "nombre": "JORGE RATHGEB SCHIFFERLI",
+   "nombre": "Mauro González Villarroel",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
    "sexo": "Masculino",
@@ -17891,8 +17891,8 @@
    "pct_asistencia_ajustada": 96.7,
    "pct_votaciones_ajustado": 81.2,
    "motivos": {
-    "Acuerdo de Comités Parlamentarios": 3,
     "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 3,
+    "Acuerdo de Comités Parlamentarios": 3,
     "Actividad oficial con el Presidente de la República (Art. 9)": 2
    },
    "periodos": [
@@ -18479,10 +18479,10 @@
   },
   {
    "id": 1183,
-   "nombre": "SERGIO BOBADILLA MUÑOZ",
+   "nombre": "Flor Weisse Novoa",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 87,
    "inasistencias": 8,
@@ -19097,7 +19097,7 @@
   },
   {
    "id": 1142,
-   "nombre": "ALEJANDRO SANTANA TIRACHINI",
+   "nombre": "Daniel Manouchehri Lobos",
    "partido": "PS",
    "partido_nombre": "Partido Socialista",
    "sexo": "Masculino",
@@ -19700,7 +19700,7 @@
   },
   {
    "id": 1216,
-   "nombre": "CRISTINA GIRARDI LAVÍN",
+   "nombre": "Stephanie Jéldrez Ortiz",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Femenino",
@@ -20312,10 +20312,10 @@
   },
   {
    "id": 1211,
-   "nombre": "GONZALO FUENZALIDA FIGUEROA",
+   "nombre": "Sofía González Cortés",
    "partido": "PC",
    "partido_nombre": "Partido Comunista",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 87,
    "inasistencias": 8,
@@ -20924,10 +20924,10 @@
   },
   {
    "id": 1116,
-   "nombre": "Claudia Nogueira Fernández",
+   "nombre": "Felipe Camaño Cárdenas",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 88,
    "inasistencias": 7,
@@ -21536,7 +21536,7 @@
   },
   {
    "id": 1143,
-   "nombre": "MARCELO SCHILLING RODRÍGUEZ",
+   "nombre": "Cristóbal Martínez Ramírez",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Masculino",
@@ -22140,10 +22140,10 @@
   },
   {
    "id": 1087,
-   "nombre": "Gustavo Hasbún Selume",
+   "nombre": "Gael Yeomans Araya",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 88,
    "inasistencias": 7,
@@ -22767,7 +22767,7 @@
   },
   {
    "id": 1250,
-   "nombre": "VLADO MIROSEVIC VERDUGO",
+   "nombre": "Bernardo Salinas Maya",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -23379,10 +23379,10 @@
   },
   {
    "id": 986,
-   "nombre": "PEPE AUTH STEWART",
+   "nombre": "Marcela Hernando Pérez",
    "partido": "PR",
    "partido_nombre": "Partido Radical de Chile",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 88,
    "inasistencias": 7,
@@ -23982,7 +23982,7 @@
   },
   {
    "id": 1165,
-   "nombre": "Felipe Ward Edwards",
+   "nombre": "Agustín Romero Leiva",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -24586,7 +24586,7 @@
   },
   {
    "id": 1248,
-   "nombre": "MIGUEL MELLADO SUAZO",
+   "nombre": "Felipe Ross Correa",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -25190,7 +25190,7 @@
   },
   {
    "id": 1108,
-   "nombre": "FERNANDO MEZA MONCADA",
+   "nombre": "Juan Carlos Beltrán Silva",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
    "sexo": "Masculino",
@@ -25802,7 +25802,7 @@
   },
   {
    "id": 1044,
-   "nombre": "Joel Rosales Guzmán",
+   "nombre": "Raúl Leiva Carvajal",
    "partido": "PS",
    "partido_nombre": "Partido Socialista",
    "sexo": "Masculino",
@@ -26414,7 +26414,7 @@
   },
   {
    "id": 1038,
-   "nombre": "Miodrag Marinovic Solo de Zaldívar",
+   "nombre": "Marcos Ilabaca Cerda",
    "partido": "PS",
    "partido_nombre": "Partido Socialista",
    "sexo": "Masculino",
@@ -27026,7 +27026,7 @@
   },
   {
    "id": 1105,
-   "nombre": "Rosauro Martínez Labbé",
+   "nombre": "Héctor Barría Angulo",
    "partido": "DC",
    "partido_nombre": "Partido Demócrata Cristiano",
    "sexo": "Masculino",
@@ -27629,7 +27629,7 @@
   },
   {
    "id": 1251,
-   "nombre": "CLAUDIA MIX JIMÉNEZ",
+   "nombre": "Macarena Santelices Cañas",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Femenino",
@@ -28232,10 +28232,10 @@
   },
   {
    "id": 1180,
-   "nombre": "BERNARDO BERGER FETT",
+   "nombre": "Consuelo Veloso Ávila",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 89,
    "inasistencias": 6,
@@ -28836,10 +28836,10 @@
   },
   {
    "id": 1189,
-   "nombre": "LORETO CARVAJAL AMBIADO",
+   "nombre": "Jaime Bassa Mercado",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 89,
    "inasistencias": 6,
@@ -29448,7 +29448,7 @@
   },
   {
    "id": 1099,
-   "nombre": "JOAQUÍN LAVÍN LEÓN",
+   "nombre": "Jaime Araya Guerrero",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -30051,10 +30051,10 @@
   },
   {
    "id": 1062,
-   "nombre": "JUAN LUIS CASTRO GONZÁLEZ",
+   "nombre": "Joanna Pérez Olea",
    "partido": "DEM",
    "partido_nombre": "Partido Demócratas Chile",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 90,
    "inasistencias": 5,
@@ -30663,7 +30663,7 @@
   },
   {
    "id": 1207,
-   "nombre": "MAYA FERNÁNDEZ ALLENDE",
+   "nombre": "Valentina Cáceres Monsálvez",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Femenino",
@@ -31266,7 +31266,7 @@
   },
   {
    "id": 815,
-   "nombre": "SERGIO BOBADILLA MUÑOZ",
+   "nombre": "Sergio Bobadilla Muñoz",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Masculino",
@@ -31877,7 +31877,7 @@
   },
   {
    "id": 1220,
-   "nombre": "JAVIER HERNÁNDEZ HERNÁNDEZ",
+   "nombre": "Leandro Kunstmann Collado",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -32489,7 +32489,7 @@
   },
   {
    "id": 1075,
-   "nombre": "Ramón Farías Ponce",
+   "nombre": "Diego Schalper Sepúlveda",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
    "sexo": "Masculino",
@@ -33093,7 +33093,7 @@
   },
   {
    "id": 1061,
-   "nombre": "LORETO CARVAJAL AMBIADO",
+   "nombre": "Andrea Parra Sauterel",
    "partido": "PPD",
    "partido_nombre": "Partido Por la Democracia",
    "sexo": "Femenino",
@@ -33705,7 +33705,7 @@
   },
   {
    "id": 1219,
-   "nombre": "HUGO GUTIÉRREZ GÁLVEZ",
+   "nombre": "Tomás Kast Sommerhoff",
    "partido": "EVOP",
    "partido_nombre": "Evolución Política",
    "sexo": "Masculino",
@@ -34308,10 +34308,10 @@
   },
   {
    "id": 1221,
-   "nombre": "MARCELA HERNANDO PÉREZ",
+   "nombre": "Benjamín Lorca Inzunza",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 90,
    "inasistencias": 5,
@@ -34912,10 +34912,10 @@
   },
   {
    "id": 1127,
-   "nombre": "LEOPOLDO PÉREZ LAHSEN",
+   "nombre": "Lorena Fries Monleón",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 90,
    "inasistencias": 5,
@@ -35516,7 +35516,7 @@
   },
   {
    "id": 1254,
-   "nombre": "CELSO MORALES MUÑOZ",
+   "nombre": "Ignacio Urcullú Clèment-Lund",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -36128,10 +36128,10 @@
   },
   {
    "id": 1082,
-   "nombre": "CRISTINA GIRARDI LAVÍN",
+   "nombre": "Cristóbal Urruticoechea Ríos",
    "partido": "PNL",
    "partido_nombre": "Partido Nacional Libertario",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 91,
    "inasistencias": 4,
@@ -36732,7 +36732,7 @@
   },
   {
    "id": 1178,
-   "nombre": "RAMÓN BARROS MONTERO",
+   "nombre": "Héctor Ulloa Aguilera",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -37335,7 +37335,7 @@
   },
   {
    "id": 1181,
-   "nombre": "ALEJANDRO BERNALES MALDONADO",
+   "nombre": "Nelson Venegas Salazar",
    "partido": "PS",
    "partido_nombre": "Partido Socialista",
    "sexo": "Masculino",
@@ -37938,7 +37938,7 @@
   },
   {
    "id": 1073,
-   "nombre": "FIDEL ESPINOZA SANDOVAL",
+   "nombre": "Juan Santana Castillo",
    "partido": "PS",
    "partido_nombre": "Partido Socialista",
    "sexo": "Masculino",
@@ -38541,7 +38541,7 @@
   },
   {
    "id": 1261,
-   "nombre": "DANIEL NÚÑEZ ARANCIBIA",
+   "nombre": "Daniel Valenzuela Salazar",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -38567,8 +38567,8 @@
    "pct_votaciones_ajustado": 90.0,
    "motivos": {
     "Actividad propia de la labor parlamentaria (Art. 42)": 2,
-    "Licencia médica (Art. 42)": 1,
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1,
+    "Licencia médica (Art. 42)": 1
    },
    "periodos": [
     {
@@ -39168,7 +39168,7 @@
   },
   {
    "id": 1217,
-   "nombre": "FÉLIX GONZÁLEZ GATICA",
+   "nombre": "Pier Karlezi Hazleby",
    "partido": "PNL",
    "partido_nombre": "Partido Nacional Libertario",
    "sexo": "Masculino",
@@ -39772,7 +39772,7 @@
   },
   {
    "id": 1114,
-   "nombre": "CELSO MORALES MUÑOZ",
+   "nombre": "Félix Bugueño Sotelo",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
    "sexo": "Masculino",
@@ -40375,7 +40375,7 @@
   },
   {
    "id": 1146,
-   "nombre": "Ernesto Silva Méndez",
+   "nombre": "José Carlos Meza Pereira",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -41000,10 +41000,10 @@
   },
   {
    "id": 1256,
-   "nombre": "JAIME MULET MARTÍNEZ",
+   "nombre": "Tatiana Urrutia Herrera",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 91,
    "inasistencias": 4,
@@ -41603,7 +41603,7 @@
   },
   {
    "id": 1241,
-   "nombre": "PABLO LORENZINI BASSO",
+   "nombre": "Patricio Pinilla Valencia",
    "partido": "DC",
    "partido_nombre": "Partido Demócrata Cristiano",
    "sexo": "Masculino",
@@ -42215,10 +42215,10 @@
   },
   {
    "id": 1264,
-   "nombre": "ERIKA OLIVERA DE LA FUENTE",
+   "nombre": "Fernando Zamorano Peralta",
    "partido": "PPD",
    "partido_nombre": "Partido Por la Democracia",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 91,
    "inasistencias": 4,
@@ -42818,7 +42818,7 @@
   },
   {
    "id": 843,
-   "nombre": "RENÉ MANUEL GARCÍA GARCÍA",
+   "nombre": "René Manuel García García",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
    "sexo": "Masculino",
@@ -43429,7 +43429,7 @@
   },
   {
    "id": 1244,
-   "nombre": "CAROLINA MARZÁN PINTO",
+   "nombre": "Claudia Reyes Larenas",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Femenino",
@@ -44040,10 +44040,10 @@
   },
   {
    "id": 1252,
-   "nombre": "ANDRÉS MOLINA MAGOFKE",
+   "nombre": "Constanza Schonhaut Soto",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 91,
    "inasistencias": 4,
@@ -44659,7 +44659,7 @@
   },
   {
    "id": 1238,
-   "nombre": "RAÚL LEIVA CARVAJAL",
+   "nombre": "Álvaro Ortiz Vera",
    "partido": "DC",
    "partido_nombre": "Partido Demócrata Cristiano",
    "sexo": "Masculino",
@@ -45270,7 +45270,7 @@
   },
   {
    "id": 1245,
-   "nombre": "MANUEL MATTA ARAGAY",
+   "nombre": "Alejandro Riquelme Ducci",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -45882,7 +45882,7 @@
   },
   {
    "id": 1205,
-   "nombre": "FRANCISCO EGUIGUREN CORREA",
+   "nombre": "Carlos Cuadrado Prats",
    "partido": "PPD",
    "partido_nombre": "Partido Por la Democracia",
    "sexo": "Masculino",
@@ -46507,7 +46507,7 @@
   },
   {
    "id": 1225,
-   "nombre": "DIEGO IBÁÑEZ COTRONEO",
+   "nombre": "Cristian Menchaca Pinochet",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -47118,10 +47118,10 @@
   },
   {
    "id": 1239,
-   "nombre": "ARACELY LEUQUÉN URIBE",
+   "nombre": "Fabián Ossandón Briceño",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 92,
    "inasistencias": 3,
@@ -47721,10 +47721,10 @@
   },
   {
    "id": 1104,
-   "nombre": "JAVIER MACAYA DANÚS",
+   "nombre": "Chiara Barchiesi Chávez",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 92,
    "inasistencias": 3,
@@ -48324,7 +48324,7 @@
   },
   {
    "id": 1259,
-   "nombre": "NICOLÁS NOMAN GARRIDO",
+   "nombre": "Juan Marcelo Valenzuela Henríquez",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
    "sexo": "Masculino",
@@ -48943,7 +48943,7 @@
   },
   {
    "id": 1226,
-   "nombre": "MARCOS ILABACA CERDA",
+   "nombre": "José Montalva Feuerhake",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -49546,10 +49546,10 @@
   },
   {
    "id": 1243,
-   "nombre": "JAVIER MACAYA DANÚS",
+   "nombre": "Tamara Ramírez Ramírez",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 92,
    "inasistencias": 3,
@@ -50157,7 +50157,7 @@
   },
   {
    "id": 1150,
-   "nombre": "GUILLERMO TEILLIER DEL VALLE",
+   "nombre": "Benjamín Moreno Bascur",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -50769,7 +50769,7 @@
   },
   {
    "id": 803,
-   "nombre": "RENÉ ALINCO BUSTOS",
+   "nombre": "René Alinco Bustos",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -51372,10 +51372,10 @@
   },
   {
    "id": 1054,
-   "nombre": "JAIME BELLOLIO AVARIA",
+   "nombre": "Francesca Muñoz González",
    "partido": "PCCH",
    "partido_nombre": "Partido Cristiano de Chile",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 93,
    "inasistencias": 2,
@@ -51975,10 +51975,10 @@
   },
   {
    "id": 1110,
-   "nombre": "Andrea Molina Oliva",
+   "nombre": "Carlos Bianchi Chelech",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 93,
    "inasistencias": 2,
@@ -52578,7 +52578,7 @@
   },
   {
    "id": 1159,
-   "nombre": "CAMILA VALLEJO DOWLING",
+   "nombre": "Lorena Pizarro Sierra",
    "partido": "PC",
    "partido_nombre": "Partido Comunista",
    "sexo": "Femenino",
@@ -53181,7 +53181,7 @@
   },
   {
    "id": 1223,
-   "nombre": "TOMÁS HIRSCH GOLDSCHMIDT",
+   "nombre": "Hans Marowski Cuevas",
    "partido": "PNL",
    "partido_nombre": "Partido Nacional Libertario",
    "sexo": "Masculino",
@@ -53792,7 +53792,7 @@
   },
   {
    "id": 1208,
-   "nombre": "IVÁN FLORES GARCÍA",
+   "nombre": "Jorge Díaz Ibarra",
    "partido": "DC",
    "partido_nombre": "Partido Demócrata Cristiano",
    "sexo": "Masculino",
@@ -53817,8 +53817,8 @@
    "pct_asistencia_ajustada": 100.0,
    "pct_votaciones_ajustado": 91.9,
    "motivos": {
-    "Impedimento grave (Art. 42)": 1,
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1,
+    "Impedimento grave (Art. 42)": 1
    },
    "periodos": [],
    "historial": [
@@ -54396,7 +54396,7 @@
   },
   {
    "id": 1222,
-   "nombre": "CARMEN HERTZ CÁDIZ",
+   "nombre": "Andrea Macías Palma",
    "partido": "PS",
    "partido_nombre": "Partido Socialista",
    "sexo": "Femenino",
@@ -54999,7 +54999,7 @@
   },
   {
    "id": 1060,
-   "nombre": "Lautaro Carmona Soto",
+   "nombre": "Luis Pardo Sáinz",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
    "sexo": "Masculino",
@@ -55603,7 +55603,7 @@
   },
   {
    "id": 1171,
-   "nombre": "JENNY ÁLVAREZ VERA",
+   "nombre": "Emilia Schneider Videla",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
    "sexo": "Femenino",
@@ -56206,7 +56206,7 @@
   },
   {
    "id": 1257,
-   "nombre": "FRANCESCA MUÑOZ GONZÁLEZ",
+   "nombre": "Alejandra Valdebenito Torres",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Femenino",
@@ -56809,10 +56809,10 @@
   },
   {
    "id": 1191,
-   "nombre": "JOSÉ MIGUEL CASTRO BASCUÑÁN",
+   "nombre": "Valentina Becerra Peña",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 93,
    "inasistencias": 2,
@@ -57412,10 +57412,10 @@
   },
   {
    "id": 1227,
-   "nombre": "GIORGIO JACKSON DRAGO",
+   "nombre": "Claudia Mora Vega",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 93,
    "inasistencias": 2,
@@ -58015,10 +58015,10 @@
   },
   {
    "id": 1263,
-   "nombre": "EMILIA NUYADO ANCAPICHÚN",
+   "nombre": "Sebastián Zamora Soto",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 93,
    "inasistencias": 2,
@@ -59230,10 +59230,10 @@
   },
   {
    "id": 1242,
-   "nombre": "KARIN LUCK URBAN",
+   "nombre": "Rodrigo Ramírez Parra",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 93,
    "inasistencias": 2,
@@ -59841,10 +59841,10 @@
   },
   {
    "id": 1200,
-   "nombre": "CATALINA DEL REAL MIHOVILOVIC",
+   "nombre": "Cristian Contreras Radovic",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 93,
    "inasistencias": 2,
@@ -60442,7 +60442,7 @@
   },
   {
    "id": 1017,
-   "nombre": "Joaquín Godoy Ibáñez",
+   "nombre": "Álvaro Carter Fernández",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -61053,7 +61053,7 @@
   },
   {
    "id": 1141,
-   "nombre": "David Sandoval Plaza",
+   "nombre": "Luis Malla Valenzuela",
    "partido": "PL",
    "partido_nombre": "Partido Liberal de Chile",
    "sexo": "Masculino",
@@ -61656,7 +61656,7 @@
   },
   {
    "id": 1028,
-   "nombre": "Enrique Jaramillo Becker",
+   "nombre": "Eduardo Durán Salinas",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
    "sexo": "Masculino",
@@ -62259,7 +62259,7 @@
   },
   {
    "id": 1249,
-   "nombre": "FERNANDO MEZA MONCADA",
+   "nombre": "Omar Sabat Guzmán",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -62862,7 +62862,7 @@
   },
   {
    "id": 1132,
-   "nombre": "RICARDO ENRIQUE RINCON GONZALEZ",
+   "nombre": "Jorge Guzmán Zepeda",
    "partido": "EVOP",
    "partido_nombre": "Evolución Política",
    "sexo": "Masculino",
@@ -63463,7 +63463,7 @@
   },
   {
    "id": 1174,
-   "nombre": "GABRIEL ASCENCIO MANSILLA",
+   "nombre": "Marco Antonio Sulantay Olivares",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Masculino",
@@ -64066,7 +64066,7 @@
   },
   {
    "id": 1246,
-   "nombre": "PATRICIO MELERO ABAROA",
+   "nombre": "José Antonio Rivas Villalobos",
    "partido": "PS",
    "partido_nombre": "Partido Socialista",
    "sexo": "Masculino",
@@ -64669,7 +64669,7 @@
   },
   {
    "id": 1133,
-   "nombre": "GASPAR RIVAS SÁNCHEZ",
+   "nombre": "Juan Irarrázaval Rossel",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -65272,10 +65272,10 @@
   },
   {
    "id": 1214,
-   "nombre": "RENÉ MANUEL GARCÍA GARCÍA",
+   "nombre": "Constanza Hube Portus",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 94,
    "inasistencias": 1,
@@ -65875,7 +65875,7 @@
   },
   {
    "id": 1182,
-   "nombre": "KARIM BIANCHI RETAMALES",
+   "nombre": "Sebastián Videla Castillo",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -66476,7 +66476,7 @@
   },
   {
    "id": 1059,
-   "nombre": "KAROL CARIOLA OLIVA",
+   "nombre": "Ximena Ossandón Irarrázabal",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
    "sexo": "Femenino",
@@ -67079,7 +67079,7 @@
   },
   {
    "id": 1170,
-   "nombre": "SEBASTIÁN ÁLVAREZ RAMÍREZ",
+   "nombre": "Luis Sánchez Ossa",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -67690,7 +67690,7 @@
   },
   {
    "id": 1203,
-   "nombre": "JORGE DURÁN ESPINOZA",
+   "nombre": "Sebastián Cristoffanini Jaraquemada",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -68293,7 +68293,7 @@
   },
   {
    "id": 1232,
-   "nombre": "PABLO KAST SOMMERHOFF",
+   "nombre": "Cristian Neira Martínez",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -68894,7 +68894,7 @@
   },
   {
    "id": 1258,
-   "nombre": "JAIME NARANJO ORTIZ",
+   "nombre": "Guillermo Valdés Carmona",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
    "sexo": "Masculino",
@@ -69495,10 +69495,10 @@
   },
   {
    "id": 1195,
-   "nombre": "DANIELLA CICARDINI MILLA",
+   "nombre": "Carlos Carvajal Gallardo",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 94,
    "inasistencias": 1,
@@ -70096,10 +70096,10 @@
   },
   {
    "id": 1262,
-   "nombre": "PAULINA NÚÑEZ URRUTIA",
+   "nombre": "Diego Vergara Rodríguez",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 94,
    "inasistencias": 1,
@@ -70699,7 +70699,7 @@
   },
   {
    "id": 1173,
-   "nombre": "SANDRA AMAR MANCILLA",
+   "nombre": "Daniela Serrano Salazar",
    "partido": "PC",
    "partido_nombre": "Partido Comunista",
    "sexo": "Femenino",
@@ -71302,10 +71302,10 @@
   },
   {
    "id": 1255,
-   "nombre": "CRISTHIAN MOREIRA BARROS",
+   "nombre": "Eileen Urqueta Rojas",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 94,
    "inasistencias": 1,
@@ -71905,7 +71905,7 @@
   },
   {
    "id": 1013,
-   "nombre": "Ramón Farías Ponce",
+   "nombre": "Alejandro Bernales Maldonado",
    "partido": "PL",
    "partido_nombre": "Partido Liberal de Chile",
    "sexo": "Masculino",
@@ -72506,7 +72506,7 @@
   },
   {
    "id": 1235,
-   "nombre": "CARLOS KUSCHEL SILVA",
+   "nombre": "Javier Olivares Avendaño",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
    "sexo": "Masculino",
@@ -73107,10 +73107,10 @@
   },
   {
    "id": 1166,
-   "nombre": "Miguel Ángel Alvarado Ramírez",
+   "nombre": "Natalia Romero Talguia",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -73708,7 +73708,7 @@
   },
   {
    "id": 1194,
-   "nombre": "ANDRÉS CELIS MONTT",
+   "nombre": "Daniel Bustos Leal",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -74309,7 +74309,7 @@
   },
   {
    "id": 1237,
-   "nombre": "JOAQUÍN LAVÍN LEÓN",
+   "nombre": "Francisco Orrego Gutiérrez",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
    "sexo": "Masculino",
@@ -74910,10 +74910,10 @@
   },
   {
    "id": 1177,
-   "nombre": "BORIS BARRERA MORENO",
+   "nombre": "Carolina Tello Rojas",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -75511,10 +75511,10 @@
   },
   {
    "id": 1119,
-   "nombre": "Marco Antonio Núñez Lozano",
+   "nombre": "Sara Concha Smith",
    "partido": "PCCH",
    "partido_nombre": "Partido Cristiano de Chile",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -76112,7 +76112,7 @@
   },
   {
    "id": 1233,
-   "nombre": "SEBASTIÁN KEITEL BIANCHI",
+   "nombre": "Ricardo Neumann Bertín",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Masculino",
@@ -76713,7 +76713,7 @@
   },
   {
    "id": 1202,
-   "nombre": "MARCELO DÍAZ DÍAZ",
+   "nombre": "Eduardo Cretton Rebolledo",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Masculino",
@@ -77314,7 +77314,7 @@
   },
   {
    "id": 1230,
-   "nombre": "TUCAPEL JIMÉNEZ FUENTES",
+   "nombre": "Alex Nahuelquin Nahuelquin",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
    "sexo": "Masculino",
@@ -77915,10 +77915,10 @@
   },
   {
    "id": 1206,
-   "nombre": "FIDEL ESPINOZA SANDOVAL",
+   "nombre": "Carolina Cucumides Calderón",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -78516,10 +78516,10 @@
   },
   {
    "id": 1198,
-   "nombre": "MIGUEL CRISPI SERRANO",
+   "nombre": "Paz Charpentier Rajcevich",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -79117,10 +79117,10 @@
   },
   {
    "id": 1229,
-   "nombre": "PAMELA JILES MORENO",
+   "nombre": "Javier Muñoz Riquelme",
    "partido": "DC",
    "partido_nombre": "Partido Demócrata Cristiano",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -79718,7 +79718,7 @@
   },
   {
    "id": 1199,
-   "nombre": "LUCIANO CRUZ-COKE CARVALLO",
+   "nombre": "Jaime Coloma Álamos",
    "partido": "UDI",
    "partido_nombre": "Unión Demócrata Independiente",
    "sexo": "Masculino",
@@ -80319,7 +80319,7 @@
   },
   {
    "id": 1210,
-   "nombre": "JUAN FUENZALIDA COBO",
+   "nombre": "Gustavo Gatica Villarroel",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -80920,10 +80920,10 @@
   },
   {
    "id": 1228,
-   "nombre": "CARLOS ABEL JARPA WEVAR",
+   "nombre": "Paulina Muñoz Minte",
    "partido": "PNL",
    "partido_nombre": "Partido Nacional Libertario",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -81521,7 +81521,7 @@
   },
   {
    "id": 1260,
-   "nombre": "IVÁN NORAMBUENA FARÍAS",
+   "nombre": "César Valenzuela Maass",
    "partido": "PS",
    "partido_nombre": "Partido Socialista",
    "sexo": "Masculino",
@@ -82122,7 +82122,7 @@
   },
   {
    "id": 1122,
-   "nombre": "JOSÉ MIGUEL ORTIZ NOVOA",
+   "nombre": "Luis Alberto Cuello Peña y Lillo",
    "partido": "PC",
    "partido_nombre": "Partido Comunista",
    "sexo": "Masculino",
@@ -82723,10 +82723,10 @@
   },
   {
    "id": 1056,
-   "nombre": "GABRIEL BORIC FONT",
+   "nombre": "Emilia Nuyado Ancapichun",
    "partido": "PS",
    "partido_nombre": "Partido Socialista",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -83324,10 +83324,10 @@
   },
   {
    "id": 1187,
-   "nombre": "KAROL CARIOLA OLIVA",
+   "nombre": "Carlo Arqueros Pizarro",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -83925,10 +83925,10 @@
   },
   {
    "id": 1190,
-   "nombre": "NATALIA CASTILLO MUÑOZ",
+   "nombre": "Enrique Bassaletti Riess",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -84526,7 +84526,7 @@
   },
   {
    "id": 1186,
-   "nombre": "MIGUEL ÁNGEL CALISTO ÁGUILA",
+   "nombre": "Ignacio Achurra Díaz",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
    "sexo": "Masculino",
@@ -85127,7 +85127,7 @@
   },
   {
    "id": 1215,
-   "nombre": "RENATO GARÍN GONZÁLEZ",
+   "nombre": "Álvaro Jofré Cáceres",
    "partido": "PNL",
    "partido_nombre": "Partido Nacional Libertario",
    "sexo": "Masculino",
@@ -85728,10 +85728,10 @@
   },
   {
    "id": 1224,
-   "nombre": "MARÍA JOSÉ HOFFMANN OPAZO",
+   "nombre": "Cristian Mella Andaur",
    "partido": "DC",
    "partido_nombre": "Partido Demócrata Cristiano",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -86329,7 +86329,7 @@
   },
   {
    "id": 1184,
-   "nombre": "GABRIEL BORIC FONT",
+   "nombre": "Roberto Celedón Fernández",
    "partido": "IND",
    "partido_nombre": "Independientes",
    "sexo": "Masculino",
@@ -86930,7 +86930,7 @@
   },
   {
    "id": 1196,
-   "nombre": "SOFÍA CID VERSALOVIC",
+   "nombre": "Priscilla Castillo Gerli",
    "partido": "DC",
    "partido_nombre": "Partido Demócrata Cristiano",
    "sexo": "Femenino",
@@ -87531,7 +87531,7 @@
   },
   {
    "id": 1204,
-   "nombre": "EDUARDO DURÁN SALINAS",
+   "nombre": "Francisco Crisóstomo Llanos",
    "partido": "PS",
    "partido_nombre": "Partido Socialista",
    "sexo": "Masculino",
@@ -88132,7 +88132,7 @@
   },
   {
    "id": 1197,
-   "nombre": "JUAN ANTONIO COLOMA ÁLAMOS",
+   "nombre": "Carlos Chandía Alarcón",
    "partido": "RN",
    "partido_nombre": "Renovación Nacional",
    "sexo": "Masculino",
@@ -88733,10 +88733,10 @@
   },
   {
    "id": 1201,
-   "nombre": "MARIO DESBORDES JIMÉNEZ",
+   "nombre": "Flor Contreras Vivallo",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -89334,10 +89334,10 @@
   },
   {
    "id": 1247,
-   "nombre": "COSME MELLADO PINO",
+   "nombre": "Javiera Rodríguez Pascual",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -89935,10 +89935,10 @@
   },
   {
    "id": 1231,
-   "nombre": "HARRY JÜRGENSEN RUNDSHAGEN",
+   "nombre": "Ximena Naranjo Pinto",
    "partido": "IND",
    "partido_nombre": "Independientes",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -90536,10 +90536,10 @@
   },
   {
    "id": 1213,
-   "nombre": "RAMÓN GALLEGUILLOS CASTILLO",
+   "nombre": "Irací Hassler Jacob",
    "partido": "PC",
    "partido_nombre": "Partido Comunista",
-   "sexo": "Masculino",
+   "sexo": "Femenino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -91137,10 +91137,10 @@
   },
   {
    "id": 1209,
-   "nombre": "CAMILA FLORES OPORTO",
+   "nombre": "Matías Fernández Hartwig",
    "partido": "FA",
    "partido_nombre": "Frente Amplio",
-   "sexo": "Femenino",
+   "sexo": "Masculino",
    "sesiones": 95,
    "asiste": 95,
    "inasistencias": 0,
@@ -91738,7 +91738,7 @@
   },
   {
    "id": 1193,
-   "nombre": "RICARDO CELIS ARAYA",
+   "nombre": "Patricio Briones Moller",
    "partido": "PDG",
    "partido_nombre": "Partido de la Gente",
    "sexo": "Masculino",
@@ -92339,7 +92339,7 @@
   },
   {
    "id": 1253,
-   "nombre": "MANUEL MONSALVE BENAVIDES",
+   "nombre": "Fernando Ugarte Tejeda",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -92940,7 +92940,7 @@
   },
   {
    "id": 1218,
-   "nombre": "RODRIGO GONZÁLEZ TORRES",
+   "nombre": "José Antonio Kast Adriasola",
    "partido": "PREP",
    "partido_nombre": "Partido Republicano",
    "sexo": "Masculino",
@@ -93541,7 +93541,7 @@
   },
   {
    "id": 1188,
-   "nombre": "ÁLVARO CARTER FERNÁNDEZ",
+   "nombre": "Marcos Barraza Gómez",
    "partido": "PC",
    "partido_nombre": "Partido Comunista",
    "sexo": "Masculino",

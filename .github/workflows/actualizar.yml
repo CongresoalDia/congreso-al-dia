@@ -38,10 +38,12 @@ jobs:
       - name: Cámara
         id: camara
         continue-on-error: true
+        # calcular.py sale con código 3 si la fuente entregó datos sospechosos (los datos quedan protegidos y se avisa)
         run: |
           python pipeline/descargar.py
-          python pipeline/calcular.py
+          estado=0; python pipeline/calcular.py || estado=$?
           python pipeline/medios.py
+          exit $estado
 
       # El Senado no está aquí: su API responde 403 a los servidores de GitHub. Se actualiza desde un PC (ver README).
 

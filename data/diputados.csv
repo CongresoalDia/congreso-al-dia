@@ -1,156 +1,156 @@
 ﻿id;nombre;partido;partido_nombre;sexo;sesiones;asiste;inasistencias;falta_licencia;falta_trabajo;falta_justificada;falta_sin_justificar;votaciones;vota;dispensado;no_vota;no_vota_presente;no_vota_licencia;no_vota_trabajo;falta_excusada;no_vota_excusado;pct_asistencia;pct_votaciones;pct_asistencia_ajustada;pct_votaciones_ajustado
-1107;DANIEL MELO CONTRERAS;FA;Frente Amplio;Masculino;95;2;93;93;0;0;0;1084;0;0;1084;2;1082;0;93;1082;2.1;0.0;;
-1148;Arturo Squella Ovalle;FA;Frente Amplio;Masculino;95;6;89;89;0;0;0;1084;102;0;982;4;978;0;89;978;6.3;9.4;;96.2
-1153;Joaquín Tuma Zedan;FA;Frente Amplio;Masculino;95;33;62;61;0;0;1;1084;281;0;803;30;770;0;61;770;34.7;25.9;97.1;89.5
-1192;JUAN LUIS CASTRO GONZÁLEZ;PDG;Partido de la Gente;Masculino;95;53;42;40;0;0;2;1084;667;0;417;66;333;0;40;333;55.8;61.5;96.4;88.8
-1021;Romilio Gutiérrez Pino;RN;Renovación Nacional;Masculino;95;60;35;29;0;4;2;1084;529;0;555;27;491;0;33;516;63.2;48.8;96.8;93.1
-1157;IGNACIO URRUTIA BONILLA;IND;Independientes;Masculino;95;68;27;11;0;6;10;1084;574;0;510;109;100;0;17;231;71.6;53.0;87.2;67.3
-1012;Enrique Estay Peñaloza;PC;Partido Comunista;Masculino;95;68;27;6;0;19;2;1084;604;0;480;21;233;0;21;414;71.6;55.7;91.9;90.1
-1117;IVÁN NORAMBUENA FARÍAS;PC;Partido Comunista;Masculino;95;72;23;13;0;5;5;1084;794;0;290;70;85;0;18;123;75.8;73.2;93.5;82.6
-1015;Alejandro García-Huidobro Sanfuentes;FA;Frente Amplio;Masculino;95;75;20;15;4;1;0;1084;858;0;226;58;134;26;20;168;78.9;79.2;100.0;93.7
-1152;RENZO TRISOTTI MARTÍNEZ;PNL;Partido Nacional Libertario;Masculino;95;76;19;7;0;10;2;1084;768;0;316;186;37;0;17;100;80.0;70.8;97.4;78.0
-1074;Daniel Farcas Guendelman;IND;Independientes;Masculino;91;76;15;4;0;8;3;1084;732;0;352;210;33;0;10;90;83.5;67.5;93.8;73.6
-1236;AMARO LABRA SEPÚLVEDA;PDG;Partido de la Gente;Masculino;95;81;14;4;2;8;0;1084;882;0;202;82;49;12;14;120;85.3;81.4;100.0;91.5
-1009;Edmundo Eluchans Urenda;UDI;Unión Demócrata Independiente;Masculino;95;82;13;0;6;7;0;1084;609;0;475;292;0;77;9;156;86.3;56.2;95.3;65.6
-1039;Rosauro Martínez Labbé;PDG;Partido de la Gente;Masculino;95;83;12;7;5;0;0;1084;598;0;486;155;237;94;12;331;87.4;55.2;100.0;79.4
-1025;JAVIER HERNÁNDEZ HERNÁNDEZ;PREP;Partido Republicano;Masculino;95;83;12;0;0;11;1;1084;866;0;218;97;0;0;7;57;87.4;79.9;94.3;84.3
-1100;Luis Lemus Aracena;PREP;Partido Republicano;Masculino;95;84;11;0;7;3;1;1084;906;0;178;52;0;98;10;125;88.4;83.6;98.8;94.5
-1128;JAIME PILOWSKY GREENE;PAH;Partido Acción Humanista;Masculino;95;84;11;0;0;11;0;1084;936;0;148;49;0;0;4;36;88.4;86.3;92.3;89.3
-1240;ANDRÉS LONGTON HERRERA;PDG;Partido de la Gente;Masculino;95;85;10;0;0;10;0;1084;866;0;218;91;0;0;7;79;89.5;79.9;96.6;86.2
-1102;Felipe Letelier Norambuena;IND;Independientes;Masculino;95;85;10;7;0;3;0;1084;872;0;212;111;53;0;7;53;89.5;80.4;96.6;84.6
-1212;SERGIO GAHONA SALAZAR;PNL;Partido Nacional Libertario;Masculino;95;85;10;2;0;8;0;1084;892;0;192;103;24;0;10;89;89.5;82.3;100.0;89.6
-1172;PEDRO PABLO ALVAREZ-SALAMANCA RAMÍREZ;PREP;Partido Republicano;Masculino;95;85;10;0;9;0;1;1084;945;1;138;51;0;78;9;78;89.5;87.3;98.8;94.0
-872;JAIME MULET MARTÍNEZ;FRVS;Federación Regionalista Verde Social;Masculino;95;86;9;0;0;8;1;1084;744;0;340;291;0;0;8;46;90.5;68.6;98.9;71.7
-1077;IVÁN FLORES GARCÍA;PPD;Partido Por la Democracia;Masculino;95;86;9;0;4;5;0;1084;745;0;339;217;0;26;5;88;90.5;68.7;95.6;74.8
-1140;RAÚL SALDÍVAR AUGER;UDI;Unión Demócrata Independiente;Masculino;95;86;9;0;0;9;0;1084;846;0;238;101;0;0;9;137;90.5;78.0;100.0;89.3
-1175;PEPE AUTH STEWART;IND;Independientes;Masculino;95;86;9;0;1;6;2;1084;867;0;217;127;0;15;7;82;90.5;80.0;97.7;86.5
-1176;NINO BALTOLU RASERA;IND;Independientes;Masculino;95;86;9;0;0;8;1;1084;898;0;186;96;0;0;8;81;90.5;82.8;98.9;89.5
-1065;JUAN ANTONIO COLOMA ÁLAMOS;UDI;Unión Demócrata Independiente;Masculino;95;87;8;0;0;8;0;1084;712;0;372;291;0;0;0;0;91.6;65.7;91.6;65.7
-1086;Romilio Gutiérrez Pino;FA;Frente Amplio;Masculino;95;87;8;0;5;2;1;1084;744;0;340;94;0;53;5;53;91.6;68.6;96.7;72.2
-1234;ISSA KORT GARRIGA;UDI;Unión Demócrata Independiente;Masculino;95;87;8;0;0;3;5;1084;840;0;244;160;0;0;0;0;91.6;77.5;91.6;77.5
-1131;JORGE RATHGEB SCHIFFERLI;RN;Renovación Nacional;Masculino;95;87;8;0;2;6;0;1084;837;20;227;161;0;16;5;33;91.6;78.7;96.7;81.2
-1183;SERGIO BOBADILLA MUÑOZ;UDI;Unión Demócrata Independiente;Masculino;95;87;8;0;8;0;0;1084;893;0;191;143;0;48;8;48;91.6;82.4;100.0;86.2
-1142;ALEJANDRO SANTANA TIRACHINI;PS;Partido Socialista;Masculino;95;87;8;0;0;8;0;1084;923;0;161;116;0;0;0;0;91.6;85.1;91.6;85.1
-1216;CRISTINA GIRARDI LAVÍN;PREP;Partido Republicano;Femenino;95;87;8;3;0;4;1;1084;957;0;127;74;38;0;7;50;91.6;88.3;98.9;92.6
-1211;GONZALO FUENZALIDA FIGUEROA;PC;Partido Comunista;Masculino;95;87;8;0;4;3;1;1084;1020;0;64;6;0;26;7;50;91.6;94.1;98.9;98.6
-1116;Claudia Nogueira Fernández;IND;Independientes;Femenino;95;88;7;4;0;2;1;1084;877;0;207;134;41;0;6;53;92.6;80.9;98.9;85.1
-1143;MARCELO SCHILLING RODRÍGUEZ;UDI;Unión Demócrata Independiente;Masculino;95;88;7;0;0;7;0;1084;944;0;140;96;0;0;1;9;92.6;87.1;93.6;87.8
-1087;Gustavo Hasbún Selume;FA;Frente Amplio;Masculino;95;88;7;1;2;3;1;1084;955;0;129;85;4;13;6;42;92.6;88.1;98.9;91.7
-1250;VLADO MIROSEVIC VERDUGO;IND;Independientes;Masculino;95;88;7;3;0;4;0;1084;966;0;118;21;48;0;7;97;92.6;89.1;100.0;97.9
-986;PEPE AUTH STEWART;PR;Partido Radical de Chile;Masculino;95;88;7;0;0;7;0;1084;971;0;113;50;0;0;0;0;92.6;89.6;92.6;89.6
-1165;Felipe Ward Edwards;PREP;Partido Republicano;Masculino;95;88;7;0;0;7;0;1084;974;0;110;72;0;0;3;12;92.6;89.9;95.7;90.9
-1248;MIGUEL MELLADO SUAZO;PREP;Partido Republicano;Masculino;95;88;7;0;0;6;1;1084;991;0;93;38;0;0;2;12;92.6;91.4;94.6;92.4
-1108;FERNANDO MEZA MONCADA;RN;Renovación Nacional;Masculino;95;88;7;1;0;5;1;1084;998;0;86;46;2;0;6;39;92.6;92.1;98.9;95.5
-1044;Joel Rosales Guzmán;PS;Partido Socialista;Masculino;95;89;6;0;2;3;1;1084;681;0;403;330;0;24;2;24;93.7;62.8;95.7;64.2
-1038;Miodrag Marinovic Solo de Zaldívar;PS;Partido Socialista;Masculino;95;89;6;0;5;1;0;1084;880;0;204;137;0;53;5;53;93.7;81.2;98.9;85.4
-1105;Rosauro Martínez Labbé;DC;Partido Demócrata Cristiano;Masculino;95;89;6;0;0;5;1;1084;914;0;170;110;0;0;5;52;93.7;84.3;98.9;88.6
-1251;CLAUDIA MIX JIMÉNEZ;IND;Independientes;Femenino;95;89;6;0;0;6;0;1084;935;0;149;102;0;0;6;47;93.7;86.3;100.0;90.2
-1180;BERNARDO BERGER FETT;FA;Frente Amplio;Masculino;95;89;6;0;0;4;2;1084;938;0;146;105;0;0;4;32;93.7;86.5;97.8;89.2
-1189;LORETO CARVAJAL AMBIADO;FA;Frente Amplio;Femenino;95;89;6;4;0;1;1;1084;982;0;102;60;30;0;5;37;93.7;90.6;98.9;93.8
-1099;JOAQUÍN LAVÍN LEÓN;IND;Independientes;Masculino;95;90;5;0;0;1;4;1084;716;0;368;318;0;0;1;9;94.7;66.1;95.7;66.6
-1062;JUAN LUIS CASTRO GONZÁLEZ;DEM;Partido Demócratas Chile;Masculino;95;90;5;0;1;2;2;1084;734;0;350;304;0;15;3;29;94.7;67.7;97.8;69.6
-1207;MAYA FERNÁNDEZ ALLENDE;IND;Independientes;Femenino;95;90;5;0;0;4;1;1084;813;0;271;238;0;0;4;32;94.7;75.0;98.9;77.3
-815;SERGIO BOBADILLA MUÑOZ;UDI;Unión Demócrata Independiente;Masculino;95;90;5;0;5;0;0;1084;881;0;203;109;0;94;5;94;94.7;81.3;100.0;89.0
-1220;JAVIER HERNÁNDEZ HERNÁNDEZ;PREP;Partido Republicano;Masculino;95;90;5;3;0;2;0;1084;909;0;175;46;111;0;5;129;94.7;83.9;100.0;95.2
-1075;Ramón Farías Ponce;RN;Renovación Nacional;Masculino;95;90;5;0;0;4;1;1084;916;0;168;132;0;0;1;3;94.7;84.5;95.7;84.7
-1061;LORETO CARVAJAL AMBIADO;PPD;Partido Por la Democracia;Femenino;95;90;5;0;3;2;0;1084;924;0;160;66;0;76;5;94;94.7;85.2;100.0;93.3
-1219;HUGO GUTIÉRREZ GÁLVEZ;EVOP;Evolución Política;Masculino;95;90;5;0;0;5;0;1084;924;7;153;113;0;0;5;40;94.7;85.8;100.0;89.1
-1221;MARCELA HERNANDO PÉREZ;PREP;Partido Republicano;Femenino;95;90;5;0;0;5;0;1084;967;0;117;62;0;0;5;55;94.7;89.2;100.0;94.0
-1127;LEOPOLDO PÉREZ LAHSEN;FA;Frente Amplio;Masculino;95;90;5;0;0;5;0;1084;976;0;108;62;0;0;1;5;94.7;90.0;95.7;90.5
-1254;CELSO MORALES MUÑOZ;PREP;Partido Republicano;Masculino;95;90;5;0;4;1;0;1084;1004;0;80;27;0;26;5;53;94.7;92.6;100.0;97.4
-1082;CRISTINA GIRARDI LAVÍN;PNL;Partido Nacional Libertario;Femenino;95;91;4;0;0;3;1;1084;734;0;350;332;0;0;3;15;95.8;67.7;98.9;68.7
-1178;RAMÓN BARROS MONTERO;IND;Independientes;Masculino;95;91;4;0;0;4;0;1084;808;0;276;251;0;0;4;25;95.8;74.5;100.0;76.3
-1181;ALEJANDRO BERNALES MALDONADO;PS;Partido Socialista;Masculino;95;91;4;0;0;3;1;1084;860;0;224;188;0;0;3;33;95.8;79.3;98.9;81.8
-1073;FIDEL ESPINOZA SANDOVAL;PS;Partido Socialista;Masculino;95;91;4;0;0;1;3;1084;895;0;189;158;0;0;1;9;95.8;82.6;96.8;83.3
-1261;DANIEL NÚÑEZ ARANCIBIA;IND;Independientes;Masculino;95;91;4;1;2;1;0;1084;932;0;152;104;15;27;4;48;95.8;86.0;100.0;90.0
-1217;FÉLIX GONZÁLEZ GATICA;PNL;Partido Nacional Libertario;Masculino;95;91;4;0;0;4;0;1084;939;0;145;103;0;0;0;0;95.8;86.6;95.8;86.6
-1114;CELSO MORALES MUÑOZ;FA;Frente Amplio;Masculino;95;91;4;0;0;3;1;1084;947;0;137;108;0;0;3;26;95.8;87.4;98.9;89.5
-1146;Ernesto Silva Méndez;PREP;Partido Republicano;Masculino;95;91;4;4;0;0;0;1084;959;0;125;94;31;0;4;31;95.8;88.5;100.0;91.1
-1256;JAIME MULET MARTÍNEZ;FA;Frente Amplio;Masculino;95;91;4;0;0;4;0;1084;972;0;112;71;0;0;4;41;95.8;89.7;100.0;93.2
-1241;PABLO LORENZINI BASSO;DC;Partido Demócrata Cristiano;Masculino;95;91;4;0;1;3;0;1084;973;0;111;80;0;5;4;31;95.8;89.8;100.0;92.4
-1264;ERIKA OLIVERA DE LA FUENTE;PPD;Partido Por la Democracia;Femenino;95;91;4;0;0;4;0;1084;982;0;102;72;0;0;4;30;95.8;90.6;100.0;93.2
-843;RENÉ MANUEL GARCÍA GARCÍA;RN;Renovación Nacional;Masculino;95;91;4;0;4;0;0;1084;981;2;101;79;0;22;4;22;95.8;90.7;100.0;92.5
-1244;CAROLINA MARZÁN PINTO;PREP;Partido Republicano;Femenino;95;91;4;4;0;0;0;1084;1002;0;82;41;41;0;4;41;95.8;92.4;100.0;96.1
-1252;ANDRÉS MOLINA MAGOFKE;FA;Frente Amplio;Masculino;95;91;4;3;0;1;0;1084;1002;0;82;40;38;0;3;38;95.8;92.4;98.9;95.8
-1238;RAÚL LEIVA CARVAJAL;DC;Partido Demócrata Cristiano;Masculino;95;91;4;0;4;0;0;1084;1025;0;59;25;0;34;4;34;95.8;94.6;100.0;97.6
-1245;MANUEL MATTA ARAGAY;PREP;Partido Republicano;Masculino;95;91;4;0;2;1;1;1084;1025;0;59;19;0;27;3;31;95.8;94.6;98.9;97.3
-1205;FRANCISCO EGUIGUREN CORREA;PPD;Partido Por la Democracia;Masculino;95;92;3;0;3;0;0;1084;885;0;199;159;0;40;3;40;96.8;81.6;100.0;84.8
-1225;DIEGO IBÁÑEZ COTRONEO;IND;Independientes;Masculino;95;92;3;3;0;0;0;1084;961;0;123;95;28;0;3;28;96.8;88.7;100.0;91.0
-1239;ARACELY LEUQUÉN URIBE;PDG;Partido de la Gente;Femenino;95;92;3;0;0;3;0;1084;980;0;104;72;0;0;3;32;96.8;90.4;100.0;93.2
-1104;JAVIER MACAYA DANÚS;PREP;Partido Republicano;Masculino;95;92;3;0;0;3;0;1084;983;0;101;69;0;0;3;32;96.8;90.7;100.0;93.4
-1259;NICOLÁS NOMAN GARRIDO;PDG;Partido de la Gente;Masculino;95;92;3;0;2;1;0;1084;987;0;97;75;0;17;2;17;96.8;91.1;98.9;92.5
-1226;MARCOS ILABACA CERDA;IND;Independientes;Masculino;95;92;3;0;0;3;0;1084;996;0;88;78;0;0;0;0;96.8;91.9;96.8;91.9
-1243;JAVIER MACAYA DANÚS;PDG;Partido de la Gente;Masculino;95;92;3;3;0;0;0;1084;1010;0;74;64;10;0;3;10;96.8;93.2;100.0;94.0
-1150;GUILLERMO TEILLIER DEL VALLE;PREP;Partido Republicano;Masculino;95;92;3;0;1;2;0;1084;1020;0;64;32;0;14;3;32;96.8;94.1;100.0;97.0
-803;RENÉ ALINCO BUSTOS;IND;Independientes;Masculino;95;93;2;0;0;2;0;1084;814;0;270;252;0;0;2;18;97.9;75.1;100.0;76.4
-1054;JAIME BELLOLIO AVARIA;PCCH;Partido Cristiano de Chile;Masculino;95;93;2;0;0;2;0;1084;847;0;237;220;0;0;2;17;97.9;78.1;100.0;79.4
-1110;Andrea Molina Oliva;IND;Independientes;Femenino;95;93;2;0;0;2;0;1084;895;0;189;178;0;0;2;11;97.9;82.6;100.0;83.4
-1159;CAMILA VALLEJO DOWLING;PC;Partido Comunista;Femenino;95;93;2;0;0;1;1;1084;948;0;136;128;0;0;1;5;97.9;87.5;98.9;87.9
-1223;TOMÁS HIRSCH GOLDSCHMIDT;PNL;Partido Nacional Libertario;Masculino;95;93;2;0;1;0;1;1084;967;0;117;90;0;22;1;22;97.9;89.2;98.9;91.1
-1208;IVÁN FLORES GARCÍA;DC;Partido Demócrata Cristiano;Masculino;95;93;2;0;0;2;0;1084;971;0;113;86;0;0;2;27;97.9;89.6;100.0;91.9
-1222;CARMEN HERTZ CÁDIZ;PS;Partido Socialista;Femenino;95;93;2;0;0;2;0;1084;993;0;91;73;0;0;2;18;97.9;91.6;100.0;93.2
-1060;Lautaro Carmona Soto;RN;Renovación Nacional;Masculino;95;93;2;0;0;2;0;1084;999;0;85;79;0;0;2;6;97.9;92.2;100.0;92.7
-1171;JENNY ÁLVAREZ VERA;FA;Frente Amplio;Femenino;95;93;2;0;0;1;1;1084;1004;0;80;72;0;0;1;5;97.9;92.6;98.9;93.0
-1257;FRANCESCA MUÑOZ GONZÁLEZ;UDI;Unión Demócrata Independiente;Femenino;95;93;2;0;0;2;0;1084;1007;0;77;59;0;0;2;18;97.9;92.9;100.0;94.5
-1191;JOSÉ MIGUEL CASTRO BASCUÑÁN;PREP;Partido Republicano;Masculino;95;93;2;0;0;2;0;1084;989;20;75;59;0;0;2;16;97.9;93.0;100.0;94.4
-1227;GIORGIO JACKSON DRAGO;RN;Renovación Nacional;Masculino;95;93;2;0;0;2;0;1084;1011;0;73;63;0;0;2;10;97.9;93.3;100.0;94.1
-1263;EMILIA NUYADO ANCAPICHÚN;IND;Independientes;Femenino;95;93;2;0;1;1;0;1084;1025;0;59;24;0;22;2;35;97.9;94.6;100.0;97.7
+1107;María Francisca Bello Campos;FA;Frente Amplio;Femenino;95;2;93;93;0;0;0;1084;0;0;1084;2;1082;0;93;1082;2.1;0.0;;
+1148;Javiera Morales Alvarado;FA;Frente Amplio;Femenino;95;6;89;89;0;0;0;1084;102;0;982;4;978;0;89;978;6.3;9.4;;96.2
+1153;Coca Ericka Ñanco Vásquez;FA;Frente Amplio;Femenino;95;33;62;61;0;0;1;1084;281;0;803;30;770;0;61;770;34.7;25.9;97.1;89.5
+1192;Lilian Betancurt Delgado;PDG;Partido de la Gente;Femenino;95;53;42;40;0;0;2;1084;667;0;417;66;333;0;40;333;55.8;61.5;96.4;88.8
+1021;Andrés Celis Montt;RN;Renovación Nacional;Masculino;95;60;35;29;0;4;2;1084;529;0;555;27;491;0;33;516;63.2;48.8;96.8;93.1
+1157;Marlene Pérez Cartes;IND;Independientes;Femenino;95;68;27;11;0;6;10;1084;574;0;510;109;100;0;17;231;71.6;53.0;87.2;67.3
+1012;Boris Barrera Moreno;PC;Partido Comunista;Masculino;95;68;27;6;0;19;2;1084;604;0;480;21;233;0;21;414;71.6;55.7;91.9;90.1
+1117;Nathalie Castillo Rojas;PC;Partido Comunista;Femenino;95;72;23;13;0;5;5;1084;794;0;290;70;85;0;18;123;75.8;73.2;93.5;82.6
+1015;Jorge Brito Hasbún;FA;Frente Amplio;Masculino;95;75;20;15;4;1;0;1084;858;0;226;58;134;26;20;168;78.9;79.2;100.0;93.7
+1152;Gloria Naveillan Arriagada;PNL;Partido Nacional Libertario;Femenino;95;76;19;7;0;10;2;1084;768;0;316;186;37;0;17;100;80.0;70.8;97.4;78.0
+1074;Marisela Santibáñez Novoa;IND;Independientes;Femenino;91;76;15;4;0;9;2;1084;732;0;352;210;33;0;10;90;83.5;67.5;93.8;73.6
+1236;Paula Olmos Contreras;PDG;Partido de la Gente;Femenino;95;81;14;4;2;8;0;1084;882;0;202;82;49;12;14;120;85.3;81.4;100.0;91.5
+1009;Jorge Alessandri Vergara;UDI;Unión Demócrata Independiente;Masculino;95;82;13;0;6;7;0;1084;609;0;475;292;0;77;9;156;86.3;56.2;95.3;65.6
+1039;Pamela Jiles Moreno;PDG;Partido de la Gente;Femenino;95;83;12;7;5;0;0;1084;598;0;486;155;237;94;12;331;87.4;55.2;100.0;79.4
+1025;Catalina Del Real Mihovilovic;PREP;Partido Republicano;Femenino;95;83;12;0;0;11;1;1084;866;0;218;97;0;0;7;57;87.4;79.9;94.3;84.3
+1100;Cristián Araya Lerdo de Tejada;PREP;Partido Republicano;Masculino;95;84;11;0;7;3;1;1084;906;0;178;52;0;98;10;125;88.4;83.6;98.8;94.5
+1128;Ana María Gazmuri Vieira;PAH;Partido Acción Humanista;Femenino;95;84;11;0;0;11;0;1084;936;0;148;49;0;0;4;36;88.4;86.3;92.3;89.3
+1240;Zandra Parisi Fernández;PDG;Partido de la Gente;Femenino;95;85;10;0;0;10;0;1084;866;0;218;91;0;0;7;79;89.5;79.9;96.6;86.2
+1102;Roberto Arroyo Muñoz;IND;Independientes;Masculino;95;85;10;7;0;3;0;1084;872;0;212;111;53;0;7;53;89.5;80.4;96.6;84.6
+1212;Erich Grohs Marín;PNL;Partido Nacional Libertario;Masculino;95;85;10;2;0;8;0;1084;892;0;192;103;24;0;10;89;89.5;82.3;100.0;89.6
+1172;Stephan Schubert Rubio;PREP;Partido Republicano;Masculino;95;85;10;0;9;0;1;1084;945;1;138;51;0;78;9;78;89.5;87.3;98.8;94.0
+872;Jaime Mulet Martínez;FRVS;Federación Regionalista Verde Social;Masculino;95;86;9;0;0;8;1;1084;744;0;340;291;0;0;8;46;90.5;68.6;98.9;71.7
+1077;Raúl Soto Mardones;PPD;Partido Por la Democracia;Masculino;95;86;9;0;4;5;0;1084;745;0;339;217;0;26;5;88;90.5;68.7;95.6;74.8
+1140;Daniel Lilayu Vivanco;UDI;Unión Demócrata Independiente;Masculino;95;86;9;0;0;9;0;1084;846;0;238;101;0;0;9;137;90.5;78.0;100.0;89.3
+1175;Cristián Tapia Ramos;IND;Independientes;Masculino;95;86;9;0;1;6;2;1084;867;0;217;127;0;15;7;82;90.5;80.0;97.7;86.5
+1176;Hotuiti Teao Drago;IND;Independientes;Masculino;95;86;9;0;0;8;1;1084;898;0;186;96;0;0;8;81;90.5;82.8;98.9;89.5
+1065;Guillermo Ramírez Diez;UDI;Unión Demócrata Independiente;Masculino;95;87;8;0;0;8;0;1084;712;0;372;291;0;0;0;0;91.6;65.7;91.6;65.7
+1086;Gonzalo Winter Etcheberry;FA;Frente Amplio;Masculino;95;87;8;0;5;2;1;1084;744;0;340;94;0;53;5;53;91.6;68.6;96.7;72.2
+1234;Mario Olavarría Rodríguez;UDI;Unión Demócrata Independiente;Masculino;95;87;8;0;0;3;5;1084;840;0;244;160;0;0;0;0;91.6;77.5;91.6;77.5
+1131;Mauro González Villarroel;RN;Renovación Nacional;Masculino;95;87;8;0;2;6;0;1084;837;20;227;161;0;16;5;33;91.6;78.7;96.7;81.2
+1183;Flor Weisse Novoa;UDI;Unión Demócrata Independiente;Femenino;95;87;8;0;8;0;0;1084;893;0;191;143;0;48;8;48;91.6;82.4;100.0;86.2
+1142;Daniel Manouchehri Lobos;PS;Partido Socialista;Masculino;95;87;8;0;0;8;0;1084;923;0;161;116;0;0;0;0;91.6;85.1;91.6;85.1
+1216;Stephanie Jéldrez Ortiz;PREP;Partido Republicano;Femenino;95;87;8;3;0;4;1;1084;957;0;127;74;38;0;7;50;91.6;88.3;98.9;92.6
+1211;Sofía González Cortés;PC;Partido Comunista;Femenino;95;87;8;0;4;3;1;1084;1020;0;64;6;0;26;7;50;91.6;94.1;98.9;98.6
+1116;Felipe Camaño Cárdenas;IND;Independientes;Masculino;95;88;7;4;0;2;1;1084;877;0;207;134;41;0;6;53;92.6;80.9;98.9;85.1
+1143;Cristóbal Martínez Ramírez;UDI;Unión Demócrata Independiente;Masculino;95;88;7;0;0;7;0;1084;944;0;140;96;0;0;1;9;92.6;87.1;93.6;87.8
+1087;Gael Yeomans Araya;FA;Frente Amplio;Femenino;95;88;7;1;2;3;1;1084;955;0;129;85;4;13;6;42;92.6;88.1;98.9;91.7
+1250;Bernardo Salinas Maya;IND;Independientes;Masculino;95;88;7;3;0;4;0;1084;966;0;118;21;48;0;7;97;92.6;89.1;100.0;97.9
+986;Marcela Hernando Pérez;PR;Partido Radical de Chile;Femenino;95;88;7;0;0;7;0;1084;971;0;113;50;0;0;0;0;92.6;89.6;92.6;89.6
+1165;Agustín Romero Leiva;PREP;Partido Republicano;Masculino;95;88;7;0;0;7;0;1084;974;0;110;72;0;0;3;12;92.6;89.9;95.7;90.9
+1248;Felipe Ross Correa;PREP;Partido Republicano;Masculino;95;88;7;0;0;6;1;1084;991;0;93;38;0;0;2;12;92.6;91.4;94.6;92.4
+1108;Juan Carlos Beltrán Silva;RN;Renovación Nacional;Masculino;95;88;7;1;0;5;1;1084;998;0;86;46;2;0;6;39;92.6;92.1;98.9;95.5
+1044;Raúl Leiva Carvajal;PS;Partido Socialista;Masculino;95;89;6;0;2;3;1;1084;681;0;403;330;0;24;2;24;93.7;62.8;95.7;64.2
+1038;Marcos Ilabaca Cerda;PS;Partido Socialista;Masculino;95;89;6;0;5;1;0;1084;880;0;204;137;0;53;5;53;93.7;81.2;98.9;85.4
+1105;Héctor Barría Angulo;DC;Partido Demócrata Cristiano;Masculino;95;89;6;0;0;5;1;1084;914;0;170;110;0;0;5;52;93.7;84.3;98.9;88.6
+1251;Macarena Santelices Cañas;IND;Independientes;Femenino;95;89;6;0;0;6;0;1084;935;0;149;102;0;0;6;47;93.7;86.3;100.0;90.2
+1180;Consuelo Veloso Ávila;FA;Frente Amplio;Femenino;95;89;6;0;0;4;2;1084;938;0;146;105;0;0;4;32;93.7;86.5;97.8;89.2
+1189;Jaime Bassa Mercado;FA;Frente Amplio;Masculino;95;89;6;4;0;1;1;1084;982;0;102;60;30;0;5;37;93.7;90.6;98.9;93.8
+1099;Jaime Araya Guerrero;IND;Independientes;Masculino;95;90;5;0;0;1;4;1084;716;0;368;318;0;0;1;9;94.7;66.1;95.7;66.6
+1062;Joanna Pérez Olea;DEM;Partido Demócratas Chile;Femenino;95;90;5;0;1;2;2;1084;734;0;350;304;0;15;3;29;94.7;67.7;97.8;69.6
+1207;Valentina Cáceres Monsálvez;IND;Independientes;Femenino;95;90;5;0;0;4;1;1084;813;0;271;238;0;0;4;32;94.7;75.0;98.9;77.3
+815;Sergio Bobadilla Muñoz;UDI;Unión Demócrata Independiente;Masculino;95;90;5;0;5;0;0;1084;881;0;203;109;0;94;5;94;94.7;81.3;100.0;89.0
+1220;Leandro Kunstmann Collado;PREP;Partido Republicano;Masculino;95;90;5;3;0;2;0;1084;909;0;175;46;111;0;5;129;94.7;83.9;100.0;95.2
+1075;Diego Schalper Sepúlveda;RN;Renovación Nacional;Masculino;95;90;5;0;0;4;1;1084;916;0;168;132;0;0;1;3;94.7;84.5;95.7;84.7
+1061;Andrea Parra Sauterel;PPD;Partido Por la Democracia;Femenino;95;90;5;0;3;2;0;1084;924;0;160;66;0;76;5;94;94.7;85.2;100.0;93.3
+1219;Tomás Kast Sommerhoff;EVOP;Evolución Política;Masculino;95;90;5;0;0;5;0;1084;924;7;153;113;0;0;5;40;94.7;85.8;100.0;89.1
+1221;Benjamín Lorca Inzunza;PREP;Partido Republicano;Masculino;95;90;5;0;0;5;0;1084;967;0;117;62;0;0;5;55;94.7;89.2;100.0;94.0
+1127;Lorena Fries Monleón;FA;Frente Amplio;Femenino;95;90;5;0;0;5;0;1084;976;0;108;62;0;0;1;5;94.7;90.0;95.7;90.5
+1254;Ignacio Urcullú Clèment-Lund;PREP;Partido Republicano;Masculino;95;90;5;0;4;1;0;1084;1004;0;80;27;0;26;5;53;94.7;92.6;100.0;97.4
+1082;Cristóbal Urruticoechea Ríos;PNL;Partido Nacional Libertario;Masculino;95;91;4;0;0;3;1;1084;734;0;350;332;0;0;3;15;95.8;67.7;98.9;68.7
+1178;Héctor Ulloa Aguilera;IND;Independientes;Masculino;95;91;4;0;0;4;0;1084;808;0;276;251;0;0;4;25;95.8;74.5;100.0;76.3
+1181;Nelson Venegas Salazar;PS;Partido Socialista;Masculino;95;91;4;0;0;3;1;1084;860;0;224;188;0;0;3;33;95.8;79.3;98.9;81.8
+1073;Juan Santana Castillo;PS;Partido Socialista;Masculino;95;91;4;0;0;1;3;1084;895;0;189;158;0;0;1;9;95.8;82.6;96.8;83.3
+1261;Daniel Valenzuela Salazar;IND;Independientes;Masculino;95;91;4;1;2;1;0;1084;932;0;152;104;15;27;4;48;95.8;86.0;100.0;90.0
+1217;Pier Karlezi Hazleby;PNL;Partido Nacional Libertario;Masculino;95;91;4;0;0;4;0;1084;939;0;145;103;0;0;0;0;95.8;86.6;95.8;86.6
+1114;Félix Bugueño Sotelo;FA;Frente Amplio;Masculino;95;91;4;0;0;3;1;1084;947;0;137;108;0;0;3;26;95.8;87.4;98.9;89.5
+1146;José Carlos Meza Pereira;PREP;Partido Republicano;Masculino;95;91;4;4;0;0;0;1084;959;0;125;94;31;0;4;31;95.8;88.5;100.0;91.1
+1256;Tatiana Urrutia Herrera;FA;Frente Amplio;Femenino;95;91;4;0;0;4;0;1084;972;0;112;71;0;0;4;41;95.8;89.7;100.0;93.2
+1241;Patricio Pinilla Valencia;DC;Partido Demócrata Cristiano;Masculino;95;91;4;0;1;3;0;1084;973;0;111;80;0;5;4;31;95.8;89.8;100.0;92.4
+1264;Fernando Zamorano Peralta;PPD;Partido Por la Democracia;Masculino;95;91;4;0;0;4;0;1084;982;0;102;72;0;0;4;30;95.8;90.6;100.0;93.2
+843;René Manuel García García;RN;Renovación Nacional;Masculino;95;91;4;0;4;0;0;1084;981;2;101;79;0;22;4;22;95.8;90.7;100.0;92.5
+1244;Claudia Reyes Larenas;PREP;Partido Republicano;Femenino;95;91;4;4;0;0;0;1084;1002;0;82;41;41;0;4;41;95.8;92.4;100.0;96.1
+1252;Constanza Schonhaut Soto;FA;Frente Amplio;Femenino;95;91;4;3;0;1;0;1084;1002;0;82;40;38;0;3;38;95.8;92.4;98.9;95.8
+1238;Álvaro Ortiz Vera;DC;Partido Demócrata Cristiano;Masculino;95;91;4;0;4;0;0;1084;1025;0;59;25;0;34;4;34;95.8;94.6;100.0;97.6
+1245;Alejandro Riquelme Ducci;PREP;Partido Republicano;Masculino;95;91;4;0;2;1;1;1084;1025;0;59;19;0;27;3;31;95.8;94.6;98.9;97.3
+1205;Carlos Cuadrado Prats;PPD;Partido Por la Democracia;Masculino;95;92;3;0;3;0;0;1084;885;0;199;159;0;40;3;40;96.8;81.6;100.0;84.8
+1225;Cristian Menchaca Pinochet;IND;Independientes;Masculino;95;92;3;3;0;0;0;1084;961;0;123;95;28;0;3;28;96.8;88.7;100.0;91.0
+1239;Fabián Ossandón Briceño;PDG;Partido de la Gente;Masculino;95;92;3;0;0;3;0;1084;980;0;104;72;0;0;3;32;96.8;90.4;100.0;93.2
+1104;Chiara Barchiesi Chávez;PREP;Partido Republicano;Femenino;95;92;3;0;0;3;0;1084;983;0;101;69;0;0;3;32;96.8;90.7;100.0;93.4
+1259;Juan Marcelo Valenzuela Henríquez;PDG;Partido de la Gente;Masculino;95;92;3;0;2;1;0;1084;987;0;97;75;0;17;2;17;96.8;91.1;98.9;92.5
+1226;José Montalva Feuerhake;IND;Independientes;Masculino;95;92;3;0;0;3;0;1084;996;0;88;78;0;0;0;0;96.8;91.9;96.8;91.9
+1243;Tamara Ramírez Ramírez;PDG;Partido de la Gente;Femenino;95;92;3;3;0;0;0;1084;1010;0;74;64;10;0;3;10;96.8;93.2;100.0;94.0
+1150;Benjamín Moreno Bascur;PREP;Partido Republicano;Masculino;95;92;3;0;1;2;0;1084;1020;0;64;32;0;14;3;32;96.8;94.1;100.0;97.0
+803;René Alinco Bustos;IND;Independientes;Masculino;95;93;2;0;0;2;0;1084;814;0;270;252;0;0;2;18;97.9;75.1;100.0;76.4
+1054;Francesca Muñoz González;PCCH;Partido Cristiano de Chile;Femenino;95;93;2;0;0;2;0;1084;847;0;237;220;0;0;2;17;97.9;78.1;100.0;79.4
+1110;Carlos Bianchi Chelech;IND;Independientes;Masculino;95;93;2;0;0;2;0;1084;895;0;189;178;0;0;2;11;97.9;82.6;100.0;83.4
+1159;Lorena Pizarro Sierra;PC;Partido Comunista;Femenino;95;93;2;0;0;1;1;1084;948;0;136;128;0;0;1;5;97.9;87.5;98.9;87.9
+1223;Hans Marowski Cuevas;PNL;Partido Nacional Libertario;Masculino;95;93;2;0;1;0;1;1084;967;0;117;90;0;22;1;22;97.9;89.2;98.9;91.1
+1208;Jorge Díaz Ibarra;DC;Partido Demócrata Cristiano;Masculino;95;93;2;0;0;2;0;1084;971;0;113;86;0;0;2;27;97.9;89.6;100.0;91.9
+1222;Andrea Macías Palma;PS;Partido Socialista;Femenino;95;93;2;0;0;2;0;1084;993;0;91;73;0;0;2;18;97.9;91.6;100.0;93.2
+1060;Luis Pardo Sáinz;RN;Renovación Nacional;Masculino;95;93;2;0;0;2;0;1084;999;0;85;79;0;0;2;6;97.9;92.2;100.0;92.7
+1171;Emilia Schneider Videla;FA;Frente Amplio;Femenino;95;93;2;0;0;1;1;1084;1004;0;80;72;0;0;1;5;97.9;92.6;98.9;93.0
+1257;Alejandra Valdebenito Torres;UDI;Unión Demócrata Independiente;Femenino;95;93;2;0;0;2;0;1084;1007;0;77;59;0;0;2;18;97.9;92.9;100.0;94.5
+1191;Valentina Becerra Peña;PREP;Partido Republicano;Femenino;95;93;2;0;0;2;0;1084;989;20;75;59;0;0;2;16;97.9;93.0;100.0;94.4
+1227;Claudia Mora Vega;RN;Renovación Nacional;Femenino;95;93;2;0;0;2;0;1084;1011;0;73;63;0;0;2;10;97.9;93.3;100.0;94.1
+1263;Sebastián Zamora Soto;IND;Independientes;Masculino;95;93;2;0;1;1;0;1084;1025;0;59;24;0;22;2;35;97.9;94.6;100.0;97.7
 915;Germán Verdugo Soto;PNL;Partido Nacional Libertario;Masculino;95;93;2;0;0;1;1;1084;1043;0;41;19;0;0;1;22;97.9;96.2;98.9;98.2
-1242;KARIN LUCK URBAN;IND;Independientes;Femenino;95;93;2;0;2;0;0;1084;1050;0;34;30;0;4;2;4;97.9;96.9;100.0;97.2
-1200;CATALINA DEL REAL MIHOVILOVIC;PDG;Partido de la Gente;Femenino;95;93;2;0;0;0;2;1084;1061;0;23;14;0;0;0;0;97.9;97.9;97.9;97.9
-1017;Joaquín Godoy Ibáñez;PREP;Partido Republicano;Masculino;95;94;1;0;1;0;0;1084;857;8;219;197;0;22;1;22;98.9;79.6;100.0;81.3
-1141;David Sandoval Plaza;PL;Partido Liberal de Chile;Masculino;95;94;1;0;0;1;0;1084;925;0;159;145;0;0;1;14;98.9;85.3;100.0;86.4
-1028;Enrique Jaramillo Becker;RN;Renovación Nacional;Masculino;95;94;1;0;0;1;0;1084;929;0;155;153;0;0;1;2;98.9;85.7;100.0;85.9
-1249;FERNANDO MEZA MONCADA;IND;Independientes;Masculino;95;94;1;0;0;1;0;1084;934;0;150;145;0;0;1;5;98.9;86.2;100.0;86.6
-1132;RICARDO ENRIQUE RINCON GONZALEZ;EVOP;Evolución Política;Masculino;95;94;1;0;0;0;1;1084;943;0;141;134;0;0;0;0;98.9;87.0;98.9;87.0
-1174;GABRIEL ASCENCIO MANSILLA;UDI;Unión Demócrata Independiente;Masculino;95;94;1;0;0;1;0;1084;951;0;133;124;0;0;1;9;98.9;87.7;100.0;88.5
-1246;PATRICIO MELERO ABAROA;PS;Partido Socialista;Masculino;95;94;1;0;0;1;0;1084;968;0;116;116;0;0;1;0;98.9;89.3;100.0;89.3
-1133;GASPAR RIVAS SÁNCHEZ;PREP;Partido Republicano;Masculino;95;94;1;0;0;1;0;1084;980;0;104;101;0;0;1;3;98.9;90.4;100.0;90.7
-1214;RENÉ MANUEL GARCÍA GARCÍA;UDI;Unión Demócrata Independiente;Masculino;95;94;1;0;0;1;0;1084;993;0;91;87;0;0;1;4;98.9;91.6;100.0;91.9
-1182;KARIM BIANCHI RETAMALES;IND;Independientes;Masculino;95;94;1;0;0;0;1;1084;998;0;86;72;0;0;0;0;98.9;92.1;98.9;92.1
-1059;KAROL CARIOLA OLIVA;RN;Renovación Nacional;Femenino;95;94;1;0;0;1;0;1084;1006;7;71;69;0;0;1;2;98.9;93.4;100.0;93.6
-1170;SEBASTIÁN ÁLVAREZ RAMÍREZ;PREP;Partido Republicano;Masculino;95;94;1;0;1;0;0;1084;1016;0;68;46;0;22;1;22;98.9;93.7;100.0;95.7
-1203;JORGE DURÁN ESPINOZA;PREP;Partido Republicano;Masculino;95;94;1;0;0;1;0;1084;1016;0;68;65;0;0;1;3;98.9;93.7;100.0;94.0
-1232;PABLO KAST SOMMERHOFF;PREP;Partido Republicano;Masculino;95;94;1;0;0;0;1;1084;1023;0;61;52;0;0;0;0;98.9;94.4;98.9;94.4
-1258;JAIME NARANJO ORTIZ;PDG;Partido de la Gente;Masculino;95;94;1;0;0;0;1;1084;1036;0;48;39;0;0;0;0;98.9;95.6;98.9;95.6
-1195;DANIELLA CICARDINI MILLA;IND;Independientes;Femenino;95;94;1;0;0;0;1;1084;1038;0;46;41;0;0;0;0;98.9;95.8;98.9;95.8
-1262;PAULINA NÚÑEZ URRUTIA;PREP;Partido Republicano;Femenino;95;94;1;0;0;1;0;1084;1045;0;39;31;0;0;1;8;98.9;96.4;100.0;97.1
-1173;SANDRA AMAR MANCILLA;PC;Partido Comunista;Femenino;95;94;1;0;0;1;0;1084;1066;0;18;17;0;0;1;1;98.9;98.3;100.0;98.4
-1255;CRISTHIAN MOREIRA BARROS;PDG;Partido de la Gente;Masculino;95;94;1;0;0;1;0;1084;1070;0;14;9;0;0;1;5;98.9;98.7;100.0;99.2
-1013;Ramón Farías Ponce;PL;Partido Liberal de Chile;Masculino;95;95;0;0;0;0;0;1084;921;0;163;163;0;0;0;0;100.0;85.0;100.0;85.0
-1235;CARLOS KUSCHEL SILVA;PDG;Partido de la Gente;Masculino;95;95;0;0;0;0;0;1084;960;0;124;124;0;0;0;0;100.0;88.6;100.0;88.6
-1166;Miguel Ángel Alvarado Ramírez;IND;Independientes;Masculino;95;95;0;0;0;0;0;1084;962;0;122;122;0;0;0;0;100.0;88.7;100.0;88.7
-1194;ANDRÉS CELIS MONTT;PREP;Partido Republicano;Masculino;95;95;0;0;0;0;0;1084;966;0;118;118;0;0;0;0;100.0;89.1;100.0;89.1
-1237;JOAQUÍN LAVÍN LEÓN;RN;Renovación Nacional;Masculino;95;95;0;0;0;0;0;1084;972;0;112;112;0;0;0;0;100.0;89.7;100.0;89.7
-1177;BORIS BARRERA MORENO;FA;Frente Amplio;Masculino;95;95;0;0;0;0;0;1084;997;0;87;87;0;0;0;0;100.0;92.0;100.0;92.0
-1119;Marco Antonio Núñez Lozano;PCCH;Partido Cristiano de Chile;Masculino;95;95;0;0;0;0;0;1084;1004;0;80;80;0;0;0;0;100.0;92.6;100.0;92.6
-1233;SEBASTIÁN KEITEL BIANCHI;UDI;Unión Demócrata Independiente;Masculino;95;95;0;0;0;0;0;1084;1011;0;73;73;0;0;0;0;100.0;93.3;100.0;93.3
-1202;MARCELO DÍAZ DÍAZ;UDI;Unión Demócrata Independiente;Masculino;95;95;0;0;0;0;0;1084;1012;0;72;72;0;0;0;0;100.0;93.4;100.0;93.4
-1230;TUCAPEL JIMÉNEZ FUENTES;PDG;Partido de la Gente;Masculino;95;95;0;0;0;0;0;1084;1019;0;65;65;0;0;0;0;100.0;94.0;100.0;94.0
-1206;FIDEL ESPINOZA SANDOVAL;IND;Independientes;Masculino;95;95;0;0;0;0;0;1084;1027;0;57;57;0;0;0;0;100.0;94.7;100.0;94.7
-1198;MIGUEL CRISPI SERRANO;PREP;Partido Republicano;Masculino;95;95;0;0;0;0;0;1084;1029;0;55;55;0;0;0;0;100.0;94.9;100.0;94.9
-1229;PAMELA JILES MORENO;DC;Partido Demócrata Cristiano;Femenino;95;95;0;0;0;0;0;1084;1018;11;55;55;0;0;0;0;100.0;94.9;100.0;94.9
-1199;LUCIANO CRUZ-COKE CARVALLO;UDI;Unión Demócrata Independiente;Masculino;95;95;0;0;0;0;0;1084;1030;0;54;54;0;0;0;0;100.0;95.0;100.0;95.0
-1210;JUAN FUENZALIDA COBO;IND;Independientes;Masculino;95;95;0;0;0;0;0;1084;1033;0;51;51;0;0;0;0;100.0;95.3;100.0;95.3
-1228;CARLOS ABEL JARPA WEVAR;PNL;Partido Nacional Libertario;Masculino;95;95;0;0;0;0;0;1084;1033;0;51;51;0;0;0;0;100.0;95.3;100.0;95.3
-1260;IVÁN NORAMBUENA FARÍAS;PS;Partido Socialista;Masculino;95;95;0;0;0;0;0;1084;1033;0;51;51;0;0;0;0;100.0;95.3;100.0;95.3
-1122;JOSÉ MIGUEL ORTIZ NOVOA;PC;Partido Comunista;Masculino;95;95;0;0;0;0;0;1084;1034;0;50;50;0;0;0;0;100.0;95.4;100.0;95.4
-1056;GABRIEL BORIC FONT;PS;Partido Socialista;Masculino;95;95;0;0;0;0;0;1084;1037;0;47;47;0;0;0;0;100.0;95.7;100.0;95.7
-1187;KAROL CARIOLA OLIVA;PREP;Partido Republicano;Femenino;95;95;0;0;0;0;0;1084;1037;0;47;47;0;0;0;0;100.0;95.7;100.0;95.7
-1190;NATALIA CASTILLO MUÑOZ;IND;Independientes;Femenino;95;95;0;0;0;0;0;1084;1038;0;46;46;0;0;0;0;100.0;95.8;100.0;95.8
-1186;MIGUEL ÁNGEL CALISTO ÁGUILA;FA;Frente Amplio;Masculino;95;95;0;0;0;0;0;1084;1040;0;44;44;0;0;0;0;100.0;95.9;100.0;95.9
-1215;RENATO GARÍN GONZÁLEZ;PNL;Partido Nacional Libertario;Masculino;95;95;0;0;0;0;0;1084;1040;0;44;44;0;0;0;0;100.0;95.9;100.0;95.9
-1224;MARÍA JOSÉ HOFFMANN OPAZO;DC;Partido Demócrata Cristiano;Femenino;95;95;0;0;0;0;0;1084;1042;0;42;42;0;0;0;0;100.0;96.1;100.0;96.1
-1184;GABRIEL BORIC FONT;IND;Independientes;Masculino;95;95;0;0;0;0;0;1084;1043;0;41;41;0;0;0;0;100.0;96.2;100.0;96.2
-1196;SOFÍA CID VERSALOVIC;DC;Partido Demócrata Cristiano;Femenino;95;95;0;0;0;0;0;1084;1046;1;37;37;0;0;0;0;100.0;96.6;100.0;96.6
-1204;EDUARDO DURÁN SALINAS;PS;Partido Socialista;Masculino;95;95;0;0;0;0;0;1084;1047;0;37;37;0;0;0;0;100.0;96.6;100.0;96.6
-1197;JUAN ANTONIO COLOMA ÁLAMOS;RN;Renovación Nacional;Masculino;95;95;0;0;0;0;0;1084;1049;0;35;35;0;0;0;0;100.0;96.8;100.0;96.8
-1201;MARIO DESBORDES JIMÉNEZ;PDG;Partido de la Gente;Masculino;95;95;0;0;0;0;0;1084;1055;0;29;29;0;0;0;0;100.0;97.3;100.0;97.3
-1247;COSME MELLADO PINO;PREP;Partido Republicano;Masculino;95;95;0;0;0;0;0;1084;1057;0;27;27;0;0;0;0;100.0;97.5;100.0;97.5
-1231;HARRY JÜRGENSEN RUNDSHAGEN;IND;Independientes;Masculino;95;95;0;0;0;0;0;1084;1059;0;25;25;0;0;0;0;100.0;97.7;100.0;97.7
-1213;RAMÓN GALLEGUILLOS CASTILLO;PC;Partido Comunista;Masculino;95;95;0;0;0;0;0;1084;1060;0;24;24;0;0;0;0;100.0;97.8;100.0;97.8
-1209;CAMILA FLORES OPORTO;FA;Frente Amplio;Femenino;95;95;0;0;0;0;0;1084;1062;0;22;22;0;0;0;0;100.0;98.0;100.0;98.0
-1193;RICARDO CELIS ARAYA;PDG;Partido de la Gente;Masculino;95;95;0;0;0;0;0;1084;1063;0;21;21;0;0;0;0;100.0;98.1;100.0;98.1
-1253;MANUEL MONSALVE BENAVIDES;PREP;Partido Republicano;Masculino;95;95;0;0;0;0;0;1084;1066;0;18;18;0;0;0;0;100.0;98.3;100.0;98.3
-1218;RODRIGO GONZÁLEZ TORRES;PREP;Partido Republicano;Masculino;95;95;0;0;0;0;0;1084;1071;0;13;13;0;0;0;0;100.0;98.8;100.0;98.8
-1188;ÁLVARO CARTER FERNÁNDEZ;PC;Partido Comunista;Masculino;95;95;0;0;0;0;0;1084;1076;0;8;8;0;0;0;0;100.0;99.3;100.0;99.3
+1242;Rodrigo Ramírez Parra;IND;Independientes;Masculino;95;93;2;0;2;0;0;1084;1050;0;34;30;0;4;2;4;97.9;96.9;100.0;97.2
+1200;Cristian Contreras Radovic;PDG;Partido de la Gente;Masculino;95;93;2;0;0;0;2;1084;1061;0;23;14;0;0;0;0;97.9;97.9;97.9;97.9
+1017;Álvaro Carter Fernández;PREP;Partido Republicano;Masculino;95;94;1;0;1;0;0;1084;857;8;219;197;0;22;1;22;98.9;79.6;100.0;81.3
+1141;Luis Malla Valenzuela;PL;Partido Liberal de Chile;Masculino;95;94;1;0;0;1;0;1084;925;0;159;145;0;0;1;14;98.9;85.3;100.0;86.4
+1028;Eduardo Durán Salinas;RN;Renovación Nacional;Masculino;95;94;1;0;0;1;0;1084;929;0;155;153;0;0;1;2;98.9;85.7;100.0;85.9
+1249;Omar Sabat Guzmán;IND;Independientes;Masculino;95;94;1;0;0;1;0;1084;934;0;150;145;0;0;1;5;98.9;86.2;100.0;86.6
+1132;Jorge Guzmán Zepeda;EVOP;Evolución Política;Masculino;95;94;1;0;0;0;1;1084;943;0;141;134;0;0;0;0;98.9;87.0;98.9;87.0
+1174;Marco Antonio Sulantay Olivares;UDI;Unión Demócrata Independiente;Masculino;95;94;1;0;0;1;0;1084;951;0;133;124;0;0;1;9;98.9;87.7;100.0;88.5
+1246;José Antonio Rivas Villalobos;PS;Partido Socialista;Masculino;95;94;1;0;0;1;0;1084;968;0;116;116;0;0;1;0;98.9;89.3;100.0;89.3
+1133;Juan Irarrázaval Rossel;PREP;Partido Republicano;Masculino;95;94;1;0;0;1;0;1084;980;0;104;101;0;0;1;3;98.9;90.4;100.0;90.7
+1214;Constanza Hube Portus;UDI;Unión Demócrata Independiente;Femenino;95;94;1;0;0;1;0;1084;993;0;91;87;0;0;1;4;98.9;91.6;100.0;91.9
+1182;Sebastián Videla Castillo;IND;Independientes;Masculino;95;94;1;0;0;0;1;1084;998;0;86;72;0;0;0;0;98.9;92.1;98.9;92.1
+1059;Ximena Ossandón Irarrázabal;RN;Renovación Nacional;Femenino;95;94;1;0;0;1;0;1084;1006;7;71;69;0;0;1;2;98.9;93.4;100.0;93.6
+1170;Luis Sánchez Ossa;PREP;Partido Republicano;Masculino;95;94;1;0;1;0;0;1084;1016;0;68;46;0;22;1;22;98.9;93.7;100.0;95.7
+1203;Sebastián Cristoffanini Jaraquemada;PREP;Partido Republicano;Masculino;95;94;1;0;0;1;0;1084;1016;0;68;65;0;0;1;3;98.9;93.7;100.0;94.0
+1232;Cristian Neira Martínez;PREP;Partido Republicano;Masculino;95;94;1;0;0;0;1;1084;1023;0;61;52;0;0;0;0;98.9;94.4;98.9;94.4
+1258;Guillermo Valdés Carmona;PDG;Partido de la Gente;Masculino;95;94;1;0;0;0;1;1084;1036;0;48;39;0;0;0;0;98.9;95.6;98.9;95.6
+1195;Carlos Carvajal Gallardo;IND;Independientes;Masculino;95;94;1;0;0;0;1;1084;1038;0;46;41;0;0;0;0;98.9;95.8;98.9;95.8
+1262;Diego Vergara Rodríguez;PREP;Partido Republicano;Masculino;95;94;1;0;0;1;0;1084;1045;0;39;31;0;0;1;8;98.9;96.4;100.0;97.1
+1173;Daniela Serrano Salazar;PC;Partido Comunista;Femenino;95;94;1;0;0;1;0;1084;1066;0;18;17;0;0;1;1;98.9;98.3;100.0;98.4
+1255;Eileen Urqueta Rojas;PDG;Partido de la Gente;Femenino;95;94;1;0;0;1;0;1084;1070;0;14;9;0;0;1;5;98.9;98.7;100.0;99.2
+1013;Alejandro Bernales Maldonado;PL;Partido Liberal de Chile;Masculino;95;95;0;0;0;0;0;1084;921;0;163;163;0;0;0;0;100.0;85.0;100.0;85.0
+1235;Javier Olivares Avendaño;PDG;Partido de la Gente;Masculino;95;95;0;0;0;0;0;1084;960;0;124;124;0;0;0;0;100.0;88.6;100.0;88.6
+1166;Natalia Romero Talguia;IND;Independientes;Femenino;95;95;0;0;0;0;0;1084;962;0;122;122;0;0;0;0;100.0;88.7;100.0;88.7
+1194;Daniel Bustos Leal;PREP;Partido Republicano;Masculino;95;95;0;0;0;0;0;1084;966;0;118;118;0;0;0;0;100.0;89.1;100.0;89.1
+1237;Francisco Orrego Gutiérrez;RN;Renovación Nacional;Masculino;95;95;0;0;0;0;0;1084;972;0;112;112;0;0;0;0;100.0;89.7;100.0;89.7
+1177;Carolina Tello Rojas;FA;Frente Amplio;Femenino;95;95;0;0;0;0;0;1084;997;0;87;87;0;0;0;0;100.0;92.0;100.0;92.0
+1119;Sara Concha Smith;PCCH;Partido Cristiano de Chile;Femenino;95;95;0;0;0;0;0;1084;1004;0;80;80;0;0;0;0;100.0;92.6;100.0;92.6
+1233;Ricardo Neumann Bertín;UDI;Unión Demócrata Independiente;Masculino;95;95;0;0;0;0;0;1084;1011;0;73;73;0;0;0;0;100.0;93.3;100.0;93.3
+1202;Eduardo Cretton Rebolledo;UDI;Unión Demócrata Independiente;Masculino;95;95;0;0;0;0;0;1084;1012;0;72;72;0;0;0;0;100.0;93.4;100.0;93.4
+1230;Alex Nahuelquin Nahuelquin;PDG;Partido de la Gente;Masculino;95;95;0;0;0;0;0;1084;1019;0;65;65;0;0;0;0;100.0;94.0;100.0;94.0
+1206;Carolina Cucumides Calderón;IND;Independientes;Femenino;95;95;0;0;0;0;0;1084;1027;0;57;57;0;0;0;0;100.0;94.7;100.0;94.7
+1198;Paz Charpentier Rajcevich;PREP;Partido Republicano;Femenino;95;95;0;0;0;0;0;1084;1029;0;55;55;0;0;0;0;100.0;94.9;100.0;94.9
+1229;Javier Muñoz Riquelme;DC;Partido Demócrata Cristiano;Masculino;95;95;0;0;0;0;0;1084;1018;11;55;55;0;0;0;0;100.0;94.9;100.0;94.9
+1199;Jaime Coloma Álamos;UDI;Unión Demócrata Independiente;Masculino;95;95;0;0;0;0;0;1084;1030;0;54;54;0;0;0;0;100.0;95.0;100.0;95.0
+1210;Gustavo Gatica Villarroel;IND;Independientes;Masculino;95;95;0;0;0;0;0;1084;1033;0;51;51;0;0;0;0;100.0;95.3;100.0;95.3
+1228;Paulina Muñoz Minte;PNL;Partido Nacional Libertario;Femenino;95;95;0;0;0;0;0;1084;1033;0;51;51;0;0;0;0;100.0;95.3;100.0;95.3
+1260;César Valenzuela Maass;PS;Partido Socialista;Masculino;95;95;0;0;0;0;0;1084;1033;0;51;51;0;0;0;0;100.0;95.3;100.0;95.3
+1122;Luis Alberto Cuello Peña y Lillo;PC;Partido Comunista;Masculino;95;95;0;0;0;0;0;1084;1034;0;50;50;0;0;0;0;100.0;95.4;100.0;95.4
+1056;Emilia Nuyado Ancapichun;PS;Partido Socialista;Femenino;95;95;0;0;0;0;0;1084;1037;0;47;47;0;0;0;0;100.0;95.7;100.0;95.7
+1187;Carlo Arqueros Pizarro;PREP;Partido Republicano;Masculino;95;95;0;0;0;0;0;1084;1037;0;47;47;0;0;0;0;100.0;95.7;100.0;95.7
+1190;Enrique Bassaletti Riess;IND;Independientes;Masculino;95;95;0;0;0;0;0;1084;1038;0;46;46;0;0;0;0;100.0;95.8;100.0;95.8
+1186;Ignacio Achurra Díaz;FA;Frente Amplio;Masculino;95;95;0;0;0;0;0;1084;1040;0;44;44;0;0;0;0;100.0;95.9;100.0;95.9
+1215;Álvaro Jofré Cáceres;PNL;Partido Nacional Libertario;Masculino;95;95;0;0;0;0;0;1084;1040;0;44;44;0;0;0;0;100.0;95.9;100.0;95.9
+1224;Cristian Mella Andaur;DC;Partido Demócrata Cristiano;Masculino;95;95;0;0;0;0;0;1084;1042;0;42;42;0;0;0;0;100.0;96.1;100.0;96.1
+1184;Roberto Celedón Fernández;IND;Independientes;Masculino;95;95;0;0;0;0;0;1084;1043;0;41;41;0;0;0;0;100.0;96.2;100.0;96.2
+1196;Priscilla Castillo Gerli;DC;Partido Demócrata Cristiano;Femenino;95;95;0;0;0;0;0;1084;1046;1;37;37;0;0;0;0;100.0;96.6;100.0;96.6
+1204;Francisco Crisóstomo Llanos;PS;Partido Socialista;Masculino;95;95;0;0;0;0;0;1084;1047;0;37;37;0;0;0;0;100.0;96.6;100.0;96.6
+1197;Carlos Chandía Alarcón;RN;Renovación Nacional;Masculino;95;95;0;0;0;0;0;1084;1049;0;35;35;0;0;0;0;100.0;96.8;100.0;96.8
+1201;Flor Contreras Vivallo;PDG;Partido de la Gente;Femenino;95;95;0;0;0;0;0;1084;1055;0;29;29;0;0;0;0;100.0;97.3;100.0;97.3
+1247;Javiera Rodríguez Pascual;PREP;Partido Republicano;Femenino;95;95;0;0;0;0;0;1084;1057;0;27;27;0;0;0;0;100.0;97.5;100.0;97.5
+1231;Ximena Naranjo Pinto;IND;Independientes;Femenino;95;95;0;0;0;0;0;1084;1059;0;25;25;0;0;0;0;100.0;97.7;100.0;97.7
+1213;Irací Hassler Jacob;PC;Partido Comunista;Femenino;95;95;0;0;0;0;0;1084;1060;0;24;24;0;0;0;0;100.0;97.8;100.0;97.8
+1209;Matías Fernández Hartwig;FA;Frente Amplio;Masculino;95;95;0;0;0;0;0;1084;1062;0;22;22;0;0;0;0;100.0;98.0;100.0;98.0
+1193;Patricio Briones Moller;PDG;Partido de la Gente;Masculino;95;95;0;0;0;0;0;1084;1063;0;21;21;0;0;0;0;100.0;98.1;100.0;98.1
+1253;Fernando Ugarte Tejeda;PREP;Partido Republicano;Masculino;95;95;0;0;0;0;0;1084;1066;0;18;18;0;0;0;0;100.0;98.3;100.0;98.3
+1218;José Antonio Kast Adriasola;PREP;Partido Republicano;Masculino;95;95;0;0;0;0;0;1084;1071;0;13;13;0;0;0;0;100.0;98.8;100.0;98.8
+1188;Marcos Barraza Gómez;PC;Partido Comunista;Masculino;95;95;0;0;0;0;0;1084;1076;0;8;8;0;0;0;0;100.0;99.3;100.0;99.3

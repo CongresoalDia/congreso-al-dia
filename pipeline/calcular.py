@@ -11,6 +11,9 @@ Uso: python pipeline/calcular.py
 import csv
 import json
 import re
+import sys
+import unicodedata
+import urllib.parse
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from datetime import date, datetime
@@ -59,6 +62,50 @@ def cargar_diputados():
             "sexo": txt(d, "c:Sexo"),
         }
     return diputados
+
+
+MAX_CAMBIOS_NOMBRE = 3  # más cambios de nombre en una actualización no son correcciones: la fuente cruzó los datos
+normal = lambda s: unicodedata.normalize("NFD", s or "").encode("ascii", "ignore").decode().casefold().split()
+
+
+def proteger_identidades(diputados):
+    """El 13-nov-2026 la Cámara entregó, para los mismos Id y militancias, el nombre, la fecha de nacimiento y el sexo de
+    otra persona en 154 de 155 diputados. Si cambian muchos nombres de golpe, se mantienen los ya publicados
+    (data/diputados.json) y se devuelve una alerta; los cambios sueltos (reemplazos, correcciones) se aceptan."""
+    archivo = SALIDA / "diputados.json"
+    if not archivo.exists():
+        return []
+    ref = {str(f["id"]): f for f in json.loads(archivo.read_text(encoding="utf-8"))["diputados"]}
+    cambios = [(i, ref[i]["nombre"], d["nombre"]) for i, d in diputados.items()
+               if i in ref and normal(ref[i]["nombre"]) != normal(d["nombre"])]
+    if len(cambios) <= MAX_CAMBIOS_NOMBRE:
+        for i, antes, ahora in cambios:
+            print(f"Aviso: el diputado {i} cambió de nombre: {antes} -> {ahora}")
+        return []
+    for i in (i for i in diputados if i in ref):  # todos: algunos llegan solo en MAYÚSCULAS
+        diputados[i]["nombre"] = ref[i]["nombre"]
+        diputados[i]["sexo"] = ref[i].get("sexo", diputados[i]["sexo"])
+    ejemplos = "; ".join(f"{i}: {antes} -> {ahora}" for i, antes, ahora in cambios[:3])
+    return [f"La Cámara entregó {len(cambios)} nombres distintos para los mismos diputados ({ejemplos}); "
+            "se mantienen los ya publicados. Revisar la fuente antes de aceptar cambios."]
+
+
+def contrastar_con_bcn(diputados):
+    """Control independiente: la ficha de la BCN de cada foto (web/medios.json) debe tener los apellidos del diputado."""
+    archivo = RAIZ / "web" / "medios.json"
+    if not archivo.exists():
+        return []
+    medios = json.loads(archivo.read_text(encoding="utf-8"))["diputados"]
+    distintos = []
+    for i, d in diputados.items():
+        fuente = (medios.get(i) or {}).get("fuente", "")
+        if "wiki/" in fuente:
+            bcn = " ".join(normal(urllib.parse.unquote(fuente.split("wiki/")[1]).replace("_", " ")))
+            if not any(a in bcn for a in normal(d["nombre"])[-2:]):
+                distintos.append(f"{i}: {d['nombre']}")
+    if len(distintos) <= MAX_CAMBIOS_NOMBRE:
+        return []
+    return [f"{len(distintos)} nombres no calzan con su ficha de la BCN (ej.: {'; '.join(distintos[:3])})."]
 
 
 def nuevo_registro():
@@ -230,6 +277,8 @@ def resumen_unanimidad(votaciones, proyectos):
 
 def main():
     diputados = cargar_diputados()
+    alertas = proteger_identidades(diputados)
+    alertas += contrastar_con_bcn(diputados)
     reg = defaultdict(nuevo_registro)
 
     # --- Asistencia a sala ---
@@ -354,6 +403,10 @@ def main():
     print(json.dumps(resumen, ensure_ascii=False, indent=1))
     print(f"Diputados con datos: {len(filas)} | votaciones sin lista de asistencia (no cuentan aún): {sin_sesion}"
           f" | con detalle inconsistente: {inconsistentes}")
+    if alertas:  # los datos ya quedaron escritos con los nombres protegidos; el código de salida marca la actualización en rojo
+        for a in alertas:
+            print("ALERTA:", a)
+        sys.exit(3)
 
 
 if __name__ == "__main__":

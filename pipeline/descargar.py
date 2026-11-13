@@ -80,6 +80,9 @@ def main() -> None:
             if s.find("c:Estado", NS).get("Valor") == "1":
                 sid = s.findtext("c:Id", namespaces=NS)
                 olvidar_si_reciente(f"asistencia/{sid}.xml", s.findtext("c:FechaInicio", namespaces=NS))
+                guardada = RAW / f"asistencia/{sid}.xml"
+                if guardada.exists() and ET.parse(guardada).getroot().find(".//c:Asistencia", NS) is None:
+                    guardada.unlink()  # se guardó antes de que la Cámara publicara la lista: se vuelve a pedir
                 sesiones.append(sid)
     en_paralelo([(f"asistencia/{s}.xml", f"WSSala.asmx/retornarSesionAsistencia?prmSesionId={s}") for s in sesiones],
                 "Asistencia a sesiones")
