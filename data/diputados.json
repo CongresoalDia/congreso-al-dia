@@ -1,6 +1,6 @@
 {
  "resumen": {
-  "actualizado": "2026-11-19T21:51",
+  "actualizado": "2026-11-20T10:52",
   "periodo": "2026-2030",
   "sesiones": 99,
   "votaciones": 1502,
@@ -5876,8 +5876,8 @@
    "pct_votaciones_ajustado": 64.8,
    "motivos": {
     "Licencia médica (Art. 42)": 7,
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 5,
-    "Impedimento grave (Art. 42)": 5
+    "Impedimento grave (Art. 42)": 5,
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 5
    },
    "periodos": [
     {
@@ -6503,8 +6503,8 @@
    "inasistencias": 17,
    "falta_licencia": 4,
    "falta_trabajo": 0,
-   "falta_justificada": 10,
-   "falta_sin_justificar": 3,
+   "falta_justificada": 9,
+   "falta_sin_justificar": 4,
    "votaciones": 1341,
    "vota": 747,
    "dispensado": 0,
@@ -6521,7 +6521,7 @@
    "motivos": {
     "Impedimento grave (Art. 42)": 7,
     "Licencia médica (Art. 42)": 4,
-    "Permiso especial Comités Parlamentarios": 3
+    "Permiso especial Comités Parlamentarios": 2
    },
    "periodos": [
     {
@@ -7047,8 +7047,8 @@
     {
      "fecha": "2026-11-02",
      "sesion": 4846,
-     "estado": "justificada",
-     "motivo": "Permiso especial Comités Parlamentarios"
+     "estado": "sin_justificar",
+     "motivo": null
     },
     {
      "fecha": "2026-11-03",
@@ -8436,8 +8436,8 @@
    "pct_votaciones_ajustado": 60.2,
    "motivos": {
     "Permiso especial Comités Parlamentarios": 4,
-    "Misión oficial con aviso de salida del país (Art. 37)": 3,
     "Actividad oficial con el Presidente de la República (Art. 9)": 3,
+    "Misión oficial con aviso de salida del país (Art. 37)": 3,
     "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 2,
     "Impedimento grave (Art. 42)": 1
    },
@@ -10361,8 +10361,8 @@
    "pct_asistencia_ajustada": 93.6,
    "pct_votaciones_ajustado": 59.7,
    "motivos": {
-    "Misión oficial con aviso de salida del país (Art. 37)": 5,
-    "Permiso especial Comités Parlamentarios": 5
+    "Permiso especial Comités Parlamentarios": 5,
+    "Misión oficial con aviso de salida del país (Art. 37)": 5
    },
    "periodos": [
     {
@@ -14795,8 +14795,8 @@
    "pct_asistencia_ajustada": 98.9,
    "pct_votaciones_ajustado": 95.2,
    "motivos": {
-    "Misión oficial con aviso de salida del país (Art. 37)": 4,
     "Actividad oficial con el Presidente de la República (Art. 9)": 4,
+    "Misión oficial con aviso de salida del país (Art. 37)": 4,
     "Actividad propia de la labor parlamentaria (Art. 42)": 1
    },
    "periodos": [
@@ -16711,8 +16711,8 @@
    "pct_votaciones_ajustado": 87.8,
    "motivos": {
     "Impedimento grave (Art. 42)": 5,
-    "Gestión encomendada por la Corporación (Art. 42)": 1,
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1,
+    "Gestión encomendada por la Corporación (Art. 42)": 1
    },
    "periodos": [
     {
@@ -19229,8 +19229,8 @@
    "pct_asistencia_ajustada": 96.8,
    "pct_votaciones_ajustado": 84.5,
    "motivos": {
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 3,
     "Acuerdo de Comités Parlamentarios": 3,
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 3,
     "Actividad oficial con el Presidente de la República (Art. 9)": 2
    },
    "periodos": [
@@ -41984,8 +41984,8 @@
    "pct_votaciones_ajustado": 91.7,
    "motivos": {
     "Actividad propia de la labor parlamentaria (Art. 42)": 2,
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1,
-    "Licencia médica (Art. 42)": 1
+    "Licencia médica (Art. 42)": 1,
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1
    },
    "periodos": [
     {
@@ -55944,8 +55944,8 @@
    "pct_asistencia_ajustada": 100.0,
    "pct_votaciones_ajustado": 93.2,
    "motivos": {
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1,
-    "Impedimento grave (Art. 42)": 1
+    "Impedimento grave (Art. 42)": 1,
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1
    },
    "periodos": [],
    "historial": [
