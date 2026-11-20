@@ -60,34 +60,57 @@ def cargar_diputados():
             "partido": txt(vigente, "c:Partido/c:Alias") if vigente is not None else "",
             "partido_nombre": txt(vigente, "c:Partido/c:Nombre") if vigente is not None else "",
             "sexo": txt(d, "c:Sexo"),
+            "en_lista": True,  # vino en la lista del período (los que solo aparecen en la asistencia no lo traen)
         }
     return diputados
 
 
-MAX_CAMBIOS_NOMBRE = 3  # más cambios de nombre en una actualización no son correcciones: la fuente cruzó los datos
+MAX_CAMBIOS = 3  # más cambios de identidad en una actualización no son correcciones: la fuente entregó datos rotos
 normal = lambda s: unicodedata.normalize("NFD", s or "").encode("ascii", "ignore").decode().casefold().split()
 
 
-def proteger_identidades(diputados):
-    """El 13-nov-2026 la Cámara entregó, para los mismos Id y militancias, el nombre, la fecha de nacimiento y el sexo de
-    otra persona en 154 de 155 diputados. Si cambian muchos nombres de golpe, se mantienen los ya publicados
-    (data/diputados.json) y se devuelve una alerta; los cambios sueltos (reemplazos, correcciones) se aceptan."""
+def proteger_identidades(diputados, activos):
+    """Nombre y partido de cada diputado activo, partiendo de la última versión publicada (data/diputados.json).
+
+    La lista de diputados de la Cámara se ha roto dos veces: el 13-nov-2026 trajo, en los mismos Id, el nombre,
+    nacimiento y sexo de otra persona; desde el 17-nov trae otros 155 Id sin militancias (los diputados actuales quedaron
+    sin partido). Por eso solo se aceptan cambios sueltos de la fuente (reemplazos, cambios de partido, correcciones);
+    si cambian muchos de golpe, o faltan, se conserva lo publicado y se devuelve una alerta."""
     archivo = SALIDA / "diputados.json"
-    if not archivo.exists():
-        return []
-    ref = {str(f["id"]): f for f in json.loads(archivo.read_text(encoding="utf-8"))["diputados"]}
-    cambios = [(i, ref[i]["nombre"], d["nombre"]) for i, d in diputados.items()
-               if i in ref and normal(ref[i]["nombre"]) != normal(d["nombre"])]
-    if len(cambios) <= MAX_CAMBIOS_NOMBRE:
-        for i, antes, ahora in cambios:
-            print(f"Aviso: el diputado {i} cambió de nombre: {antes} -> {ahora}")
-        return []
-    for i in (i for i in diputados if i in ref):  # todos: algunos llegan solo en MAYÚSCULAS
-        diputados[i]["nombre"] = ref[i]["nombre"]
-        diputados[i]["sexo"] = ref[i].get("sexo", diputados[i]["sexo"])
-    ejemplos = "; ".join(f"{i}: {antes} -> {ahora}" for i, antes, ahora in cambios[:3])
-    return [f"La Cámara entregó {len(cambios)} nombres distintos para los mismos diputados ({ejemplos}); "
-            "se mantienen los ya publicados. Revisar la fuente antes de aceptar cambios."]
+    ref = {str(f["id"]): f for f in json.loads(archivo.read_text(encoding="utf-8"))["diputados"]} if archivo.exists() else {}
+    alertas = []
+    conocidos = [i for i in activos if i in ref]
+    fuera = [i for i in activos if not diputados[i].get("en_lista")]
+    if len(fuera) > MAX_CAMBIOS:
+        alertas.append(f"La lista de diputados de la Cámara no trae a {len(fuera)} de los {len(activos)} diputados con "
+                       "asistencia (¿lista de otro período?).")
+
+    nombres = [i for i in conocidos if normal(diputados[i]["nombre"]) != normal(ref[i]["nombre"])]
+    for i in conocidos:
+        if i not in nombres:
+            diputados[i]["nombre"] = ref[i]["nombre"]  # mismo nombre: se conserva la escritura publicada (no MAYÚSCULAS)
+    if len(nombres) > MAX_CAMBIOS:
+        for i in nombres:
+            diputados[i]["nombre"], diputados[i]["sexo"] = ref[i]["nombre"], ref[i].get("sexo", diputados[i]["sexo"])
+        ejemplos = "; ".join(f"{i}: {ref[i]['nombre']}" for i in nombres[:3])
+        alertas.append(f"La Cámara entregó {len(nombres)} nombres distintos para los mismos diputados ({ejemplos}...); "
+                       "se mantienen los publicados.")
+    else:
+        for i in nombres:
+            print(f"Aviso: el diputado {i} cambió de nombre: {ref[i]['nombre']} -> {diputados[i]['nombre']}")
+
+    sin_partido = [i for i in conocidos if not diputados[i]["partido"] and ref[i].get("partido")]
+    cambio_partido = [i for i in conocidos if diputados[i]["partido"] and diputados[i]["partido"] != ref[i].get("partido")]
+    for i in sin_partido + (cambio_partido if len(cambio_partido) > MAX_CAMBIOS else []):
+        diputados[i]["partido"], diputados[i]["partido_nombre"] = ref[i]["partido"], ref[i]["partido_nombre"]
+    if len(sin_partido) > MAX_CAMBIOS:
+        alertas.append(f"La Cámara no entregó el partido de {len(sin_partido)} diputados; se mantienen los publicados.")
+    if len(cambio_partido) > MAX_CAMBIOS:
+        alertas.append(f"La Cámara cambió el partido de {len(cambio_partido)} diputados de golpe; se mantienen los publicados.")
+    else:
+        for i in cambio_partido:
+            print(f"Aviso: el diputado {i} cambió de partido: {ref[i]['partido']} -> {diputados[i]['partido']}")
+    return alertas
 
 
 def contrastar_con_bcn(diputados):
@@ -103,7 +126,7 @@ def contrastar_con_bcn(diputados):
             bcn = " ".join(normal(urllib.parse.unquote(fuente.split("wiki/")[1]).replace("_", " ")))
             if not any(a in bcn for a in normal(d["nombre"])[-2:]):
                 distintos.append(f"{i}: {d['nombre']}")
-    if len(distintos) <= MAX_CAMBIOS_NOMBRE:
+    if len(distintos) <= MAX_CAMBIOS:
         return []
     return [f"{len(distintos)} nombres no calzan con su ficha de la BCN (ej.: {'; '.join(distintos[:3])})."]
 
@@ -277,8 +300,6 @@ def resumen_unanimidad(votaciones, proyectos):
 
 def main():
     diputados = cargar_diputados()
-    alertas = proteger_identidades(diputados)
-    alertas += contrastar_con_bcn(diputados)
     reg = defaultdict(nuevo_registro)
 
     # --- Asistencia a sala ---
@@ -357,6 +378,12 @@ def main():
 
     def pct(a, b, minimo=1):
         return round(100 * a / b, 1) if b >= minimo else None
+
+    activos = [did for did, r in reg.items() if did in diputados and r["sesiones"]]
+    alertas = proteger_identidades(diputados, activos)
+    alertas += contrastar_con_bcn({did: diputados[did] for did in activos})
+    for d in diputados.values():
+        d.pop("en_lista", None)
 
     filas = []
     for did, r in reg.items():

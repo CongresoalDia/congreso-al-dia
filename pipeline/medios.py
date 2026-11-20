@@ -211,6 +211,17 @@ def main():
         CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Logos: {len(medios['partidos'])}/{len(cache)}")
 
+    # Si una fuente falla (BCN sin respuesta, la Cámara sin partidos como desde el 17-nov-2026), se conserva lo que ya había
+    # en vez de borrar fotos o logos que siguen siendo válidos
+    anterior = json.loads((WEB / "medios.json").read_text(encoding="utf-8")) if (WEB / "medios.json").exists() else {}
+    ids = {str(d["id"]) for d in datos["diputados"]}
+    for clave, m in anterior.get("diputados", {}).items():
+        if clave in ids and clave not in medios["diputados"] and (WEB / m["foto"]).exists():
+            medios["diputados"][clave] = m
+    for alias, m in anterior.get("partidos", {}).items():
+        if alias not in medios["partidos"] and (not m.get("logo") or (WEB / m["logo"]).exists()):
+            medios["partidos"][alias] = m
+
     # Orden fijo (la BCN entrega los resultados en distinto orden cada vez) para que el archivo solo cambie si cambian los datos
     medios["diputados"] = dict(sorted(medios["diputados"].items(), key=lambda kv: int(kv[0])))
     medios["partidos"] = dict(sorted(medios["partidos"].items()))
