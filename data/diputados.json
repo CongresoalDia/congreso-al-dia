@@ -1,6 +1,6 @@
 {
  "resumen": {
-  "actualizado": "2026-11-20T10:52",
+  "actualizado": "2026-11-21T17:04",
   "periodo": "2026-2030",
   "sesiones": 99,
   "votaciones": 1502,
@@ -8436,8 +8436,8 @@
    "pct_votaciones_ajustado": 60.2,
    "motivos": {
     "Permiso especial Comités Parlamentarios": 4,
-    "Actividad oficial con el Presidente de la República (Art. 9)": 3,
     "Misión oficial con aviso de salida del país (Art. 37)": 3,
+    "Actividad oficial con el Presidente de la República (Art. 9)": 3,
     "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 2,
     "Impedimento grave (Art. 42)": 1
    },
@@ -9088,8 +9088,8 @@
    "pct_asistencia_ajustada": 100.0,
    "pct_votaciones_ajustado": 82.1,
    "motivos": {
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 5,
     "Licencia médica (Art. 42)": 5,
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 5,
     "Impedimento grave (Art. 42)": 3
    },
    "periodos": [
@@ -14151,8 +14151,8 @@
    "inasistencias": 10,
    "falta_licencia": 0,
    "falta_trabajo": 0,
-   "falta_justificada": 8,
-   "falta_sin_justificar": 2,
+   "falta_justificada": 9,
+   "falta_sin_justificar": 1,
    "votaciones": 1341,
    "vota": 1143,
    "dispensado": 0,
@@ -14160,15 +14160,15 @@
    "no_vota_presente": 97,
    "no_vota_licencia": 0,
    "no_vota_trabajo": 0,
-   "falta_excusada": 8,
-   "no_vota_excusado": 81,
+   "falta_excusada": 9,
+   "no_vota_excusado": 92,
    "pct_asistencia": 89.9,
    "pct_votaciones": 85.2,
-   "pct_asistencia_ajustada": 97.8,
-   "pct_votaciones_ajustado": 90.7,
+   "pct_asistencia_ajustada": 98.9,
+   "pct_votaciones_ajustado": 91.5,
    "motivos": {
     "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 5,
-    "Impedimento grave (Art. 42)": 3
+    "Impedimento grave (Art. 42)": 4
    },
    "periodos": [],
    "historial": [
@@ -14757,8 +14757,8 @@
     {
      "fecha": "2026-11-17",
      "sesion": 4855,
-     "estado": "sin_justificar",
-     "motivo": null
+     "estado": "justificada",
+     "motivo": "Impedimento grave (Art. 42)"
     },
     {
      "fecha": "2026-11-18",
@@ -19229,8 +19229,8 @@
    "pct_asistencia_ajustada": 96.8,
    "pct_votaciones_ajustado": 84.5,
    "motivos": {
-    "Acuerdo de Comités Parlamentarios": 3,
     "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 3,
+    "Acuerdo de Comités Parlamentarios": 3,
     "Actividad oficial con el Presidente de la República (Art. 9)": 2
    },
    "periodos": [
@@ -41984,8 +41984,8 @@
    "pct_votaciones_ajustado": 91.7,
    "motivos": {
     "Actividad propia de la labor parlamentaria (Art. 42)": 2,
-    "Licencia médica (Art. 42)": 1,
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1,
+    "Licencia médica (Art. 42)": 1
    },
    "periodos": [
     {
@@ -64731,8 +64731,8 @@
    "inasistencias": 1,
    "falta_licencia": 0,
    "falta_trabajo": 0,
-   "falta_justificada": 0,
-   "falta_sin_justificar": 1,
+   "falta_justificada": 1,
+   "falta_sin_justificar": 0,
    "votaciones": 1341,
    "vota": 1167,
    "dispensado": 0,
@@ -64740,13 +64740,15 @@
    "no_vota_presente": 163,
    "no_vota_licencia": 0,
    "no_vota_trabajo": 0,
-   "falta_excusada": 0,
-   "no_vota_excusado": 0,
+   "falta_excusada": 1,
+   "no_vota_excusado": 11,
    "pct_asistencia": 99.0,
    "pct_votaciones": 87.0,
-   "pct_asistencia_ajustada": 99.0,
-   "pct_votaciones_ajustado": 87.0,
-   "motivos": {},
+   "pct_asistencia_ajustada": 100.0,
+   "pct_votaciones_ajustado": 87.7,
+   "motivos": {
+    "Impedimento grave (Art. 42)": 1
+   },
    "periodos": [],
    "historial": [
     {
@@ -65334,8 +65336,8 @@
     {
      "fecha": "2026-11-17",
      "sesion": 4855,
-     "estado": "sin_justificar",
-     "motivo": null
+     "estado": "justificada",
+     "motivo": "Impedimento grave (Art. 42)"
     },
     {
      "fecha": "2026-11-18",
