@@ -1,9 +1,9 @@
 {
  "resumen": {
-  "actualizado": "2026-11-24T20:29",
+  "actualizado": "2026-11-25T19:44",
   "periodo": "2026-2030",
   "sesiones": 101,
-  "votaciones": 1558,
+  "votaciones": 1567,
   "promedio_asistencia": 93.4,
   "promedio_votaciones": 84.8,
   "promedio_asistencia_ajustada": 98.7,
@@ -12489,8 +12489,8 @@
    "inasistencias": 11,
    "falta_licencia": 0,
    "falta_trabajo": 0,
-   "falta_justificada": 10,
-   "falta_sin_justificar": 1,
+   "falta_justificada": 11,
+   "falta_sin_justificar": 0,
    "votaciones": 1397,
    "vota": 1153,
    "dispensado": 0,
@@ -12498,14 +12498,14 @@
    "no_vota_presente": 104,
    "no_vota_licencia": 0,
    "no_vota_trabajo": 0,
-   "falta_excusada": 7,
-   "no_vota_excusado": 79,
+   "falta_excusada": 8,
+   "no_vota_excusado": 92,
    "pct_asistencia": 89.1,
    "pct_votaciones": 82.5,
-   "pct_asistencia_ajustada": 95.7,
-   "pct_votaciones_ajustado": 87.5,
+   "pct_asistencia_ajustada": 96.8,
+   "pct_votaciones_ajustado": 88.4,
    "motivos": {
-    "Impedimento grave (Art. 42)": 7,
+    "Impedimento grave (Art. 42)": 8,
     "Permiso especial Comités Parlamentarios": 3
    },
    "periodos": [],
@@ -13113,8 +13113,8 @@
     {
      "fecha": "2026-11-24",
      "sesion": 4858,
-     "estado": "sin_justificar",
-     "motivo": null
+     "estado": "justificada",
+     "motivo": "Impedimento grave (Art. 42)"
     }
    ]
   },
