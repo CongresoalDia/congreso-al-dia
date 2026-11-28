@@ -1,6 +1,6 @@
 {
  "resumen": {
-  "actualizado": "2026-11-27T19:19",
+  "actualizado": "2026-11-28T17:56",
   "periodo": "2026-2030",
   "sesiones": 102,
   "votaciones": 1567,
@@ -8653,8 +8653,8 @@
    "pct_votaciones_ajustado": 90.7,
    "motivos": {
     "Misión oficial con aviso de salida del país (Art. 37)": 7,
-    "Permiso especial Comités Parlamentarios": 3,
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 3
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 3,
+    "Permiso especial Comités Parlamentarios": 3
    },
    "periodos": [
     {
@@ -9986,8 +9986,8 @@
    "pct_votaciones_ajustado": 61.5,
    "motivos": {
     "Permiso especial Comités Parlamentarios": 4,
-    "Misión oficial con aviso de salida del país (Art. 37)": 3,
     "Actividad oficial con el Presidente de la República (Art. 9)": 3,
+    "Misión oficial con aviso de salida del país (Art. 37)": 3,
     "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 2,
     "Impedimento grave (Art. 42)": 1
    },
@@ -12611,8 +12611,8 @@
    "pct_asistencia_ajustada": 93.8,
    "pct_votaciones_ajustado": 61.6,
    "motivos": {
-    "Permiso especial Comités Parlamentarios": 5,
-    "Misión oficial con aviso de salida del país (Art. 37)": 5
+    "Misión oficial con aviso de salida del país (Art. 37)": 5,
+    "Permiso especial Comités Parlamentarios": 5
    },
    "periodos": [
     {
@@ -15218,8 +15218,8 @@
    "pct_asistencia_ajustada": 98.9,
    "pct_votaciones_ajustado": 95.5,
    "motivos": {
-    "Actividad oficial con el Presidente de la República (Art. 9)": 4,
     "Misión oficial con aviso de salida del país (Art. 37)": 4,
+    "Actividad oficial con el Presidente de la República (Art. 9)": 4,
     "Actividad propia de la labor parlamentaria (Art. 42)": 1
    },
    "periodos": [
@@ -15887,8 +15887,8 @@
    "pct_asistencia_ajustada": 95.9,
    "pct_votaciones_ajustado": 66.3,
    "motivos": {
-    "Permiso especial Comités Parlamentarios": 4,
     "Misión oficial con aviso de salida del país (Art. 37)": 4,
+    "Permiso especial Comités Parlamentarios": 4,
     "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1
    },
    "periodos": [
@@ -44509,8 +44509,8 @@
    "pct_votaciones_ajustado": 91.9,
    "motivos": {
     "Actividad propia de la labor parlamentaria (Art. 42)": 2,
-    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1,
-    "Licencia médica (Art. 42)": 1
+    "Licencia médica (Art. 42)": 1,
+    "Permiso por motivos particulares sin goce de Dieta (Art. 42)": 1
    },
    "periodos": [
     {
